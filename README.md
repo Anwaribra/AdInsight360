@@ -6,36 +6,47 @@ A data pipeline for extracting and analyzing marketing insights from Reddit data
 
 This project automates the collection of marketing-related content from Reddit and loads it into Snowflake for analysis. The pipeline extracts posts from various Reddit categories (hot, new, and top posts) and maintains a structured database of marketing insights.
 
+## Dashboard Preview
+
+![Engagement Metrics](data/doc/newplot.png)
+*Real-time engagement metrics showing post performance and community interaction*
+
+![Author Analysis](data/doc/newplot%20(1).png)
+*Author contribution analysis and trending metrics*
+
+## Database Schema
+
+![Database Schema](data/doc/ADINSIGHT_DB.png)
+*AdInsight360 database schema showing relationships between staging and mart layers*
+
 ## Project Structure
 
 ```
 AdInsight360/
-├── airflow/               
+├── airflow/               # Airflow DAGs for orchestration
 │   └── dags/
-├── analyses/              
-├── macros/                 
-├── models/               
-│   ├── marts/            
-│   ├── staging/
-│   ├── utils/            
-│   └── sources.yml       
-├── scripts/               
+├── analyses/             # dbt analyses (ad hoc SQL)
+├── macros/              # dbt macros
+├── models/              # dbt models
+│   ├── marts/           # Business-level marts
+│   ├── staging/         # Staging models
+│   ├── utils/           # Utility models/macros
+│   └── sources.yml      # Source definitions
+├── scripts/             # Data extraction and loading scripts
 │   ├── extract_data.py
 │   └── load_to_snowflake.py
-├── tests/                
-├── .env                    
-├── requirements.txt       
-└── README.md               
+├── streamlit/           # Streamlit analytics dashboard
+│   ├── dashboard.py     # Main dashboard application
+│   ├── pages/          # Dashboard pages
+│   └── utils/          # Dashboard utilities
+├── data/               # Data storage and documentation
+│   ├── raw/            # Raw JSON data
+│   └── doc/            # Documentation assets
+├── tests/              # dbt tests
+├── .env                # Environment variables
+├── requirements.txt    # Python dependencies
+└── README.md           # Project documentation
 ```
-
-
-
-
-
-
-
-
-
 
 ## Features
 
@@ -48,10 +59,16 @@ AdInsight360/
   - Author information
   - Timestamps
   - URLs
+- Interactive Analytics Dashboard:
+  - Real-time engagement metrics
+  - Content performance analysis
+  - Author influence tracking
+  - Trend visualization
+  - Custom filtering and exploration
 
 ## Data Pipeline
 
-The project consists of two main components:
+The project consists of three main components:
 
 1. **Data Extraction** (`scripts/extract_data.py`)
    - Fetches posts from Reddit's marketing subreddit
@@ -65,10 +82,17 @@ The project consists of two main components:
    - Handles data type conversions
    - Provides error handling and logging
 
+3. **Analytics Dashboard** (`streamlit/dashboard.py`)
+   - Interactive data exploration
+   - Real-time metrics and KPIs
+   - Custom visualizations
+   - Trend analysis and insights
+
 ## Orchestration & Transformation
 
 - **Airflow** orchestrates the end-to-end pipeline, automating extraction, loading, and transformation tasks.
 - **dbt** is used for data transformation and analytics modeling. Models are organized into staging and marts layers for clean, analytics-ready data.
+- **Streamlit** provides an interactive web interface for data exploration and analysis.
 
 ## Environment Setup
 
@@ -86,8 +110,31 @@ The project consists of two main components:
    - `SNOWFLAKE_ROLE`
 3. **Set up Airflow** and ensure it can access the project directory.
 4. **Configure dbt** profiles as needed for your Snowflake connection.
+5. **Launch Streamlit** dashboard with `streamlit run streamlit/dashboard.py`.
 
+## Analytics Dashboard
 
+The Streamlit dashboard provides interactive analytics and insights:
+
+1. **Engagement Metrics**
+   - Post performance tracking
+   - Comment activity analysis
+   - Score distribution patterns
+
+2. **Content Analysis**
+   - Popular topics and themes
+   - Title sentiment analysis
+   - URL domain statistics
+
+3. **Author Analytics**
+   - Top contributors
+   - Posting patterns
+   - Engagement rates
+
+4. **Trend Analysis**
+   - Time-based patterns
+   - Seasonal trends
+   - Growth metrics
 
 ## Data Structure
 

@@ -13,7 +13,7 @@ staged as (
         id,
         title,
         score,
-        to_timestamp_ntz(cast(created_utc as float)) as created_utc,
+        to_timestamp(to_number(created_utc, 38, 0)) as created_utc,
         url,
         num_comments,
         author,

@@ -1,6 +1,9 @@
 # Environment variables
 .env
 
+# Local configuration
+streamlit/config/local_db.py
+
 # dbt
 target/
 dbt_packages/
@@ -45,3 +48,8 @@ webserver_config.py
 # OS
 .DS_Store
 Thumbs.db 
+
+.scripts/
+setup_postgres.py
+data/
+tables/ 

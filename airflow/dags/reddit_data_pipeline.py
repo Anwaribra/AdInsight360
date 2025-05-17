@@ -67,4 +67,4 @@ dbt_test = BashOperator(
 )
 
 # Set task dependencies
-extract_task >> load_task >> dbt_staging >> dbt_marts >> dbt_test
+extract_task >> load_task >> dbt_staging >> dbt_marts >> dbt_test 
