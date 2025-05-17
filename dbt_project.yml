@@ -1,0 +1,28 @@
+name: 'dbt_adinsight360'
+version: '1.0.0'
+config-version: 2
+
+profile: 'dbt_adinsight360'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_packages"
+  - "logs"
+
+require-dbt-version: [">=1.9.4", "<2.0.0"]
+
+models:
+  adinsight360:
+    +materialized: view
+
+seeds:
+  adinsight360:
+    +column_types:
+      id: number
