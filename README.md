@@ -9,15 +9,15 @@ This project automates the collection of marketing-related content from Reddit a
 ## Dashboard Preview
 
 ![Engagement Metrics](data/doc/newplot.png)
-*Real-time engagement metrics showing post performance and community interaction*
+- *Real-time engagement metrics showing post performance and community interaction*
 
 ![Author Analysis](data/doc/Author_analysis.png)
-*Author contribution analysis and trending metrics*
+- *Author contribution analysis and trending metrics*
 
 ## Database Schema
 
 ![Database Schema](data/doc/ADINSIGHT_DB.png)
-*AdInsight360 database schema showing relationships between staging and mart layers*
+- *AdInsight360 database schema showing relationships between staging and mart layers*
 
 ## Project Structure
 
