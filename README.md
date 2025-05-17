@@ -11,7 +11,7 @@ This project automates the collection of marketing-related content from Reddit a
 ![Engagement Metrics](data/doc/newplot.png)
 *Real-time engagement metrics showing post performance and community interaction*
 
-![Author Analysis](data/doc/newplot%20(1).png)
+![Author Analysis](data/doc/Author_analysis.png)
 *Author contribution analysis and trending metrics*
 
 ## Database Schema
