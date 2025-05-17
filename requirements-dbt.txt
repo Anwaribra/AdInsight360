@@ -1,0 +1,4 @@
+# dbt packages
+dbt-core==1.7.1
+dbt-snowflake==1.7.1
+sqlparse<0.5,>=0.2.3  

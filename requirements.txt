@@ -9,16 +9,8 @@ snowflake-connector-python==3.5.0
 snowflake-sqlalchemy==1.5.1
 
 # Data processing
-pandas==2.1.4  # Compatible with Streamlit and Snowflake provider
+pandas==2.1.4
 numpy==1.26.4
-
-# dbt
-dbt-core==1.7.1
-dbt-snowflake==1.7.1
-
-# Airflow - Python 3.12 compatible versions
-apache-airflow==3.0.1
-apache-airflow-providers-snowflake==5.3.0
 
 # Visualization
 plotly==5.18.0
@@ -29,7 +21,7 @@ black==24.1.1
 flake8==7.0.0
 pytest==8.0.0
 
-# Additional dependencies for Airflow
+# Additional dependencies
 typing-extensions>=4.0.0
-sqlalchemy>=1.4.0
+sqlalchemy==1.4.54
 alembic>=1.6.0

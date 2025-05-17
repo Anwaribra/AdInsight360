@@ -1,0 +1,5 @@
+# Airflow providers
+apache-airflow==3.0.1
+apache-airflow-providers-snowflake==5.3.0
+apache-airflow-providers-common-sql>=1.26.0
+sqlparse>=0.5.1  
