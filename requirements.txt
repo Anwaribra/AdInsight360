@@ -1,25 +1,30 @@
-# Data Extraction
+# Core dependencies
+streamlit>=1.31.0
 praw==7.7.1
 python-dotenv==1.0.0
 
-# Data Loading
+# Database
 psycopg2-binary==2.9.9
-snowflake-connector-python==3.5.0
-snowflake-sqlalchemy==1.5.1
+snowflake-connector-python>=3.5.0
+snowflake-sqlalchemy>=1.5.1
 
-# Data Transformation
-dbt-snowflake==1.7.1
-dbt-core==1.7.1
+# Data processing
+pandas>=2.2.0
+numpy>=1.26.0
 
-# Orchestration
-apache-airflow==2.7.1
-apache-airflow-providers-snowflake==3.3.1
+# dbt
+dbt-core>=1.7.1
+dbt-snowflake>=1.7.1
 
-# Testing
-pytest==7.4.3
-pytest-dbt==0.1.0
+# Airflow - Python 3.12 compatible versions
+apache-airflow>=2.8.0
+apache-airflow-providers-snowflake>=6.3.0
 
-# Analytics Dashboard
-streamlit==1.32.0
-plotly==5.18.0
-pandas==2.2.0
+# Visualization
+plotly>=5.18.0
+matplotlib>=3.8.0
+
+# Development
+black>=24.1.0
+flake8>=7.0.0
+pytest>=8.0.0
