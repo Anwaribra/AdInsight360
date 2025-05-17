@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: marketing_insights
+    description: Marketing insights derived from Reddit posts
+    columns:
+      - name: metric_type
+        description: Type of metric (daily or author)
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['daily', 'author']
+      - name: dimension
+        description: Dimension for the metric (date or author)
+        tests:
+          - not_null
+      - name: total_posts
+        description: Total number of posts
+        tests:
+          - not_null
+          - dbt_utils.expression_is_true:
+              expression: ">= 0"
+      - name: total_score
+        description: Total score across all posts
+      - name: total_comments
+        description: Total comments across all posts
+      - name: avg_score
+        description: Average score per post
+      - name: avg_comments
+        description: Average comments per post 

@@ -342,3 +342,802 @@ SELECT
 [0m00:08:29.001249 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f415a1cea50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f415a28c790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f415df35190>]}
 [0m00:08:29.001583 [debug] [MainThread]: Flushing usage events
 [0m00:08:29.701319 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:23:05.978360 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcbc18ded90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcbc18dd850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcbc18def10>]}
+
+
+============================== 00:23:05.980517 | 0b3b88de-6ecf-4831-afac-3f05a6707438 ==============================
+[0m00:23:05.980517 [info ] [MainThread]: Running with dbt=1.9.4
+[0m00:23:05.980986 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/anwar/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': '/home/anwar/AdInsight360/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt clean', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m00:23:06.068107 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0b3b88de-6ecf-4831-afac-3f05a6707438', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcbc191f190>]}
+[0m00:23:06.074770 [debug] [MainThread]: Resource report: {"command_name": "clean", "command_success": true, "command_wall_clock_time": 0.12942217, "process_in_blocks": "384", "process_kernel_time": 0.100758, "process_mem_max_rss": "96348", "process_out_blocks": "104", "process_user_time": 0.918405}
+[0m00:23:06.075237 [debug] [MainThread]: Command `dbt clean` succeeded at 00:23:06.075154 after 0.13 seconds
+[0m00:23:06.075556 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcbc1afae10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcbc1bbc790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcbc18d2bd0>]}
+[0m00:23:06.075880 [debug] [MainThread]: Flushing usage events
+[0m00:23:07.533213 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:23:11.262051 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1af5477a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1af54776d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1af5477590>]}
+
+
+============================== 00:23:11.264198 | 1d7c9ee7-747a-4b28-8d18-3d978564c5bd ==============================
+[0m00:23:11.264198 [info ] [MainThread]: Running with dbt=1.9.4
+[0m00:23:11.264698 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/anwar/.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/home/anwar/AdInsight360/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m00:23:11.688418 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1d7c9ee7-747a-4b28-8d18-3d978564c5bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1af54f5b90>]}
+[0m00:23:11.725934 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1d7c9ee7-747a-4b28-8d18-3d978564c5bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1ad8ba0fd0>]}
+[0m00:23:11.726628 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+[0m00:23:11.794448 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m00:23:11.794988 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m00:23:11.795383 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '1d7c9ee7-747a-4b28-8d18-3d978564c5bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1ad87aed50>]}
+[0m00:23:12.721002 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1d7c9ee7-747a-4b28-8d18-3d978564c5bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1ad7da0d10>]}
+[0m00:23:12.776840 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anwar/AdInsight360/target/manifest.json
+[0m00:23:12.778066 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anwar/AdInsight360/target/semantic_manifest.json
+[0m00:23:12.785507 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1d7c9ee7-747a-4b28-8d18-3d978564c5bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1ad7d5f410>]}
+[0m00:23:12.785956 [info ] [MainThread]: Found 2 models, 10 data tests, 1 source, 476 macros
+[0m00:23:12.786301 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1d7c9ee7-747a-4b28-8d18-3d978564c5bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1ad85e7690>]}
+[0m00:23:12.787405 [info ] [MainThread]: 
+[0m00:23:12.787747 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m00:23:12.788033 [info ] [MainThread]: 
+[0m00:23:12.788453 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m00:23:12.791982 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ADINSIGHT_DB'
+[0m00:23:12.792622 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ADINSIGHT_DB'
+[0m00:23:12.819730 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB"
+[0m00:23:12.820178 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB"
+[0m00:23:12.820539 [debug] [ThreadPool]: On list_ADINSIGHT_DB: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB"} */
+show terse schemas in database ADINSIGHT_DB
+    limit 10000
+[0m00:23:12.820846 [debug] [ThreadPool]: On list_ADINSIGHT_DB: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB"} */
+show terse schemas in database ADINSIGHT_DB
+    limit 10000
+[0m00:23:12.821115 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:23:12.821442 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:23:14.336703 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.515 seconds
+[0m00:23:14.344023 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.523 seconds
+[0m00:23:14.348539 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ADINSIGHT_DB, now list_ADINSIGHT_DB_public_analytics)
+[0m00:23:14.349851 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ADINSIGHT_DB, now list_ADINSIGHT_DB_public)
+[0m00:23:14.363291 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB_public_analytics"
+[0m00:23:14.365152 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB_public"
+[0m00:23:14.365509 [debug] [ThreadPool]: On list_ADINSIGHT_DB_public_analytics: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB_public_analytics"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m00:23:14.365815 [debug] [ThreadPool]: On list_ADINSIGHT_DB_public: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB_public"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m00:23:14.576452 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.209 seconds
+[0m00:23:14.578560 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.212 seconds
+[0m00:23:14.585182 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB_public"
+[0m00:23:14.587269 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB_public_analytics"
+[0m00:23:14.587704 [debug] [ThreadPool]: On list_ADINSIGHT_DB_public: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB_public"} */
+show objects in ADINSIGHT_DB.public
+    limit 10000
+    
+;
+[0m00:23:14.588152 [debug] [ThreadPool]: On list_ADINSIGHT_DB_public_analytics: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB_public_analytics"} */
+show objects in ADINSIGHT_DB.public_analytics
+    limit 10000
+    
+;
+[0m00:23:14.756251 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.168 seconds
+[0m00:23:14.758517 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.169 seconds
+[0m00:23:14.762599 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB_public"
+[0m00:23:14.766585 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB_public_analytics"
+[0m00:23:14.767764 [debug] [ThreadPool]: On list_ADINSIGHT_DB_public: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB_public"} */
+alter session unset quoted_identifiers_ignore_case;
+[0m00:23:14.768932 [debug] [ThreadPool]: On list_ADINSIGHT_DB_public_analytics: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB_public_analytics"} */
+alter session unset quoted_identifiers_ignore_case;
+[0m00:23:14.914993 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.145 seconds
+[0m00:23:14.933767 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.161 seconds
+[0m00:23:14.936673 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1d7c9ee7-747a-4b28-8d18-3d978564c5bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1ad7f05d90>]}
+[0m00:23:14.938586 [debug] [Thread-1 (]: Began running node model.adinsight.stg_reddit_posts
+[0m00:23:14.939049 [info ] [Thread-1 (]: 1 of 2 START sql view model public_analytics.stg_reddit_posts .................. [RUN]
+[0m00:23:14.939494 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_ADINSIGHT_DB_public_analytics, now model.adinsight.stg_reddit_posts)
+[0m00:23:14.939827 [debug] [Thread-1 (]: Began compiling node model.adinsight.stg_reddit_posts
+[0m00:23:14.945650 [debug] [Thread-1 (]: Writing injected SQL for node "model.adinsight.stg_reddit_posts"
+[0m00:23:14.946375 [debug] [Thread-1 (]: Began executing node model.adinsight.stg_reddit_posts
+[0m00:23:14.969094 [debug] [Thread-1 (]: Writing runtime sql for node "model.adinsight.stg_reddit_posts"
+[0m00:23:14.970068 [debug] [Thread-1 (]: Using snowflake connection "model.adinsight.stg_reddit_posts"
+[0m00:23:14.970438 [debug] [Thread-1 (]: On model.adinsight.stg_reddit_posts: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "node_id": "model.adinsight.stg_reddit_posts"} */
+create or replace   view ADINSIGHT_DB.public_analytics.stg_reddit_posts
+  
+   as (
+    
+
+with source as (
+    select * from ADINSIGHT_DB.public.reddit_marketing
+),
+
+staged as (
+    select
+        id,
+        title,
+        score,
+        created_utc,
+        url,
+        num_comments,
+        author,
+        loaded_at
+    from source
+)
+
+select * from staged
+  );
+[0m00:23:15.129321 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01bc6aa3-0000-2581-0000-000060e56b6d
+[0m00:23:15.130698 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'ADINSIGHT_DB.PUBLIC.REDDIT_MARKETING' does not exist or not authorized.
+[0m00:23:15.138306 [debug] [Thread-1 (]: Database Error in model stg_reddit_posts (models/staging/stg_reddit_posts.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'ADINSIGHT_DB.PUBLIC.REDDIT_MARKETING' does not exist or not authorized.
+  compiled code at target/run/adinsight/models/staging/stg_reddit_posts.sql
+[0m00:23:15.140994 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1d7c9ee7-747a-4b28-8d18-3d978564c5bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1ad7d13c50>]}
+[0m00:23:15.141994 [error] [Thread-1 (]: 1 of 2 ERROR creating sql view model public_analytics.stg_reddit_posts ......... [[31mERROR[0m in 0.20s]
+[0m00:23:15.142935 [debug] [Thread-1 (]: Finished running node model.adinsight.stg_reddit_posts
+[0m00:23:15.143625 [debug] [Thread-7 (]: Marking all children of 'model.adinsight.stg_reddit_posts' to be skipped because of status 'error'.  Reason: Database Error in model stg_reddit_posts (models/staging/stg_reddit_posts.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'ADINSIGHT_DB.PUBLIC.REDDIT_MARKETING' does not exist or not authorized.
+  compiled code at target/run/adinsight/models/staging/stg_reddit_posts.sql.
+[0m00:23:15.144509 [debug] [Thread-3 (]: Began running node model.adinsight.marketing_insights
+[0m00:23:15.144978 [info ] [Thread-3 (]: 2 of 2 SKIP relation public.marketing_insights ................................. [[33mSKIP[0m]
+[0m00:23:15.145477 [debug] [Thread-3 (]: Finished running node model.adinsight.marketing_insights
+[0m00:23:15.146562 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m00:23:15.146968 [debug] [MainThread]: Connection 'model.adinsight.stg_reddit_posts' was left open.
+[0m00:23:15.147334 [debug] [MainThread]: On model.adinsight.stg_reddit_posts: Close
+[0m00:23:15.375397 [debug] [MainThread]: Connection 'list_ADINSIGHT_DB_public' was left open.
+[0m00:23:15.376625 [debug] [MainThread]: On list_ADINSIGHT_DB_public: Close
+[0m00:23:15.615544 [info ] [MainThread]: 
+[0m00:23:15.616961 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 2.83 seconds (2.83s).
+[0m00:23:15.618497 [debug] [MainThread]: Command end result
+[0m00:23:15.714782 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anwar/AdInsight360/target/manifest.json
+[0m00:23:15.716011 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anwar/AdInsight360/target/semantic_manifest.json
+[0m00:23:15.719674 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/anwar/AdInsight360/target/run_results.json
+[0m00:23:15.719971 [info ] [MainThread]: 
+[0m00:23:15.720320 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m00:23:15.720629 [info ] [MainThread]: 
+[0m00:23:15.720964 [error] [MainThread]:   Database Error in model stg_reddit_posts (models/staging/stg_reddit_posts.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'ADINSIGHT_DB.PUBLIC.REDDIT_MARKETING' does not exist or not authorized.
+  compiled code at target/run/adinsight/models/staging/stg_reddit_posts.sql
+[0m00:23:15.721249 [info ] [MainThread]: 
+[0m00:23:15.721537 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=1 TOTAL=2
+[0m00:23:15.722222 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 4.493061, "process_in_blocks": "0", "process_kernel_time": 0.208167, "process_mem_max_rss": "225668", "process_out_blocks": "3264", "process_user_time": 2.745805}
+[0m00:23:15.722665 [debug] [MainThread]: Command `dbt run` failed at 00:23:15.722595 after 4.49 seconds
+[0m00:23:15.723004 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1af94ce1d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1af94ce050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1af94cd510>]}
+[0m00:23:15.723353 [debug] [MainThread]: Flushing usage events
+[0m00:23:16.433121 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:25:12.041402 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fecad75f190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fecad75ffd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fecad75efd0>]}
+
+
+============================== 00:25:12.044244 | b9b727a1-bfdd-4895-9f22-e006c376b2b6 ==============================
+[0m00:25:12.044244 [info ] [MainThread]: Running with dbt=1.9.4
+[0m00:25:12.044997 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/anwar/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': '/home/anwar/AdInsight360/logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt run', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m00:25:12.539379 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b9b727a1-bfdd-4895-9f22-e006c376b2b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec90cdaad0>]}
+[0m00:25:12.581932 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b9b727a1-bfdd-4895-9f22-e006c376b2b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec90b27910>]}
+[0m00:25:12.582889 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+[0m00:25:12.662084 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m00:25:12.771060 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m00:25:12.771471 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m00:25:12.804539 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b9b727a1-bfdd-4895-9f22-e006c376b2b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec909a7190>]}
+[0m00:25:12.868582 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anwar/AdInsight360/target/manifest.json
+[0m00:25:12.870220 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anwar/AdInsight360/target/semantic_manifest.json
+[0m00:25:12.878983 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b9b727a1-bfdd-4895-9f22-e006c376b2b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec90cecd50>]}
+[0m00:25:12.879655 [info ] [MainThread]: Found 2 models, 10 data tests, 1 source, 476 macros
+[0m00:25:12.880113 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b9b727a1-bfdd-4895-9f22-e006c376b2b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec909c3290>]}
+[0m00:25:12.881716 [info ] [MainThread]: 
+[0m00:25:12.882178 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m00:25:12.882540 [info ] [MainThread]: 
+[0m00:25:12.883051 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m00:25:12.887098 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ADINSIGHT_DB'
+[0m00:25:12.899936 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ADINSIGHT_DB'
+[0m00:25:12.991614 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB"
+[0m00:25:12.992083 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB"
+[0m00:25:12.992491 [debug] [ThreadPool]: On list_ADINSIGHT_DB: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB"} */
+show terse schemas in database ADINSIGHT_DB
+    limit 10000
+[0m00:25:12.992843 [debug] [ThreadPool]: On list_ADINSIGHT_DB: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB"} */
+show terse schemas in database ADINSIGHT_DB
+    limit 10000
+[0m00:25:12.993184 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:25:12.993694 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:25:14.270701 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.277 seconds
+[0m00:25:14.272423 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.279 seconds
+[0m00:25:14.277320 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ADINSIGHT_DB, now list_ADINSIGHT_DB_public_analytics)
+[0m00:25:14.277936 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ADINSIGHT_DB, now list_ADINSIGHT_DB_public)
+[0m00:25:14.287625 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB_public_analytics"
+[0m00:25:14.289862 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB_public"
+[0m00:25:14.290402 [debug] [ThreadPool]: On list_ADINSIGHT_DB_public_analytics: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB_public_analytics"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m00:25:14.290779 [debug] [ThreadPool]: On list_ADINSIGHT_DB_public: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB_public"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m00:25:14.435664 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.144 seconds
+[0m00:25:14.442440 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB_public_analytics"
+[0m00:25:14.443177 [debug] [ThreadPool]: On list_ADINSIGHT_DB_public_analytics: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB_public_analytics"} */
+show objects in ADINSIGHT_DB.public_analytics
+    limit 10000
+    
+;
+[0m00:25:14.446185 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.154 seconds
+[0m00:25:14.448648 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB_public"
+[0m00:25:14.449092 [debug] [ThreadPool]: On list_ADINSIGHT_DB_public: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB_public"} */
+show objects in ADINSIGHT_DB.public
+    limit 10000
+    
+;
+[0m00:25:14.611370 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.162 seconds
+[0m00:25:14.612762 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.169 seconds
+[0m00:25:14.615879 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB_public"
+[0m00:25:14.617985 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB_public_analytics"
+[0m00:25:14.618615 [debug] [ThreadPool]: On list_ADINSIGHT_DB_public: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB_public"} */
+alter session unset quoted_identifiers_ignore_case;
+[0m00:25:14.619208 [debug] [ThreadPool]: On list_ADINSIGHT_DB_public_analytics: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB_public_analytics"} */
+alter session unset quoted_identifiers_ignore_case;
+[0m00:25:14.755508 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.136 seconds
+[0m00:25:14.776644 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.156 seconds
+[0m00:25:14.780252 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b9b727a1-bfdd-4895-9f22-e006c376b2b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec90a6cf90>]}
+[0m00:25:14.785121 [debug] [Thread-1 (]: Began running node model.adinsight.stg_reddit_posts
+[0m00:25:14.786117 [info ] [Thread-1 (]: 1 of 2 START sql view model public_analytics.stg_reddit_posts .................. [RUN]
+[0m00:25:14.786862 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_ADINSIGHT_DB_public_analytics, now model.adinsight.stg_reddit_posts)
+[0m00:25:14.787302 [debug] [Thread-1 (]: Began compiling node model.adinsight.stg_reddit_posts
+[0m00:25:14.793649 [debug] [Thread-1 (]: Writing injected SQL for node "model.adinsight.stg_reddit_posts"
+[0m00:25:14.794242 [debug] [Thread-1 (]: Began executing node model.adinsight.stg_reddit_posts
+[0m00:25:14.819738 [debug] [Thread-1 (]: Writing runtime sql for node "model.adinsight.stg_reddit_posts"
+[0m00:25:14.820948 [debug] [Thread-1 (]: Using snowflake connection "model.adinsight.stg_reddit_posts"
+[0m00:25:14.821393 [debug] [Thread-1 (]: On model.adinsight.stg_reddit_posts: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "node_id": "model.adinsight.stg_reddit_posts"} */
+create or replace   view ADINSIGHT_DB.public_analytics.stg_reddit_posts
+  
+   as (
+    
+
+with source as (
+    select * from ADINSIGHT_DB.public.reddit_marketing
+),
+
+staged as (
+    select
+        id,
+        title,
+        score,
+        created_utc,
+        url,
+        num_comments,
+        author,
+        loaded_at
+    from source
+)
+
+select * from staged
+  );
+[0m00:25:15.186425 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.364 seconds
+[0m00:25:15.209798 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b9b727a1-bfdd-4895-9f22-e006c376b2b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec8f35a990>]}
+[0m00:25:15.210387 [info ] [Thread-1 (]: 1 of 2 OK created sql view model public_analytics.stg_reddit_posts ............. [[32mSUCCESS 1[0m in 0.42s]
+[0m00:25:15.210885 [debug] [Thread-1 (]: Finished running node model.adinsight.stg_reddit_posts
+[0m00:25:15.211555 [debug] [Thread-3 (]: Began running node model.adinsight.marketing_insights
+[0m00:25:15.212010 [info ] [Thread-3 (]: 2 of 2 START sql view model public.marketing_insights .......................... [RUN]
+[0m00:25:15.212485 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.adinsight.marketing_insights'
+[0m00:25:15.212792 [debug] [Thread-3 (]: Began compiling node model.adinsight.marketing_insights
+[0m00:25:15.217092 [debug] [Thread-3 (]: Writing injected SQL for node "model.adinsight.marketing_insights"
+[0m00:25:15.217835 [debug] [Thread-3 (]: Began executing node model.adinsight.marketing_insights
+[0m00:25:15.220962 [debug] [Thread-3 (]: Writing runtime sql for node "model.adinsight.marketing_insights"
+[0m00:25:15.222242 [debug] [Thread-3 (]: Using snowflake connection "model.adinsight.marketing_insights"
+[0m00:25:15.222622 [debug] [Thread-3 (]: On model.adinsight.marketing_insights: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "node_id": "model.adinsight.marketing_insights"} */
+create or replace   view ADINSIGHT_DB.public.marketing_insights
+  
+   as (
+    with posts as (
+    select * from ADINSIGHT_DB.public_analytics.stg_reddit_posts
+),
+
+daily_metrics as (
+    select
+        date_trunc('day', created_utc) as date,
+        count(*) as total_posts,
+        sum(score) as total_score,
+        sum(num_comments) as total_comments,
+        avg(score) as avg_score,
+        avg(num_comments) as avg_comments
+    from posts
+    group by 1
+),
+
+author_metrics as (
+    select
+        author,
+        count(*) as post_count,
+        sum(score) as total_score,
+        sum(num_comments) as total_comments,
+        avg(score) as avg_score,
+        avg(num_comments) as avg_comments
+    from posts
+    where author is not null
+    group by 1
+)
+
+select
+    'daily' as metric_type,
+    date as dimension,
+    total_posts,
+    total_score,
+    total_comments,
+    avg_score,
+    avg_comments
+from daily_metrics
+
+union all
+
+select
+    'author' as metric_type,
+    author as dimension,
+    post_count as total_posts,
+    total_score,
+    total_comments,
+    avg_score,
+    avg_comments
+from author_metrics
+  );
+[0m00:25:15.222967 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m00:25:15.955556 [debug] [Thread-3 (]: Snowflake adapter: Snowflake query id: 01bc6aa5-0000-247f-0000-000060e57c61
+[0m00:25:15.956483 [debug] [Thread-3 (]: Snowflake adapter: Snowflake error: 002016 (22000): SQL compilation error:
+Function DATE_TRUNC does not support FLOAT argument type
+[0m00:25:15.960756 [debug] [Thread-3 (]: Database Error in model marketing_insights (models/marts/marketing_insights.sql)
+  002016 (22000): SQL compilation error:
+  Function DATE_TRUNC does not support FLOAT argument type
+  compiled code at target/run/adinsight/models/marts/marketing_insights.sql
+[0m00:25:15.961416 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b9b727a1-bfdd-4895-9f22-e006c376b2b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec90766dd0>]}
+[0m00:25:15.962134 [error] [Thread-3 (]: 2 of 2 ERROR creating sql view model public.marketing_insights ................. [[31mERROR[0m in 0.75s]
+[0m00:25:15.962824 [debug] [Thread-3 (]: Finished running node model.adinsight.marketing_insights
+[0m00:25:15.963453 [debug] [Thread-7 (]: Marking all children of 'model.adinsight.marketing_insights' to be skipped because of status 'error'.  Reason: Database Error in model marketing_insights (models/marts/marketing_insights.sql)
+  002016 (22000): SQL compilation error:
+  Function DATE_TRUNC does not support FLOAT argument type
+  compiled code at target/run/adinsight/models/marts/marketing_insights.sql.
+[0m00:25:15.965090 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m00:25:15.965664 [debug] [MainThread]: Connection 'model.adinsight.stg_reddit_posts' was left open.
+[0m00:25:15.966087 [debug] [MainThread]: On model.adinsight.stg_reddit_posts: Close
+[0m00:25:16.215737 [debug] [MainThread]: Connection 'list_ADINSIGHT_DB_public' was left open.
+[0m00:25:16.216362 [debug] [MainThread]: On list_ADINSIGHT_DB_public: Close
+[0m00:25:16.457112 [debug] [MainThread]: Connection 'model.adinsight.marketing_insights' was left open.
+[0m00:25:16.458347 [debug] [MainThread]: On model.adinsight.marketing_insights: Close
+[0m00:25:16.706344 [info ] [MainThread]: 
+[0m00:25:16.707052 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 3.82 seconds (3.82s).
+[0m00:25:16.708114 [debug] [MainThread]: Command end result
+[0m00:25:16.729483 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anwar/AdInsight360/target/manifest.json
+[0m00:25:16.732296 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anwar/AdInsight360/target/semantic_manifest.json
+[0m00:25:16.738215 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/anwar/AdInsight360/target/run_results.json
+[0m00:25:16.738601 [info ] [MainThread]: 
+[0m00:25:16.738957 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m00:25:16.739275 [info ] [MainThread]: 
+[0m00:25:16.739608 [error] [MainThread]:   Database Error in model marketing_insights (models/marts/marketing_insights.sql)
+  002016 (22000): SQL compilation error:
+  Function DATE_TRUNC does not support FLOAT argument type
+  compiled code at target/run/adinsight/models/marts/marketing_insights.sql
+[0m00:25:16.739896 [info ] [MainThread]: 
+[0m00:25:16.740214 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=1 SKIP=0 TOTAL=2
+[0m00:25:16.741452 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 4.7372327, "process_in_blocks": "32088", "process_kernel_time": 0.262901, "process_mem_max_rss": "221520", "process_out_blocks": "2288", "process_user_time": 2.283227}
+[0m00:25:16.741907 [debug] [MainThread]: Command `dbt run` failed at 00:25:16.741832 after 4.74 seconds
+[0m00:25:16.742260 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fecad7b3cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fecad7b1ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec90adf250>]}
+[0m00:25:16.742588 [debug] [MainThread]: Flushing usage events
+[0m00:25:17.654718 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:25:30.068638 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec8a97aa10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec8a97bb50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec8bda1010>]}
+
+
+============================== 00:25:30.071489 | 9b61eb35-6e5e-4abf-a454-e353e9d3a725 ==============================
+[0m00:25:30.071489 [info ] [MainThread]: Running with dbt=1.9.4
+[0m00:25:30.072106 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/anwar/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': '/home/anwar/AdInsight360/logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m00:25:30.673364 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9b61eb35-6e5e-4abf-a454-e353e9d3a725', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec8a9b0d90>]}
+[0m00:25:30.719134 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9b61eb35-6e5e-4abf-a454-e353e9d3a725', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec6e0ad3d0>]}
+[0m00:25:30.719871 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+[0m00:25:30.808602 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m00:25:30.936580 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m00:25:30.937646 [debug] [MainThread]: Partial parsing: updated file: adinsight://models/staging/stg_reddit_posts.sql
+[0m00:25:31.414495 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9b61eb35-6e5e-4abf-a454-e353e9d3a725', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec8b4f9650>]}
+[0m00:25:31.508937 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anwar/AdInsight360/target/manifest.json
+[0m00:25:31.512037 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anwar/AdInsight360/target/semantic_manifest.json
+[0m00:25:31.524864 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9b61eb35-6e5e-4abf-a454-e353e9d3a725', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec6da56850>]}
+[0m00:25:31.525623 [info ] [MainThread]: Found 2 models, 10 data tests, 1 source, 476 macros
+[0m00:25:31.526244 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9b61eb35-6e5e-4abf-a454-e353e9d3a725', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec8ad10850>]}
+[0m00:25:31.528663 [info ] [MainThread]: 
+[0m00:25:31.529346 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m00:25:31.529862 [info ] [MainThread]: 
+[0m00:25:31.530552 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m00:25:31.536214 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ADINSIGHT_DB'
+[0m00:25:31.537126 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ADINSIGHT_DB'
+[0m00:25:31.590689 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB"
+[0m00:25:31.591935 [debug] [ThreadPool]: On list_ADINSIGHT_DB: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB"} */
+show terse schemas in database ADINSIGHT_DB
+    limit 10000
+[0m00:25:31.592381 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:25:31.591392 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB"
+[0m00:25:31.593200 [debug] [ThreadPool]: On list_ADINSIGHT_DB: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB"} */
+show terse schemas in database ADINSIGHT_DB
+    limit 10000
+[0m00:25:31.593729 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:25:33.465826 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.872 seconds
+[0m00:25:33.468278 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.876 seconds
+[0m00:25:33.470514 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ADINSIGHT_DB, now list_ADINSIGHT_DB_public)
+[0m00:25:33.471083 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ADINSIGHT_DB, now list_ADINSIGHT_DB_public_analytics)
+[0m00:25:33.481883 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB_public"
+[0m00:25:33.485351 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB_public_analytics"
+[0m00:25:33.485983 [debug] [ThreadPool]: On list_ADINSIGHT_DB_public: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB_public"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m00:25:33.486406 [debug] [ThreadPool]: On list_ADINSIGHT_DB_public_analytics: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB_public_analytics"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m00:25:33.646704 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.159 seconds
+[0m00:25:33.647916 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.161 seconds
+[0m00:25:33.653184 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB_public_analytics"
+[0m00:25:33.654938 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB_public"
+[0m00:25:33.655378 [debug] [ThreadPool]: On list_ADINSIGHT_DB_public_analytics: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB_public_analytics"} */
+show objects in ADINSIGHT_DB.public_analytics
+    limit 10000
+    
+;
+[0m00:25:33.655853 [debug] [ThreadPool]: On list_ADINSIGHT_DB_public: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB_public"} */
+show objects in ADINSIGHT_DB.public
+    limit 10000
+    
+;
+[0m00:25:33.824955 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.169 seconds
+[0m00:25:33.826460 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB_public_analytics"
+[0m00:25:33.827422 [debug] [ThreadPool]: On list_ADINSIGHT_DB_public_analytics: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB_public_analytics"} */
+alter session unset quoted_identifiers_ignore_case;
+[0m00:25:33.835278 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.178 seconds
+[0m00:25:33.836694 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB_public"
+[0m00:25:33.837057 [debug] [ThreadPool]: On list_ADINSIGHT_DB_public: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB_public"} */
+alter session unset quoted_identifiers_ignore_case;
+[0m00:25:33.974887 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.147 seconds
+[0m00:25:33.984875 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.147 seconds
+[0m00:25:33.986692 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9b61eb35-6e5e-4abf-a454-e353e9d3a725', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec6d18d1d0>]}
+[0m00:25:33.988696 [debug] [Thread-1 (]: Began running node model.adinsight.stg_reddit_posts
+[0m00:25:33.989233 [info ] [Thread-1 (]: 1 of 2 START sql view model public_analytics.stg_reddit_posts .................. [RUN]
+[0m00:25:33.989720 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_ADINSIGHT_DB_public, now model.adinsight.stg_reddit_posts)
+[0m00:25:33.990053 [debug] [Thread-1 (]: Began compiling node model.adinsight.stg_reddit_posts
+[0m00:25:33.997373 [debug] [Thread-1 (]: Writing injected SQL for node "model.adinsight.stg_reddit_posts"
+[0m00:25:33.998027 [debug] [Thread-1 (]: Began executing node model.adinsight.stg_reddit_posts
+[0m00:25:34.022666 [debug] [Thread-1 (]: Writing runtime sql for node "model.adinsight.stg_reddit_posts"
+[0m00:25:34.023660 [debug] [Thread-1 (]: Using snowflake connection "model.adinsight.stg_reddit_posts"
+[0m00:25:34.024093 [debug] [Thread-1 (]: On model.adinsight.stg_reddit_posts: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "node_id": "model.adinsight.stg_reddit_posts"} */
+create or replace   view ADINSIGHT_DB.public_analytics.stg_reddit_posts
+  
+   as (
+    
+
+with source as (
+    select * from ADINSIGHT_DB.public.reddit_marketing
+),
+
+staged as (
+    select
+        id,
+        title,
+        score,
+        to_timestamp(created_utc) as created_utc,
+        url,
+        num_comments,
+        author,
+        loaded_at
+    from source
+)
+
+select * from staged
+  );
+[0m00:25:34.198539 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01bc6aa5-0000-2581-0000-000060e56d45
+[0m00:25:34.199241 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001007 (22023): SQL compilation error:
+invalid type [TO_TIMESTAMP(SOURCE.CREATED_UTC)] for parameter 'TO_TIMESTAMP_NTZ'
+[0m00:25:34.202961 [debug] [Thread-1 (]: Database Error in model stg_reddit_posts (models/staging/stg_reddit_posts.sql)
+  001007 (22023): SQL compilation error:
+  invalid type [TO_TIMESTAMP(SOURCE.CREATED_UTC)] for parameter 'TO_TIMESTAMP_NTZ'
+  compiled code at target/run/adinsight/models/staging/stg_reddit_posts.sql
+[0m00:25:34.204842 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9b61eb35-6e5e-4abf-a454-e353e9d3a725', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec6d1ac450>]}
+[0m00:25:34.205709 [error] [Thread-1 (]: 1 of 2 ERROR creating sql view model public_analytics.stg_reddit_posts ......... [[31mERROR[0m in 0.21s]
+[0m00:25:34.206427 [debug] [Thread-1 (]: Finished running node model.adinsight.stg_reddit_posts
+[0m00:25:34.207019 [debug] [Thread-7 (]: Marking all children of 'model.adinsight.stg_reddit_posts' to be skipped because of status 'error'.  Reason: Database Error in model stg_reddit_posts (models/staging/stg_reddit_posts.sql)
+  001007 (22023): SQL compilation error:
+  invalid type [TO_TIMESTAMP(SOURCE.CREATED_UTC)] for parameter 'TO_TIMESTAMP_NTZ'
+  compiled code at target/run/adinsight/models/staging/stg_reddit_posts.sql.
+[0m00:25:34.207775 [debug] [Thread-3 (]: Began running node model.adinsight.marketing_insights
+[0m00:25:34.208171 [info ] [Thread-3 (]: 2 of 2 SKIP relation public.marketing_insights ................................. [[33mSKIP[0m]
+[0m00:25:34.208659 [debug] [Thread-3 (]: Finished running node model.adinsight.marketing_insights
+[0m00:25:34.210921 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m00:25:34.212857 [debug] [MainThread]: Connection 'list_ADINSIGHT_DB_public_analytics' was left open.
+[0m00:25:34.213869 [debug] [MainThread]: On list_ADINSIGHT_DB_public_analytics: Close
+[0m00:25:34.448853 [debug] [MainThread]: Connection 'model.adinsight.stg_reddit_posts' was left open.
+[0m00:25:34.450024 [debug] [MainThread]: On model.adinsight.stg_reddit_posts: Close
+[0m00:25:34.686554 [info ] [MainThread]: 
+[0m00:25:34.687256 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 3.16 seconds (3.16s).
+[0m00:25:34.688234 [debug] [MainThread]: Command end result
+[0m00:25:34.709311 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anwar/AdInsight360/target/manifest.json
+[0m00:25:34.712994 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anwar/AdInsight360/target/semantic_manifest.json
+[0m00:25:34.718721 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/anwar/AdInsight360/target/run_results.json
+[0m00:25:34.719157 [info ] [MainThread]: 
+[0m00:25:34.719602 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m00:25:34.720009 [info ] [MainThread]: 
+[0m00:25:34.720519 [error] [MainThread]:   Database Error in model stg_reddit_posts (models/staging/stg_reddit_posts.sql)
+  001007 (22023): SQL compilation error:
+  invalid type [TO_TIMESTAMP(SOURCE.CREATED_UTC)] for parameter 'TO_TIMESTAMP_NTZ'
+  compiled code at target/run/adinsight/models/staging/stg_reddit_posts.sql
+[0m00:25:34.720958 [info ] [MainThread]: 
+[0m00:25:34.721334 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=1 TOTAL=2
+[0m00:25:34.722086 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 4.705128, "process_in_blocks": "6056", "process_kernel_time": 0.247979, "process_mem_max_rss": "223636", "process_out_blocks": "3392", "process_user_time": 2.797803}
+[0m00:25:34.722513 [debug] [MainThread]: Command `dbt run` failed at 00:25:34.722441 after 4.71 seconds
+[0m00:25:34.722854 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec8a97a6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec8e9ce210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec8e9ce0d0>]}
+[0m00:25:34.723172 [debug] [MainThread]: Flushing usage events
+[0m00:25:35.445419 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:26:13.130108 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f501e0dbd10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f501f4e4f90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f501eb5f010>]}
+
+
+============================== 00:26:13.132307 | 8eee07d2-a6b2-4fac-b1b1-9c5313b26d2d ==============================
+[0m00:26:13.132307 [info ] [MainThread]: Running with dbt=1.9.4
+[0m00:26:13.132957 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/anwar/.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/home/anwar/AdInsight360/logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m00:26:13.627311 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8eee07d2-a6b2-4fac-b1b1-9c5313b26d2d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f50016c7150>]}
+[0m00:26:13.674006 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8eee07d2-a6b2-4fac-b1b1-9c5313b26d2d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5001795390>]}
+[0m00:26:13.674738 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+[0m00:26:13.749884 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m00:26:13.852849 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m00:26:13.853747 [debug] [MainThread]: Partial parsing: updated file: adinsight://models/staging/stg_reddit_posts.sql
+[0m00:26:14.242528 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8eee07d2-a6b2-4fac-b1b1-9c5313b26d2d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f501e13aa50>]}
+[0m00:26:14.306618 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anwar/AdInsight360/target/manifest.json
+[0m00:26:14.308004 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anwar/AdInsight360/target/semantic_manifest.json
+[0m00:26:14.315825 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8eee07d2-a6b2-4fac-b1b1-9c5313b26d2d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5001120450>]}
+[0m00:26:14.316302 [info ] [MainThread]: Found 2 models, 10 data tests, 1 source, 476 macros
+[0m00:26:14.316653 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8eee07d2-a6b2-4fac-b1b1-9c5313b26d2d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f50013cc850>]}
+[0m00:26:14.318265 [info ] [MainThread]: 
+[0m00:26:14.318765 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m00:26:14.319169 [info ] [MainThread]: 
+[0m00:26:14.319794 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m00:26:14.324067 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ADINSIGHT_DB'
+[0m00:26:14.324676 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ADINSIGHT_DB'
+[0m00:26:14.354744 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB"
+[0m00:26:14.355730 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB"
+[0m00:26:14.356164 [debug] [ThreadPool]: On list_ADINSIGHT_DB: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB"} */
+show terse schemas in database ADINSIGHT_DB
+    limit 10000
+[0m00:26:14.356539 [debug] [ThreadPool]: On list_ADINSIGHT_DB: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB"} */
+show terse schemas in database ADINSIGHT_DB
+    limit 10000
+[0m00:26:14.356934 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:26:14.357234 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:26:15.486562 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.130 seconds
+[0m00:26:15.489090 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.132 seconds
+[0m00:26:15.491448 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ADINSIGHT_DB, now list_ADINSIGHT_DB_public)
+[0m00:26:15.492124 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ADINSIGHT_DB, now list_ADINSIGHT_DB_public_analytics)
+[0m00:26:15.506366 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB_public_analytics"
+[0m00:26:15.507778 [debug] [ThreadPool]: On list_ADINSIGHT_DB_public_analytics: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB_public_analytics"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m00:26:15.507148 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB_public"
+[0m00:26:15.508455 [debug] [ThreadPool]: On list_ADINSIGHT_DB_public: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB_public"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m00:26:15.655424 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.147 seconds
+[0m00:26:15.659557 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB_public"
+[0m00:26:15.659958 [debug] [ThreadPool]: On list_ADINSIGHT_DB_public: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB_public"} */
+show objects in ADINSIGHT_DB.public
+    limit 10000
+    
+;
+[0m00:26:15.665639 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.157 seconds
+[0m00:26:15.666884 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB_public_analytics"
+[0m00:26:15.667205 [debug] [ThreadPool]: On list_ADINSIGHT_DB_public_analytics: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB_public_analytics"} */
+show objects in ADINSIGHT_DB.public_analytics
+    limit 10000
+    
+;
+[0m00:26:15.875325 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.215 seconds
+[0m00:26:15.880473 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB_public"
+[0m00:26:15.882529 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.215 seconds
+[0m00:26:15.883551 [debug] [ThreadPool]: On list_ADINSIGHT_DB_public: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB_public"} */
+alter session unset quoted_identifiers_ignore_case;
+[0m00:26:15.886908 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB_public_analytics"
+[0m00:26:15.890552 [debug] [ThreadPool]: On list_ADINSIGHT_DB_public_analytics: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB_public_analytics"} */
+alter session unset quoted_identifiers_ignore_case;
+[0m00:26:16.165592 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.277 seconds
+[0m00:26:16.168571 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.277 seconds
+[0m00:26:16.171687 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8eee07d2-a6b2-4fac-b1b1-9c5313b26d2d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f50012cd4d0>]}
+[0m00:26:16.173668 [debug] [Thread-1 (]: Began running node model.adinsight.stg_reddit_posts
+[0m00:26:16.174196 [info ] [Thread-1 (]: 1 of 2 START sql view model public_analytics.stg_reddit_posts .................. [RUN]
+[0m00:26:16.174687 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_ADINSIGHT_DB_public_analytics, now model.adinsight.stg_reddit_posts)
+[0m00:26:16.175050 [debug] [Thread-1 (]: Began compiling node model.adinsight.stg_reddit_posts
+[0m00:26:16.181534 [debug] [Thread-1 (]: Writing injected SQL for node "model.adinsight.stg_reddit_posts"
+[0m00:26:16.182173 [debug] [Thread-1 (]: Began executing node model.adinsight.stg_reddit_posts
+[0m00:26:16.210111 [debug] [Thread-1 (]: Writing runtime sql for node "model.adinsight.stg_reddit_posts"
+[0m00:26:16.211007 [debug] [Thread-1 (]: Using snowflake connection "model.adinsight.stg_reddit_posts"
+[0m00:26:16.211387 [debug] [Thread-1 (]: On model.adinsight.stg_reddit_posts: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "node_id": "model.adinsight.stg_reddit_posts"} */
+create or replace   view ADINSIGHT_DB.public_analytics.stg_reddit_posts
+  
+   as (
+    
+
+with source as (
+    select * from ADINSIGHT_DB.public.reddit_marketing
+),
+
+staged as (
+    select
+        id,
+        title,
+        score,
+        to_timestamp(cast(created_utc as double)) as created_utc,
+        url,
+        num_comments,
+        author,
+        loaded_at
+    from source
+)
+
+select * from staged
+  );
+[0m00:26:16.550627 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01bc6aa6-0000-247f-0000-000060e57d7d
+[0m00:26:16.552033 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001007 (22023): SQL compilation error:
+invalid type [TO_TIMESTAMP(identity(SOURCE.CREATED_UTC))] for parameter 'TO_TIMESTAMP_NTZ'
+[0m00:26:16.557843 [debug] [Thread-1 (]: Database Error in model stg_reddit_posts (models/staging/stg_reddit_posts.sql)
+  001007 (22023): SQL compilation error:
+  invalid type [TO_TIMESTAMP(identity(SOURCE.CREATED_UTC))] for parameter 'TO_TIMESTAMP_NTZ'
+  compiled code at target/run/adinsight/models/staging/stg_reddit_posts.sql
+[0m00:26:16.559699 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8eee07d2-a6b2-4fac-b1b1-9c5313b26d2d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4ffb5d1e10>]}
+[0m00:26:16.560366 [error] [Thread-1 (]: 1 of 2 ERROR creating sql view model public_analytics.stg_reddit_posts ......... [[31mERROR[0m in 0.38s]
+[0m00:26:16.560971 [debug] [Thread-1 (]: Finished running node model.adinsight.stg_reddit_posts
+[0m00:26:16.561564 [debug] [Thread-7 (]: Marking all children of 'model.adinsight.stg_reddit_posts' to be skipped because of status 'error'.  Reason: Database Error in model stg_reddit_posts (models/staging/stg_reddit_posts.sql)
+  001007 (22023): SQL compilation error:
+  invalid type [TO_TIMESTAMP(identity(SOURCE.CREATED_UTC))] for parameter 'TO_TIMESTAMP_NTZ'
+  compiled code at target/run/adinsight/models/staging/stg_reddit_posts.sql.
+[0m00:26:16.562239 [debug] [Thread-3 (]: Began running node model.adinsight.marketing_insights
+[0m00:26:16.562586 [info ] [Thread-3 (]: 2 of 2 SKIP relation public.marketing_insights ................................. [[33mSKIP[0m]
+[0m00:26:16.562961 [debug] [Thread-3 (]: Finished running node model.adinsight.marketing_insights
+[0m00:26:16.563807 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m00:26:16.564089 [debug] [MainThread]: Connection 'model.adinsight.stg_reddit_posts' was left open.
+[0m00:26:16.564363 [debug] [MainThread]: On model.adinsight.stg_reddit_posts: Close
+[0m00:26:16.865907 [debug] [MainThread]: Connection 'list_ADINSIGHT_DB_public' was left open.
+[0m00:26:16.866439 [debug] [MainThread]: On list_ADINSIGHT_DB_public: Close
+[0m00:26:17.306329 [info ] [MainThread]: 
+[0m00:26:17.306803 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 2.99 seconds (2.99s).
+[0m00:26:17.307414 [debug] [MainThread]: Command end result
+[0m00:26:17.324761 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anwar/AdInsight360/target/manifest.json
+[0m00:26:17.326791 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anwar/AdInsight360/target/semantic_manifest.json
+[0m00:26:17.332384 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/anwar/AdInsight360/target/run_results.json
+[0m00:26:17.332970 [info ] [MainThread]: 
+[0m00:26:17.333569 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m00:26:17.334049 [info ] [MainThread]: 
+[0m00:26:17.334513 [error] [MainThread]:   Database Error in model stg_reddit_posts (models/staging/stg_reddit_posts.sql)
+  001007 (22023): SQL compilation error:
+  invalid type [TO_TIMESTAMP(identity(SOURCE.CREATED_UTC))] for parameter 'TO_TIMESTAMP_NTZ'
+  compiled code at target/run/adinsight/models/staging/stg_reddit_posts.sql
+[0m00:26:17.334881 [info ] [MainThread]: 
+[0m00:26:17.335205 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=1 TOTAL=2
+[0m00:26:17.336190 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 4.2449408, "process_in_blocks": "4928", "process_kernel_time": 0.208829, "process_mem_max_rss": "224096", "process_out_blocks": "3272", "process_user_time": 2.426998}
+[0m00:26:17.336855 [debug] [MainThread]: Command `dbt run` failed at 00:26:17.336744 after 4.25 seconds
+[0m00:26:17.337367 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f501e144d50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f50220ee050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f50220ee1d0>]}
+[0m00:26:17.337825 [debug] [MainThread]: Flushing usage events
+[0m00:26:18.246133 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:26:51.494264 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4c178bf190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4c17adeb50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4c178befd0>]}
+
+
+============================== 00:26:51.496416 | 45fa309a-cb5c-4a40-b151-fa9e5a1959cf ==============================
+[0m00:26:51.496416 [info ] [MainThread]: Running with dbt=1.9.4
+[0m00:26:51.496939 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/home/anwar/AdInsight360/logs', 'profiles_dir': '/home/anwar/.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m00:26:51.916659 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '45fa309a-cb5c-4a40-b151-fa9e5a1959cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4c184dbf50>]}
+[0m00:26:51.954433 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '45fa309a-cb5c-4a40-b151-fa9e5a1959cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4bfaca1950>]}
+[0m00:26:51.955169 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+[0m00:26:52.023774 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m00:26:52.116354 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m00:26:52.116927 [debug] [MainThread]: Partial parsing: updated file: adinsight://models/staging/stg_reddit_posts.sql
+[0m00:26:52.460310 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '45fa309a-cb5c-4a40-b151-fa9e5a1959cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4c17c6f650>]}
+[0m00:26:52.515926 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anwar/AdInsight360/target/manifest.json
+[0m00:26:52.517230 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anwar/AdInsight360/target/semantic_manifest.json
+[0m00:26:52.525005 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '45fa309a-cb5c-4a40-b151-fa9e5a1959cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4bfac5bf50>]}
+[0m00:26:52.525476 [info ] [MainThread]: Found 2 models, 10 data tests, 1 source, 476 macros
+[0m00:26:52.525816 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '45fa309a-cb5c-4a40-b151-fa9e5a1959cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4bfa95e750>]}
+[0m00:26:52.526916 [info ] [MainThread]: 
+[0m00:26:52.527272 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m00:26:52.527562 [info ] [MainThread]: 
+[0m00:26:52.527988 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m00:26:52.531564 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ADINSIGHT_DB'
+[0m00:26:52.532156 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ADINSIGHT_DB'
+[0m00:26:52.564830 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB"
+[0m00:26:52.565316 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB"
+[0m00:26:52.565628 [debug] [ThreadPool]: On list_ADINSIGHT_DB: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB"} */
+show terse schemas in database ADINSIGHT_DB
+    limit 10000
+[0m00:26:52.565944 [debug] [ThreadPool]: On list_ADINSIGHT_DB: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB"} */
+show terse schemas in database ADINSIGHT_DB
+    limit 10000
+[0m00:26:52.566265 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:26:52.566538 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:26:54.659781 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 2.093 seconds
+[0m00:26:54.661968 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 2.096 seconds
+[0m00:26:54.670847 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ADINSIGHT_DB, now list_ADINSIGHT_DB_public)
+[0m00:26:54.672450 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ADINSIGHT_DB, now list_ADINSIGHT_DB_public_analytics)
+[0m00:26:54.689477 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB_public"
+[0m00:26:54.691337 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB_public_analytics"
+[0m00:26:54.691737 [debug] [ThreadPool]: On list_ADINSIGHT_DB_public: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB_public"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m00:26:54.692062 [debug] [ThreadPool]: On list_ADINSIGHT_DB_public_analytics: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB_public_analytics"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m00:26:54.960363 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.267 seconds
+[0m00:26:54.962514 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.270 seconds
+[0m00:26:54.971757 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB_public_analytics"
+[0m00:26:54.974953 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB_public"
+[0m00:26:54.975718 [debug] [ThreadPool]: On list_ADINSIGHT_DB_public_analytics: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB_public_analytics"} */
+show objects in ADINSIGHT_DB.public_analytics
+    limit 10000
+    
+;
+[0m00:26:54.976277 [debug] [ThreadPool]: On list_ADINSIGHT_DB_public: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB_public"} */
+show objects in ADINSIGHT_DB.public
+    limit 10000
+    
+;
+[0m00:26:55.267865 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.289 seconds
+[0m00:26:55.270122 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.293 seconds
+[0m00:26:55.274133 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB_public"
+[0m00:26:55.277956 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB_public_analytics"
+[0m00:26:55.279142 [debug] [ThreadPool]: On list_ADINSIGHT_DB_public: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB_public"} */
+alter session unset quoted_identifiers_ignore_case;
+[0m00:26:55.280324 [debug] [ThreadPool]: On list_ADINSIGHT_DB_public_analytics: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB_public_analytics"} */
+alter session unset quoted_identifiers_ignore_case;
+[0m00:26:55.427272 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.146 seconds
+[0m00:26:55.437360 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.154 seconds
+[0m00:26:55.441992 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '45fa309a-cb5c-4a40-b151-fa9e5a1959cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4bfa8ecc50>]}
+[0m00:26:55.447107 [debug] [Thread-1 (]: Began running node model.adinsight.stg_reddit_posts
+[0m00:26:55.448625 [info ] [Thread-1 (]: 1 of 2 START sql view model public_analytics.stg_reddit_posts .................. [RUN]
+[0m00:26:55.450086 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_ADINSIGHT_DB_public_analytics, now model.adinsight.stg_reddit_posts)
+[0m00:26:55.451107 [debug] [Thread-1 (]: Began compiling node model.adinsight.stg_reddit_posts
+[0m00:26:55.461476 [debug] [Thread-1 (]: Writing injected SQL for node "model.adinsight.stg_reddit_posts"
+[0m00:26:55.462195 [debug] [Thread-1 (]: Began executing node model.adinsight.stg_reddit_posts
+[0m00:26:55.485727 [debug] [Thread-1 (]: Writing runtime sql for node "model.adinsight.stg_reddit_posts"
+[0m00:26:55.486619 [debug] [Thread-1 (]: Using snowflake connection "model.adinsight.stg_reddit_posts"
+[0m00:26:55.487002 [debug] [Thread-1 (]: On model.adinsight.stg_reddit_posts: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "node_id": "model.adinsight.stg_reddit_posts"} */
+create or replace   view ADINSIGHT_DB.public_analytics.stg_reddit_posts
+  
+   as (
+    
+
+with source as (
+    select * from ADINSIGHT_DB.public.reddit_marketing
+),
+
+staged as (
+    select
+        id,
+        title,
+        score,
+        to_timestamp_ntz(cast(created_utc as float)) as created_utc,
+        url,
+        num_comments,
+        author,
+        loaded_at
+    from source
+)
+
+select * from staged
+  );
+[0m00:26:55.651961 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01bc6aa6-0000-247f-0000-000060e57d91
+[0m00:26:55.653398 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001007 (22023): SQL compilation error:
+invalid type [TO_TIMESTAMP_NTZ(identity(SOURCE.CREATED_UTC))] for parameter 'TO_TIMESTAMP_NTZ'
+[0m00:26:55.661158 [debug] [Thread-1 (]: Database Error in model stg_reddit_posts (models/staging/stg_reddit_posts.sql)
+  001007 (22023): SQL compilation error:
+  invalid type [TO_TIMESTAMP_NTZ(identity(SOURCE.CREATED_UTC))] for parameter 'TO_TIMESTAMP_NTZ'
+  compiled code at target/run/adinsight/models/staging/stg_reddit_posts.sql
+[0m00:26:55.664048 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '45fa309a-cb5c-4a40-b151-fa9e5a1959cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4bfaa59990>]}
+[0m00:26:55.665060 [error] [Thread-1 (]: 1 of 2 ERROR creating sql view model public_analytics.stg_reddit_posts ......... [[31mERROR[0m in 0.21s]
+[0m00:26:55.665891 [debug] [Thread-1 (]: Finished running node model.adinsight.stg_reddit_posts
+[0m00:26:55.666694 [debug] [Thread-7 (]: Marking all children of 'model.adinsight.stg_reddit_posts' to be skipped because of status 'error'.  Reason: Database Error in model stg_reddit_posts (models/staging/stg_reddit_posts.sql)
+  001007 (22023): SQL compilation error:
+  invalid type [TO_TIMESTAMP_NTZ(identity(SOURCE.CREATED_UTC))] for parameter 'TO_TIMESTAMP_NTZ'
+  compiled code at target/run/adinsight/models/staging/stg_reddit_posts.sql.
+[0m00:26:55.667689 [debug] [Thread-3 (]: Began running node model.adinsight.marketing_insights
+[0m00:26:55.668122 [info ] [Thread-3 (]: 2 of 2 SKIP relation public.marketing_insights ................................. [[33mSKIP[0m]
+[0m00:26:55.668548 [debug] [Thread-3 (]: Finished running node model.adinsight.marketing_insights
+[0m00:26:55.669620 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m00:26:55.669985 [debug] [MainThread]: Connection 'list_ADINSIGHT_DB_public' was left open.
+[0m00:26:55.670303 [debug] [MainThread]: On list_ADINSIGHT_DB_public: Close
+[0m00:26:55.908387 [debug] [MainThread]: Connection 'model.adinsight.stg_reddit_posts' was left open.
+[0m00:26:55.909622 [debug] [MainThread]: On model.adinsight.stg_reddit_posts: Close
+[0m00:26:56.146190 [info ] [MainThread]: 
+[0m00:26:56.146781 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 3.62 seconds (3.62s).
+[0m00:26:56.147399 [debug] [MainThread]: Command end result
+[0m00:26:56.166211 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anwar/AdInsight360/target/manifest.json
+[0m00:26:56.169093 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anwar/AdInsight360/target/semantic_manifest.json
+[0m00:26:56.173931 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/anwar/AdInsight360/target/run_results.json
+[0m00:26:56.174372 [info ] [MainThread]: 
+[0m00:26:56.174737 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m00:26:56.175049 [info ] [MainThread]: 
+[0m00:26:56.175400 [error] [MainThread]:   Database Error in model stg_reddit_posts (models/staging/stg_reddit_posts.sql)
+  001007 (22023): SQL compilation error:
+  invalid type [TO_TIMESTAMP_NTZ(identity(SOURCE.CREATED_UTC))] for parameter 'TO_TIMESTAMP_NTZ'
+  compiled code at target/run/adinsight/models/staging/stg_reddit_posts.sql
+[0m00:26:56.175697 [info ] [MainThread]: 
+[0m00:26:56.175999 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=1 TOTAL=2
+[0m00:26:56.176755 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 4.7153196, "process_in_blocks": "0", "process_kernel_time": 0.202093, "process_mem_max_rss": "223940", "process_out_blocks": "3232", "process_user_time": 2.20822}
+[0m00:26:56.177195 [debug] [MainThread]: Command `dbt run` failed at 00:26:56.177125 after 4.72 seconds
+[0m00:26:56.177546 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4c1b8ee050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4c1b8ed550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4bfa189ad0>]}
+[0m00:26:56.177875 [debug] [MainThread]: Flushing usage events
+[0m00:26:56.886720 [debug] [MainThread]: An error was encountered while trying to flush usage events

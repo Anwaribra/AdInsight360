@@ -6,6 +6,37 @@ A data pipeline for extracting and analyzing marketing insights from Reddit data
 
 This project automates the collection of marketing-related content from Reddit and loads it into Snowflake for analysis. The pipeline extracts posts from various Reddit categories (hot, new, and top posts) and maintains a structured database of marketing insights.
 
+## Project Structure
+
+```
+AdInsight360/
+├── airflow/               
+│   └── dags/
+├── analyses/              
+├── macros/                 
+├── models/               
+│   ├── marts/            
+│   ├── staging/
+│   ├── utils/            
+│   └── sources.yml       
+├── scripts/               
+│   ├── extract_data.py
+│   └── load_to_snowflake.py
+├── tests/                
+├── .env                    
+├── requirements.txt       
+└── README.md               
+```
+
+
+
+
+
+
+
+
+
+
 ## Features
 
 - Automated Reddit data extraction
@@ -33,6 +64,29 @@ The project consists of two main components:
    - Maintains data integrity with primary keys
    - Handles data type conversions
    - Provides error handling and logging
+
+## Orchestration & Transformation
+
+- **Airflow** orchestrates the end-to-end pipeline, automating extraction, loading, and transformation tasks.
+- **dbt** is used for data transformation and analytics modeling. Models are organized into staging and marts layers for clean, analytics-ready data.
+
+## Environment Setup
+
+1. **Clone the repository** and install dependencies from `requirements.txt`.
+2. **Configure environment variables** by creating a `.env` file in the project root with the following keys:
+   - `REDDIT_CLIENT_ID`
+   - `REDDIT_CLIENT_SECRET`
+   - `REDDIT_USER_AGENT`
+   - `SNOWFLAKE_USER`
+   - `SNOWFLAKE_PASSWORD`
+   - `SNOWFLAKE_ACCOUNT`
+   - `SNOWFLAKE_DATABASE`
+   - `SNOWFLAKE_SCHEMA`
+   - `SNOWFLAKE_WAREHOUSE`
+   - `SNOWFLAKE_ROLE`
+3. **Set up Airflow** and ensure it can access the project directory.
+4. **Configure dbt** profiles as needed for your Snowflake connection.
+
 
 
 ## Data Structure

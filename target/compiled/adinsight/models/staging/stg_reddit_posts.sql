@@ -1,10 +1,20 @@
 
 
-SELECT
-    'post_1' AS id,
-    'Test Post' AS title,
-    100 AS score,
-    CURRENT_TIMESTAMP() AS created_at,
-    'https://example.com' AS url,
-    5 AS num_comments,
-    'test_user' AS author
+with source as (
+    select * from ADINSIGHT_DB.public.reddit_marketing
+),
+
+staged as (
+    select
+        id,
+        title,
+        score,
+        to_timestamp_ntz(cast(created_utc as float)) as created_utc,
+        url,
+        num_comments,
+        author,
+        loaded_at
+    from source
+)
+
+select * from staged

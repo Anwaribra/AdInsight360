@@ -2,7 +2,25 @@ version: 2
 
 sources:
   - name: reddit
+    database: ADINSIGHT_DB
     schema: public
     tables:
-      - name: raw_posts
-        description: "Raw Reddit posts data"
+      - name: reddit_marketing
+        description: Raw Reddit marketing posts
+        columns:
+          - name: id
+            description: Unique identifier for the post
+          - name: title
+            description: Post title
+          - name: score
+            description: Post score (upvotes - downvotes)
+          - name: created_utc
+            description: Post creation timestamp in UTC
+          - name: url
+            description: Post URL
+          - name: num_comments
+            description: Number of comments on the post
+          - name: author
+            description: Username of the post author
+          - name: loaded_at
+            description: Timestamp when the record was loaded
