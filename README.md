@@ -1,83 +1,42 @@
 # AdInsight360
 
+A data pipeline for extracting and analyzing marketing insights from Reddit data.
 
-
-
+## Overview
 
 This project automates the collection of marketing-related content from Reddit and loads it into Snowflake for analysis. The pipeline extracts posts from various Reddit categories (hot, new, and top posts) and maintains a structured database of marketing insights.
 
-## Project Structure
 
-```
-AdInsight360/
-├── airflow/               # Airflow DAGs for orchestration
-│   └── dags/
-├── analyses/             # dbt analyses (ad hoc SQL)
-├── macros/              # dbt macros
-├── models/              # dbt models
-│   ├── marts/           # Business-level marts
-│   ├── staging/         # Staging models
-│   ├── utils/           # Utility models/macros
-│   └── sources.yml      # Source definitions
-├── scripts/             # Data extraction and loading scripts
-│   ├── extract_data.py
-│   └── load_to_snowflake.py
-├── streamlit/           # Streamlit analytics dashboard
-│   ├── dashboard.py     # Main dashboard application
-│   ├── pages/          # Dashboard pages
-│   └── utils/          # Dashboard utilities
-├── data/               # Data storage and documentation
-│   ├── raw/            # Raw JSON data
-│   └── doc/            # Documentation assets
-├── tests/              # dbt tests
-├── .env                # Environment variables
-├── requirements.txt    # Python dependencies
-└── README.md           # Project documentation
-```
+## System Architecture
 
-## Data Pipeline
+![AdInsight360 Architecture](data/doc/architecture.png)
+*System architecture showing data flow from Reddit API to Streamlit dashboard*
 
-The project consists of three main components:
+The system consists of several key components:
+1. **Data Extraction**: Automated Reddit data collection using PRAW
+2. **Data Storage**: JSON files for raw data and Snowflake for processed data
+3. **Data Transformation**: dbt models for data transformation and business logic
+4. **Orchestration**: Airflow DAGs managing the entire pipeline
+5. **Visualization**: Streamlit dashboard for interactive analytics
 
-1. **Data Extraction** (`scripts/extract_data.py`)
-   - Fetches posts from Reddit's marketing subreddit
-   - Collects posts from multiple categories (hot, new, top)
-   - Handles duplicate prevention
-   - Saves data in JSON format
+## Live Demo
 
-2. **Data Loading** (`scripts/load_to_snowflake.py`)
-   - Loads extracted data into Snowflake
-   - Maintains data integrity with primary keys
-   - Handles data type conversions
-   - Provides error handling and logging
+🔗 **[Try the live demo](https://redditinsight360.streamlit.app/)**
 
-3. **Analytics Dashboard** (`streamlit/dashboard.py`)
-   - Interactive data exploration
-   - Real-time metrics and KPIs
-   - Custom visualizations
-   - Trend analysis and insights
-
-
-
-
-
-
-
-
-
+Experience the interactive dashboard and analytics features in action!
 
 ## Dashboard Preview
 
 ![Engagement Metrics](data/doc/newplot.png)
-- *Real-time engagement metrics showing post performance and community interaction*
+*Real-time engagement metrics showing post performance and community interaction*
 
 ![Author Analysis](data/doc/Author_analysis.png)
-- *Author contribution analysis and trending metrics*
+*Author contribution analysis and trending metrics*
 
 ## Database Schema
 
 ![Database Schema](data/doc/ADINSIGHT_DB.png)
-- *AdInsight360 database schema showing relationships between staging and mart layers*
+*AdInsight360 database schema showing relationships between staging and mart layers*
 
 
 ## Features
@@ -97,38 +56,5 @@ The project consists of three main components:
   - Author influence tracking
   - Trend visualization
   - Custom filtering and exploration
-
-
-
-## Orchestration & Transformation
-
-- **Airflow** orchestrates the end-to-end pipeline, automating extraction, loading, and transformation tasks.
-- **dbt** is used for data transformation and analytics modeling. Models are organized into staging and marts layers for clean, analytics-ready data.
-- **Streamlit** provides an interactive web interface for data exploration and analysis.
-
-
-## Analytics Dashboard
-
-The Streamlit dashboard provides interactive analytics and insights:
-
-1. **Engagement Metrics**
-   - Post performance tracking
-   - Comment activity analysis
-   - Score distribution patterns
-
-2. **Content Analysis**
-   - Popular topics and themes
-   - Title sentiment analysis
-   - URL domain statistics
-
-3. **Author Analytics**
-   - Top contributors
-   - Posting patterns
-   - Engagement rates
-
-4. **Trend Analysis**
-   - Time-based patterns
-   - Seasonal trends
-   - Growth metrics
 
 
