@@ -1,612 +1,344 @@
-[0m19:39:38.891280 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0574980590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f05749808d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0574980e10>]}
+[0m00:00:36.368202 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f64da483390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f64db8a7890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f64da4a6890>]}
 
 
-============================== 19:39:38.893399 | 7b639e76-7f82-41b0-a4c5-ac1dd34d4473 ==============================
-[0m19:39:38.893399 [info ] [MainThread]: Running with dbt=1.9.4
-[0m19:39:38.893873 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/anwar/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt init dbt_adinsight', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
-[0m19:39:38.898873 [debug] [MainThread]: Starter project path: /home/anwar/anaconda3/lib/python3.11/site-packages/dbt/include/starter_project
-[0m19:39:38.901323 [info ] [MainThread]: 
-Your new dbt project "dbt_adinsight" was created!
-
-For more information on how to configure the profiles.yml file,
-please consult the dbt documentation here:
-
-  https://docs.getdbt.com/docs/configure-your-profile
-
-One more thing:
-
-Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
-
-  https://community.getdbt.com/
-
-Happy modeling!
-
-[0m19:39:38.901899 [info ] [MainThread]: Setting up your profile.
-[0m19:43:40.008144 [info ] [MainThread]: Profile dbt_adinsight written to /home/anwar/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
-[0m19:43:40.015531 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 241.15738, "process_in_blocks": "181864", "process_kernel_time": 0.222607, "process_mem_max_rss": "197700", "process_out_blocks": "208", "process_user_time": 1.261752}
-[0m19:43:40.017274 [debug] [MainThread]: Command `dbt init` succeeded at 19:43:40.016976 after 241.16 seconds
-[0m19:43:40.018501 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0574981590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0574981150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f05788ed490>]}
-[0m19:43:40.019511 [debug] [MainThread]: Flushing usage events
-[0m19:43:41.166539 [debug] [MainThread]: An error was encountered while trying to flush usage events
-[0m19:46:40.451001 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4792eff110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f47931dc8d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4792efe590>]}
+============================== 00:00:36.370424 | a47cb8b4-0567-4b9a-a5b0-ce24bdecfd18 ==============================
+[0m00:00:36.370424 [info ] [MainThread]: Running with dbt=1.9.4
+[0m00:00:36.370921 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/anwar/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/home/anwar/AdInsight360/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt clean', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m00:00:36.482282 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a47cb8b4-0567-4b9a-a5b0-ce24bdecfd18', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f64da3a7990>]}
+[0m00:00:36.492775 [debug] [MainThread]: Resource report: {"command_name": "clean", "command_success": true, "command_wall_clock_time": 0.1607455, "process_in_blocks": "28800", "process_kernel_time": 0.124552, "process_mem_max_rss": "96124", "process_out_blocks": "8", "process_user_time": 1.067355}
+[0m00:00:36.493268 [debug] [MainThread]: Command `dbt clean` succeeded at 00:00:36.493177 after 0.16 seconds
+[0m00:00:36.493597 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f64da4e5310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f64da4e5510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f64de4ce050>]}
+[0m00:00:36.493931 [debug] [MainThread]: Flushing usage events
+[0m00:00:38.165261 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:00:39.365888 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f25e51ab310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f25e51aba10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f25e51ab590>]}
 
 
-============================== 19:46:40.453346 | 733a4e3f-3f85-44ea-afb5-b3dc47139434 ==============================
-[0m19:46:40.453346 [info ] [MainThread]: Running with dbt=1.9.4
-[0m19:46:40.453884 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/anwar/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
-[0m19:46:40.460144 [info ] [MainThread]: dbt version: 1.9.4
-[0m19:46:40.460663 [info ] [MainThread]: python version: 3.11.3
-[0m19:46:40.460992 [info ] [MainThread]: python path: /home/anwar/anaconda3/bin/python
-[0m19:46:40.461324 [info ] [MainThread]: os info: Linux-6.14.2-300.fc42.x86_64-x86_64-with-glibc2.41
-[0m19:46:40.989121 [info ] [MainThread]: Using profiles dir at /home/anwar/.dbt
-[0m19:46:40.989775 [info ] [MainThread]: Using profiles.yml file at /home/anwar/.dbt/profiles.yml
-[0m19:46:40.990221 [info ] [MainThread]: Using dbt_project.yml file at /home/anwar/AdInsight360/dbt_project.yml
-[0m19:46:40.990648 [info ] [MainThread]: Configuration:
-[0m19:46:40.990929 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
-[0m19:46:40.991188 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
-[0m19:46:40.991436 [info ] [MainThread]: Required dependencies:
-[0m19:46:40.991698 [debug] [MainThread]: Executing "git --help"
-[0m19:46:40.993652 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
-[0m19:46:40.994049 [debug] [MainThread]: STDERR: "b''"
-[0m19:46:40.994368 [info ] [MainThread]:  - git [[32mOK found[0m]
-
-[0m19:46:40.994702 [info ] [MainThread]: Connection test skipped since no profile was found
-[0m19:46:40.995140 [info ] [MainThread]: [31m2 checks failed:[0m
-[0m19:46:40.995611 [info ] [MainThread]: Could not load dbt_project.yml
-Profile loading failed for the following reason:
+============================== 00:00:39.368015 | c1ccdd74-b482-4e74-b755-107b11e38bb0 ==============================
+[0m00:00:39.368015 [info ] [MainThread]: Running with dbt=1.9.4
+[0m00:00:39.368530 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/home/anwar/.dbt', 'log_path': '/home/anwar/AdInsight360/logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m00:00:39.370467 [error] [MainThread]: Encountered an error:
 Runtime Error
-  Credentials in profile "crm_project", target "dev" invalid: 2003 is not of type 'string'
+  Could not find profile named 'adinsight'
+[0m00:00:39.371217 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.038195003, "process_in_blocks": "0", "process_kernel_time": 0.121835, "process_mem_max_rss": "94356", "process_out_blocks": "0", "process_user_time": 0.859605}
+[0m00:00:39.371684 [debug] [MainThread]: Command `dbt run` failed at 00:00:39.371601 after 0.04 seconds
+[0m00:00:39.372035 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f25e5201dd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f25e54e8e10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f25e91ed410>]}
+[0m00:00:39.372389 [debug] [MainThread]: Flushing usage events
+[0m00:00:40.546215 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:02:53.166444 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb224ab090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb226bc550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb224aa190>]}
 
 
-[0m19:46:40.996107 [info ] [MainThread]: Project loading failed for the following reason:
- project path </home/anwar/AdInsight360/dbt_project.yml> not found
+============================== 00:02:53.168658 | 342f06d4-2646-42c6-984f-ed04940bc4e4 ==============================
+[0m00:02:53.168658 [info ] [MainThread]: Running with dbt=1.9.4
+[0m00:02:53.169173 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/home/anwar/AdInsight360/logs', 'fail_fast': 'False', 'profiles_dir': '/home/anwar/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt clean', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m00:02:53.259501 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '342f06d4-2646-42c6-984f-ed04940bc4e4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb223c3850>]}
+[0m00:02:53.265495 [debug] [MainThread]: Resource report: {"command_name": "clean", "command_success": true, "command_wall_clock_time": 0.13383822, "process_in_blocks": "960", "process_kernel_time": 0.102865, "process_mem_max_rss": "96276", "process_out_blocks": "8", "process_user_time": 0.937778}
+[0m00:02:53.265953 [debug] [MainThread]: Command `dbt clean` succeeded at 00:02:53.265879 after 0.13 seconds
+[0m00:02:53.266278 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb224aa6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb223d8950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb264a8a10>]}
+[0m00:02:53.266617 [debug] [MainThread]: Flushing usage events
+[0m00:02:54.788795 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:03:00.853154 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6dfffbff50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6dfffbf1d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6dfffbf990>]}
 
-[0m19:46:40.997318 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.57970613, "process_in_blocks": "74568", "process_kernel_time": 0.172323, "process_mem_max_rss": "203140", "process_out_blocks": "24", "process_user_time": 1.344218}
-[0m19:46:40.998059 [debug] [MainThread]: Command `dbt debug` failed at 19:46:40.997941 after 0.58 seconds
-[0m19:46:40.998611 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4792f63390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4792f617d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4774d85250>]}
-[0m19:46:40.999159 [debug] [MainThread]: Flushing usage events
-[0m19:46:48.076707 [debug] [MainThread]: An error was encountered while trying to flush usage events
-[0m19:50:46.668516 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fea5182c6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fea51b27d50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fea5184ca90>]}
 
-
-============================== 19:50:46.670806 | 8aed1ba0-7c61-4c59-aea0-2d0d2a0547ab ==============================
-[0m19:50:46.670806 [info ] [MainThread]: Running with dbt=1.9.4
-[0m19:50:46.671343 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/anwar/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/home/anwar/AdInsight360/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
-[0m19:50:46.678149 [info ] [MainThread]: dbt version: 1.9.4
-[0m19:50:46.678600 [info ] [MainThread]: python version: 3.11.3
-[0m19:50:46.678945 [info ] [MainThread]: python path: /home/anwar/anaconda3/bin/python
-[0m19:50:46.679302 [info ] [MainThread]: os info: Linux-6.14.2-300.fc42.x86_64-x86_64-with-glibc2.41
-[0m19:50:46.684350 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.mysql'
-[0m19:50:46.685036 [info ] [MainThread]: Using profiles dir at /home/anwar/.dbt
-[0m19:50:46.685413 [info ] [MainThread]: Using profiles.yml file at /home/anwar/.dbt/profiles.yml
-[0m19:50:46.685687 [info ] [MainThread]: Using dbt_project.yml file at /home/anwar/AdInsight360/dbt_project.yml
-[0m19:50:46.758236 [info ] [MainThread]: Configuration:
-[0m19:50:46.759269 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
-[0m19:50:46.759768 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
-[0m19:50:46.760226 [info ] [MainThread]: Required dependencies:
-[0m19:50:46.760659 [debug] [MainThread]: Executing "git --help"
-[0m19:50:46.762279 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
-[0m19:50:46.762694 [debug] [MainThread]: STDERR: "b''"
-[0m19:50:46.762977 [info ] [MainThread]:  - git [[32mOK found[0m]
-
-[0m19:50:46.763301 [info ] [MainThread]: Connection test skipped since no profile was found
-[0m19:50:46.763701 [info ] [MainThread]: [31m1 check failed:[0m
-[0m19:50:46.764072 [info ] [MainThread]: Profile loading failed for the following reason:
+============================== 00:03:00.856110 | 01d12bb5-e091-4786-894e-76356b570636 ==============================
+[0m00:03:00.856110 [info ] [MainThread]: Running with dbt=1.9.4
+[0m00:03:00.856799 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/anwar/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/home/anwar/AdInsight360/logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m00:03:00.859084 [error] [MainThread]: Encountered an error:
 Runtime Error
-  Credentials in profile "adinsight360", target "dev" invalid: Runtime Error
-    Could not find adapter type mysql!
+  Could not find profile named 'adinsight'
+[0m00:03:00.859840 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.04196136, "process_in_blocks": "0", "process_kernel_time": 0.090005, "process_mem_max_rss": "94488", "process_out_blocks": "8", "process_user_time": 0.878754}
+[0m00:03:00.860297 [debug] [MainThread]: Command `dbt run` failed at 00:03:00.860209 after 0.04 seconds
+[0m00:03:00.860638 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6e0001df50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6e00a49190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6dfffc9110>]}
+[0m00:03:00.860979 [debug] [MainThread]: Flushing usage events
+[0m00:03:01.628449 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:05:56.314027 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f874a92fcd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f874bd4b690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f874aa23310>]}
 
 
-[0m19:50:46.765054 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.13494016, "process_in_blocks": "32", "process_kernel_time": 0.113032, "process_mem_max_rss": "96852", "process_out_blocks": "16", "process_user_time": 1.186413}
-[0m19:50:46.765614 [debug] [MainThread]: Command `dbt debug` failed at 19:50:46.765532 after 0.14 seconds
-[0m19:50:46.765955 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fea5182b410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fea538d1090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fea522a1190>]}
-[0m19:50:46.766306 [debug] [MainThread]: Flushing usage events
-[0m19:50:48.370771 [debug] [MainThread]: An error was encountered while trying to flush usage events
-[0m19:52:16.122155 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe28c874d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe28cbb0ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe28c8b1850>]}
+============================== 00:05:56.316194 | 1877003e-5137-40f1-a634-d1b01bd24cb2 ==============================
+[0m00:05:56.316194 [info ] [MainThread]: Running with dbt=1.9.4
+[0m00:05:56.316696 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/home/anwar/.dbt', 'log_path': '/home/anwar/AdInsight360/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt clean', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m00:05:56.405631 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1877003e-5137-40f1-a634-d1b01bd24cb2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f874a852710>]}
+[0m00:05:56.411524 [debug] [MainThread]: Resource report: {"command_name": "clean", "command_success": true, "command_wall_clock_time": 0.13098149, "process_in_blocks": "0", "process_kernel_time": 0.119646, "process_mem_max_rss": "96400", "process_out_blocks": "8", "process_user_time": 0.960593}
+[0m00:05:56.412015 [debug] [MainThread]: Command `dbt clean` succeeded at 00:05:56.411938 after 0.13 seconds
+[0m00:05:56.412357 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f874a996ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f874a9951d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f874e87bc10>]}
+[0m00:05:56.412693 [debug] [MainThread]: Flushing usage events
+[0m00:05:57.280913 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:05:58.431276 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f228cdf6f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f228ce351d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f228ce19f10>]}
 
 
-============================== 19:52:16.124270 | c7275977-2654-498f-b3bf-da9ff2d73c68 ==============================
-[0m19:52:16.124270 [info ] [MainThread]: Running with dbt=1.9.4
-[0m19:52:16.124841 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/home/anwar/.dbt', 'log_path': '/home/anwar/AdInsight360/logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
-[0m19:52:16.129651 [info ] [MainThread]: dbt version: 1.9.4
-[0m19:52:16.130141 [info ] [MainThread]: python version: 3.11.3
-[0m19:52:16.130603 [info ] [MainThread]: python path: /home/anwar/anaconda3/bin/python
-[0m19:52:16.130985 [info ] [MainThread]: os info: Linux-6.14.2-300.fc42.x86_64-x86_64-with-glibc2.41
-[0m19:52:16.135560 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.mysql'
-[0m19:52:16.136296 [info ] [MainThread]: Using profiles dir at /home/anwar/.dbt
-[0m19:52:16.136710 [info ] [MainThread]: Using profiles.yml file at /home/anwar/.dbt/profiles.yml
-[0m19:52:16.137016 [info ] [MainThread]: Using dbt_project.yml file at /home/anwar/AdInsight360/dbt_project.yml
-[0m19:52:16.203841 [info ] [MainThread]: Configuration:
-[0m19:52:16.204322 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
-[0m19:52:16.204683 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
-[0m19:52:16.204980 [info ] [MainThread]: Required dependencies:
-[0m19:52:16.205284 [debug] [MainThread]: Executing "git --help"
-[0m19:52:16.206682 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
-[0m19:52:16.207014 [debug] [MainThread]: STDERR: "b''"
-[0m19:52:16.207273 [info ] [MainThread]:  - git [[32mOK found[0m]
+============================== 00:05:58.434625 | 881b05a3-9bd6-417c-9127-8918335908c0 ==============================
+[0m00:05:58.434625 [info ] [MainThread]: Running with dbt=1.9.4
+[0m00:05:58.435376 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/anwar/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': '/home/anwar/AdInsight360/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m00:05:58.443992 [info ] [MainThread]: dbt version: 1.9.4
+[0m00:05:58.444689 [info ] [MainThread]: python version: 3.11.3
+[0m00:05:58.445203 [info ] [MainThread]: python path: /home/anwar/anaconda3/bin/python
+[0m00:05:58.445655 [info ] [MainThread]: os info: Linux-6.14.2-300.fc42.x86_64-x86_64-with-glibc2.41
+[0m00:05:59.198601 [info ] [MainThread]: Using profiles dir at /home/anwar/.dbt
+[0m00:05:59.199298 [info ] [MainThread]: Using profiles.yml file at /home/anwar/.dbt/profiles.yml
+[0m00:05:59.199735 [info ] [MainThread]: Using dbt_project.yml file at /home/anwar/AdInsight360/dbt_project.yml
+[0m00:05:59.200317 [info ] [MainThread]: adapter type: snowflake
+[0m00:05:59.200723 [info ] [MainThread]: adapter version: 1.9.4
+[0m00:05:59.288813 [info ] [MainThread]: Configuration:
+[0m00:05:59.289402 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m00:05:59.289810 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m00:05:59.290182 [info ] [MainThread]: Required dependencies:
+[0m00:05:59.290580 [debug] [MainThread]: Executing "git --help"
+[0m00:05:59.292662 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m00:05:59.293219 [debug] [MainThread]: STDERR: "b''"
+[0m00:05:59.293620 [info ] [MainThread]:  - git [[32mOK found[0m]
 
-[0m19:52:16.207573 [info ] [MainThread]: Connection test skipped since no profile was found
-[0m19:52:16.207871 [info ] [MainThread]: [31m1 check failed:[0m
-[0m19:52:16.208154 [info ] [MainThread]: Profile loading failed for the following reason:
-Runtime Error
-  Credentials in profile "adinsight360", target "dev" invalid: Runtime Error
-    Could not find adapter type mysql!
+[0m00:05:59.294008 [info ] [MainThread]: Connection:
+[0m00:05:59.294412 [info ] [MainThread]:   account: REZTYKO-ZD49254
+[0m00:05:59.294781 [info ] [MainThread]:   user: ANWARMOUSA
+[0m00:05:59.295146 [info ] [MainThread]:   database: ADINSIGHT_DB
+[0m00:05:59.295632 [info ] [MainThread]:   warehouse: ADINSIGHT_WH
+[0m00:05:59.296046 [info ] [MainThread]:   role: ACCOUNTADMIN
+[0m00:05:59.296458 [info ] [MainThread]:   schema: public
+[0m00:05:59.296869 [info ] [MainThread]:   authenticator: None
+[0m00:05:59.297281 [info ] [MainThread]:   oauth_client_id: None
+[0m00:05:59.297691 [info ] [MainThread]:   query_tag: None
+[0m00:05:59.298098 [info ] [MainThread]:   client_session_keep_alive: False
+[0m00:05:59.298506 [info ] [MainThread]:   host: None
+[0m00:05:59.298901 [info ] [MainThread]:   port: None
+[0m00:05:59.299331 [info ] [MainThread]:   proxy_host: None
+[0m00:05:59.299736 [info ] [MainThread]:   proxy_port: None
+[0m00:05:59.300131 [info ] [MainThread]:   protocol: None
+[0m00:05:59.300539 [info ] [MainThread]:   connect_retries: 1
+[0m00:05:59.300940 [info ] [MainThread]:   connect_timeout: None
+[0m00:05:59.301342 [info ] [MainThread]:   retry_on_database_errors: False
+[0m00:05:59.301743 [info ] [MainThread]:   retry_all: False
+[0m00:05:59.302142 [info ] [MainThread]:   insecure_mode: False
+[0m00:05:59.302544 [info ] [MainThread]:   reuse_connections: True
+[0m00:05:59.303103 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+[0m00:05:59.416470 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m00:05:59.441355 [debug] [MainThread]: Using snowflake connection "debug"
+[0m00:05:59.441974 [debug] [MainThread]: On debug: select 1 as id
+[0m00:05:59.442420 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m00:06:00.670030 [debug] [MainThread]: SQL status: SUCCESS 1 in 1.228 seconds
+[0m00:06:00.670971 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
 
-
-[0m19:52:16.208829 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.12032536, "process_in_blocks": "13272", "process_kernel_time": 0.125398, "process_mem_max_rss": "96640", "process_out_blocks": "24", "process_user_time": 0.95266}
-[0m19:52:16.209254 [debug] [MainThread]: Command `dbt debug` failed at 19:52:16.209181 after 0.12 seconds
-[0m19:52:16.209627 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe28c8bea90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe28c8bf0d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe28cc27410>]}
-[0m19:52:16.210025 [debug] [MainThread]: Flushing usage events
-[0m19:52:17.762053 [debug] [MainThread]: An error was encountered while trying to flush usage events
-[0m19:52:43.053545 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc13fc47b90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc13fe5a390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc13fc46f50>]}
-
-
-============================== 19:52:43.056347 | be592b10-69a9-43a7-ae97-f051c17f32e6 ==============================
-[0m19:52:43.056347 [info ] [MainThread]: Running with dbt=1.9.4
-[0m19:52:43.056895 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': '/home/anwar/.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
-[0m19:52:43.065559 [info ] [MainThread]: dbt version: 1.9.4
-[0m19:52:43.066184 [info ] [MainThread]: python version: 3.11.3
-[0m19:52:43.066645 [info ] [MainThread]: python path: /home/anwar/anaconda3/bin/python
-[0m19:52:43.067064 [info ] [MainThread]: os info: Linux-6.14.2-300.fc42.x86_64-x86_64-with-glibc2.41
-[0m19:52:43.501401 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.mysql'
-[0m19:52:43.502038 [info ] [MainThread]: Using profiles dir at /home/anwar/.dbt
-[0m19:52:43.502395 [info ] [MainThread]: Using profiles.yml file at /home/anwar/.dbt/profiles.yml
-[0m19:52:43.502676 [info ] [MainThread]: Using dbt_project.yml file at /home/anwar/AdInsight360/dbt_project.yml
-[0m19:52:43.502955 [info ] [MainThread]: Configuration:
-[0m19:52:43.503219 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
-[0m19:52:43.503473 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
-[0m19:52:43.503722 [info ] [MainThread]: Required dependencies:
-[0m19:52:43.503985 [debug] [MainThread]: Executing "git --help"
-[0m19:52:43.505399 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
-[0m19:52:43.505743 [debug] [MainThread]: STDERR: "b''"
-[0m19:52:43.506007 [info ] [MainThread]:  - git [[32mOK found[0m]
-
-[0m19:52:43.506286 [info ] [MainThread]: Connection test skipped since no profile was found
-[0m19:52:43.506687 [info ] [MainThread]: [31m2 checks failed:[0m
-[0m19:52:43.507028 [info ] [MainThread]: Could not load dbt_project.yml
-Profile loading failed for the following reason:
-Runtime Error
-  Credentials in profile "adinsight360", target "dev" invalid: Runtime Error
-    Could not find adapter type mysql!
+[0m00:06:00.671410 [info ] [MainThread]: [32mAll checks passed![0m
+[0m00:06:00.672217 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 2.2812324, "process_in_blocks": "146408", "process_kernel_time": 0.256684, "process_mem_max_rss": "210668", "process_out_blocks": "88", "process_user_time": 1.629183}
+[0m00:06:00.672708 [debug] [MainThread]: Command `dbt debug` succeeded at 00:06:00.672634 after 2.28 seconds
+[0m00:06:00.673008 [debug] [MainThread]: Connection 'debug' was left open.
+[0m00:06:00.673333 [debug] [MainThread]: On debug: Close
+[0m00:06:00.900310 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f228ce5b150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f228ce59390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f226ff65510>]}
+[0m00:06:00.900821 [debug] [MainThread]: Flushing usage events
+[0m00:06:01.569555 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:06:02.899600 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff648cbfe10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff648cbf950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff648cbfa50>]}
 
 
-[0m19:52:43.507351 [info ] [MainThread]: Project loading failed for the following reason:
- project path </home/anwar/AdInsight360/dbt_project.yml> not found
+============================== 00:06:02.902067 | 21146a7f-fa21-4897-bc2d-9c2eb6a32265 ==============================
+[0m00:06:02.902067 [info ] [MainThread]: Running with dbt=1.9.4
+[0m00:06:02.902693 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/anwar/.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/home/anwar/AdInsight360/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m00:06:03.363085 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '21146a7f-fa21-4897-bc2d-9c2eb6a32265', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff62c2baad0>]}
+[0m00:06:03.401558 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '21146a7f-fa21-4897-bc2d-9c2eb6a32265', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff649838d90>]}
+[0m00:06:03.402298 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+[0m00:06:03.486932 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m00:06:03.487523 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m00:06:03.487871 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '21146a7f-fa21-4897-bc2d-9c2eb6a32265', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff62c048890>]}
+[0m00:06:04.314575 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '21146a7f-fa21-4897-bc2d-9c2eb6a32265', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff62bf2ed90>]}
+[0m00:06:04.367329 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anwar/AdInsight360/target/manifest.json
+[0m00:06:04.369159 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anwar/AdInsight360/target/semantic_manifest.json
+[0m00:06:04.380189 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '21146a7f-fa21-4897-bc2d-9c2eb6a32265', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff62b673350>]}
+[0m00:06:04.380871 [info ] [MainThread]: Found 1 model, 1 source, 476 macros
+[0m00:06:04.381333 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '21146a7f-fa21-4897-bc2d-9c2eb6a32265', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff62b74d210>]}
+[0m00:06:04.382761 [info ] [MainThread]: 
+[0m00:06:04.383295 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m00:06:04.383689 [info ] [MainThread]: 
+[0m00:06:04.384274 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m00:06:04.385236 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ADINSIGHT_DB'
+[0m00:06:04.412250 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB"
+[0m00:06:04.412630 [debug] [ThreadPool]: On list_ADINSIGHT_DB: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB"} */
+show terse schemas in database ADINSIGHT_DB
+    limit 10000
+[0m00:06:04.412925 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:06:05.132144 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.719 seconds
+[0m00:06:05.133660 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ADINSIGHT_DB, now create_ADINSIGHT_DB_public_analytics)
+[0m00:06:05.134091 [debug] [ThreadPool]: Creating schema "database: "ADINSIGHT_DB"
+schema: "public_analytics"
+"
+[0m00:06:05.137370 [debug] [ThreadPool]: Using snowflake connection "create_ADINSIGHT_DB_public_analytics"
+[0m00:06:05.137677 [debug] [ThreadPool]: On create_ADINSIGHT_DB_public_analytics: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "create_ADINSIGHT_DB_public_analytics"} */
+create schema if not exists ADINSIGHT_DB.public_analytics
+[0m00:06:05.300048 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.162 seconds
+[0m00:06:05.301613 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_ADINSIGHT_DB_public_analytics, now list_ADINSIGHT_DB_public_analytics)
+[0m00:06:05.309423 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB_public_analytics"
+[0m00:06:05.309809 [debug] [ThreadPool]: On list_ADINSIGHT_DB_public_analytics: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB_public_analytics"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m00:06:05.490172 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.180 seconds
+[0m00:06:05.494387 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB_public_analytics"
+[0m00:06:05.494756 [debug] [ThreadPool]: On list_ADINSIGHT_DB_public_analytics: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB_public_analytics"} */
+show objects in ADINSIGHT_DB.public_analytics
+    limit 10000
+    
+;
+[0m00:06:05.690779 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.196 seconds
+[0m00:06:05.694095 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB_public_analytics"
+[0m00:06:05.694846 [debug] [ThreadPool]: On list_ADINSIGHT_DB_public_analytics: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB_public_analytics"} */
+alter session unset quoted_identifiers_ignore_case;
+[0m00:06:05.871672 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.176 seconds
+[0m00:06:05.874781 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '21146a7f-fa21-4897-bc2d-9c2eb6a32265', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff62a9da550>]}
+[0m00:06:05.878952 [debug] [Thread-1 (]: Began running node model.adinsight.stg_reddit_posts
+[0m00:06:05.879721 [info ] [Thread-1 (]: 1 of 1 START sql view model public_analytics.stg_reddit_posts .................. [RUN]
+[0m00:06:05.880268 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_ADINSIGHT_DB_public_analytics, now model.adinsight.stg_reddit_posts)
+[0m00:06:05.880693 [debug] [Thread-1 (]: Began compiling node model.adinsight.stg_reddit_posts
+[0m00:06:05.889632 [debug] [Thread-1 (]: Writing injected SQL for node "model.adinsight.stg_reddit_posts"
+[0m00:06:05.890308 [debug] [Thread-1 (]: Began executing node model.adinsight.stg_reddit_posts
+[0m00:06:05.911864 [debug] [Thread-1 (]: Writing runtime sql for node "model.adinsight.stg_reddit_posts"
+[0m00:06:05.912793 [debug] [Thread-1 (]: Using snowflake connection "model.adinsight.stg_reddit_posts"
+[0m00:06:05.913167 [debug] [Thread-1 (]: On model.adinsight.stg_reddit_posts: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "node_id": "model.adinsight.stg_reddit_posts"} */
+create or replace   view ADINSIGHT_DB.public_analytics.stg_reddit_posts
+  
+   as (
+    
 
-[0m19:52:43.508233 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.48833746, "process_in_blocks": "91040", "process_kernel_time": 0.171099, "process_mem_max_rss": "198768", "process_out_blocks": "16", "process_user_time": 1.2433}
-[0m19:52:43.508674 [debug] [MainThread]: Command `dbt debug` failed at 19:52:43.508596 after 0.49 seconds
-[0m19:52:43.509012 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc13fcaefd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc13fcad150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc12b11ead0>]}
-[0m19:52:43.509368 [debug] [MainThread]: Flushing usage events
-[0m19:52:44.252552 [debug] [MainThread]: An error was encountered while trying to flush usage events
-[0m19:53:37.470549 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8e4303f350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8e4304a610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8e4308a9d0>]}
-
-
-============================== 19:53:37.472665 | 330edc2a-26df-4b6c-9b51-443087138d58 ==============================
-[0m19:53:37.472665 [info ] [MainThread]: Running with dbt=1.9.4
-[0m19:53:37.473207 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/anwar/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
-[0m19:53:37.478785 [info ] [MainThread]: dbt version: 1.9.4
-[0m19:53:37.479438 [info ] [MainThread]: python version: 3.11.3
-[0m19:53:37.479905 [info ] [MainThread]: python path: /home/anwar/anaconda3/bin/python
-[0m19:53:37.480368 [info ] [MainThread]: os info: Linux-6.14.2-300.fc42.x86_64-x86_64-with-glibc2.41
-[0m19:53:37.859575 [info ] [MainThread]: Using profiles dir at /home/anwar/.dbt
-[0m19:53:37.860109 [info ] [MainThread]: Using profiles.yml file at /home/anwar/.dbt/profiles.yml
-[0m19:53:37.860555 [info ] [MainThread]: Using dbt_project.yml file at /home/anwar/AdInsight360/dbt_project.yml
-[0m19:53:37.860992 [info ] [MainThread]: Configuration:
-[0m19:53:37.861394 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
-[0m19:53:37.861790 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
-[0m19:53:37.862183 [info ] [MainThread]: Required dependencies:
-[0m19:53:37.862595 [debug] [MainThread]: Executing "git --help"
-[0m19:53:37.864273 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
-[0m19:53:37.864632 [debug] [MainThread]: STDERR: "b''"
-[0m19:53:37.864984 [info ] [MainThread]:  - git [[32mOK found[0m]
-
-[0m19:53:37.865379 [info ] [MainThread]: Connection test skipped since no profile was found
-[0m19:53:37.865730 [info ] [MainThread]: [31m2 checks failed:[0m
-[0m19:53:37.866009 [info ] [MainThread]: Could not load dbt_project.yml
-Profile loading failed for the following reason:
-Runtime Error
-  Credentials in profile "adinsight360", target "dev" invalid: '3306' is not valid under any of the given schemas
-
-
-[0m19:53:37.866332 [info ] [MainThread]: Project loading failed for the following reason:
- project path </home/anwar/AdInsight360/dbt_project.yml> not found
-
-[0m19:53:37.867067 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.43347135, "process_in_blocks": "32", "process_kernel_time": 0.164257, "process_mem_max_rss": "198968", "process_out_blocks": "24", "process_user_time": 1.312563}
-[0m19:53:37.867550 [debug] [MainThread]: Command `dbt debug` failed at 19:53:37.867471 after 0.43 seconds
-[0m19:53:37.867889 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8e43347c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8e4306fed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8e26942a10>]}
-[0m19:53:37.868268 [debug] [MainThread]: Flushing usage events
-[0m19:53:39.012493 [debug] [MainThread]: An error was encountered while trying to flush usage events
-[0m19:54:27.413243 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa3397947d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa339a60e10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa33972dbd0>]}
-
-
-============================== 19:54:27.415335 | 3b60d875-2333-4ecb-a625-88fc2a55a472 ==============================
-[0m19:54:27.415335 [info ] [MainThread]: Running with dbt=1.9.4
-[0m19:54:27.415801 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/anwar/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'invocation_command': 'dbt debug', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
-[0m19:54:27.420756 [info ] [MainThread]: dbt version: 1.9.4
-[0m19:54:27.421209 [info ] [MainThread]: python version: 3.11.3
-[0m19:54:27.421628 [info ] [MainThread]: python path: /home/anwar/anaconda3/bin/python
-[0m19:54:27.421903 [info ] [MainThread]: os info: Linux-6.14.2-300.fc42.x86_64-x86_64-with-glibc2.41
-[0m19:54:27.790029 [info ] [MainThread]: Using profiles dir at /home/anwar/.dbt
-[0m19:54:27.790530 [info ] [MainThread]: Using profiles.yml file at /home/anwar/.dbt/profiles.yml
-[0m19:54:27.790849 [info ] [MainThread]: Using dbt_project.yml file at /home/anwar/AdInsight360/dbt_project.yml
-[0m19:54:27.791324 [info ] [MainThread]: adapter type: snowflake
-[0m19:54:27.791625 [info ] [MainThread]: adapter version: 1.9.4
-[0m19:54:27.791943 [info ] [MainThread]: Configuration:
-[0m19:54:27.792207 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
-[0m19:54:27.792483 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
-[0m19:54:27.792732 [info ] [MainThread]: Required dependencies:
-[0m19:54:27.793006 [debug] [MainThread]: Executing "git --help"
-[0m19:54:27.794637 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
-[0m19:54:27.795013 [debug] [MainThread]: STDERR: "b''"
-[0m19:54:27.795288 [info ] [MainThread]:  - git [[32mOK found[0m]
-
-[0m19:54:27.795569 [info ] [MainThread]: Connection:
-[0m19:54:27.795899 [info ] [MainThread]:   account: REZTYKO-ZD49254.snowflakecomputing.com
-[0m19:54:27.796258 [info ] [MainThread]:   user: ANWARMOUSA
-[0m19:54:27.796647 [info ] [MainThread]:   database: ADINSIGHT_DB
-[0m19:54:27.796991 [info ] [MainThread]:   warehouse: ADINSIGHT_WH
-[0m19:54:27.797316 [info ] [MainThread]:   role: ACCOUNTADMIN
-[0m19:54:27.797631 [info ] [MainThread]:   schema: RAW
-[0m19:54:27.797959 [info ] [MainThread]:   authenticator: None
-[0m19:54:27.798274 [info ] [MainThread]:   oauth_client_id: None
-[0m19:54:27.798620 [info ] [MainThread]:   query_tag: None
-[0m19:54:27.798949 [info ] [MainThread]:   client_session_keep_alive: False
-[0m19:54:27.799324 [info ] [MainThread]:   host: None
-[0m19:54:27.799581 [info ] [MainThread]:   port: None
-[0m19:54:27.799836 [info ] [MainThread]:   proxy_host: None
-[0m19:54:27.800094 [info ] [MainThread]:   proxy_port: None
-[0m19:54:27.800413 [info ] [MainThread]:   protocol: None
-[0m19:54:27.800741 [info ] [MainThread]:   connect_retries: 1
-[0m19:54:27.801009 [info ] [MainThread]:   connect_timeout: None
-[0m19:54:27.801297 [info ] [MainThread]:   retry_on_database_errors: False
-[0m19:54:27.801580 [info ] [MainThread]:   retry_all: False
-[0m19:54:27.801901 [info ] [MainThread]:   insecure_mode: False
-[0m19:54:27.802186 [info ] [MainThread]:   reuse_connections: True
-[0m19:54:27.802624 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
-[0m19:54:27.869625 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
-[0m19:54:27.973058 [debug] [MainThread]: Using snowflake connection "debug"
-[0m19:54:27.973735 [debug] [MainThread]: On debug: select 1 as id
-[0m19:54:27.974179 [debug] [MainThread]: Opening a new connection, currently in state init
-[0m19:54:36.318106 [debug] [MainThread]: Snowflake adapter: Error running SQL: select 1 as id
-[0m19:54:36.318512 [debug] [MainThread]: Snowflake adapter: Rolling back transaction.
-[0m19:54:36.318898 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
-
-[0m19:54:36.319309 [info ] [MainThread]: [31m2 checks failed:[0m
-[0m19:54:36.319637 [info ] [MainThread]: Project loading failed for the following reason:
- project path </home/anwar/AdInsight360/dbt_project.yml> not found
-
-[0m19:54:36.319960 [info ] [MainThread]: dbt was unable to connect to the specified database.
-The database returned the following error:
-
-  >Database Error
-  250001: Could not connect to Snowflake backend after 2 attempt(s).Aborting
-  Verify that the hostnames and port numbers in SYSTEM$ALLOWLIST are added to your firewall's allowed list.
-  To further troubleshoot your connection you may reference the following article: https://docs.snowflake.com/en/user-guide/client-connectivity-troubleshooting/overview.
-
-Check your database credentials and try again. For more information, visit:
-https://docs.getdbt.com/docs/configure-your-profile
+SELECT
+    id,
+    title,
+    score,
+    created_utc::TIMESTAMP_NTZ AS created_at,
+    url,
+    num_comments,
+    author
+FROM ADINSIGHT_DB.public.raw_posts
+  );
+[0m00:06:06.146993 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01bc6a92-0000-2581-0000-000060e56ac5
+[0m00:06:06.147676 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'ADINSIGHT_DB.PUBLIC.RAW_POSTS' does not exist or not authorized.
+[0m00:06:06.152736 [debug] [Thread-1 (]: Database Error in model stg_reddit_posts (models/staging/stg_reddit_posts.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'ADINSIGHT_DB.PUBLIC.RAW_POSTS' does not exist or not authorized.
+  compiled code at target/run/adinsight/models/staging/stg_reddit_posts.sql
+[0m00:06:06.155433 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '21146a7f-fa21-4897-bc2d-9c2eb6a32265', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff62bfc7450>]}
+[0m00:06:06.156176 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model public_analytics.stg_reddit_posts ......... [[31mERROR[0m in 0.27s]
+[0m00:06:06.156753 [debug] [Thread-1 (]: Finished running node model.adinsight.stg_reddit_posts
+[0m00:06:06.157304 [debug] [Thread-7 (]: Marking all children of 'model.adinsight.stg_reddit_posts' to be skipped because of status 'error'.  Reason: Database Error in model stg_reddit_posts (models/staging/stg_reddit_posts.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'ADINSIGHT_DB.PUBLIC.RAW_POSTS' does not exist or not authorized.
+  compiled code at target/run/adinsight/models/staging/stg_reddit_posts.sql.
+[0m00:06:06.158422 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m00:06:06.158906 [debug] [MainThread]: Connection 'model.adinsight.stg_reddit_posts' was left open.
+[0m00:06:06.159309 [debug] [MainThread]: On model.adinsight.stg_reddit_posts: Close
+[0m00:06:06.790645 [info ] [MainThread]: 
+[0m00:06:06.791339 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 2.41 seconds (2.41s).
+[0m00:06:06.792290 [debug] [MainThread]: Command end result
+[0m00:06:06.811690 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anwar/AdInsight360/target/manifest.json
+[0m00:06:06.813091 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anwar/AdInsight360/target/semantic_manifest.json
+[0m00:06:06.817112 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/anwar/AdInsight360/target/run_results.json
+[0m00:06:06.817469 [info ] [MainThread]: 
+[0m00:06:06.817859 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m00:06:06.818191 [info ] [MainThread]: 
+[0m00:06:06.818576 [error] [MainThread]:   Database Error in model stg_reddit_posts (models/staging/stg_reddit_posts.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'ADINSIGHT_DB.PUBLIC.RAW_POSTS' does not exist or not authorized.
+  compiled code at target/run/adinsight/models/staging/stg_reddit_posts.sql
+[0m00:06:06.818872 [info ] [MainThread]: 
+[0m00:06:06.819176 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m00:06:06.819918 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 3.9552763, "process_in_blocks": "1344", "process_kernel_time": 0.169493, "process_mem_max_rss": "221964", "process_out_blocks": "3176", "process_user_time": 2.531324}
+[0m00:06:06.820410 [debug] [MainThread]: Command `dbt run` failed at 00:06:06.820319 after 3.96 seconds
+[0m00:06:06.820757 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff64ccee190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff64ccee090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff64ccee050>]}
+[0m00:06:06.821086 [debug] [MainThread]: Flushing usage events
+[0m00:06:07.710451 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:08:21.359954 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efef2fa7c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efef49921d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efef2fe7f50>]}
 
 
-[0m19:54:36.321138 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 8.943908, "process_in_blocks": "7952", "process_kernel_time": 0.186472, "process_mem_max_rss": "212144", "process_out_blocks": "2408", "process_user_time": 1.720291}
-[0m19:54:36.322606 [debug] [MainThread]: Command `dbt debug` failed at 19:54:36.322428 after 8.95 seconds
-[0m19:54:36.323221 [debug] [MainThread]: Connection 'debug' was left open.
-[0m19:54:36.323700 [debug] [MainThread]: On debug: No close available on handle
-[0m19:54:36.324091 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa3397972d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa31c786c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa339795850>]}
-[0m19:54:36.324660 [debug] [MainThread]: Flushing usage events
-[0m19:54:36.994089 [debug] [MainThread]: An error was encountered while trying to flush usage events
-[0m19:56:10.561135 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb76c1f47d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb76c1f4850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb76c18e110>]}
+============================== 00:08:21.362310 | 36bb0834-92d1-41e9-8579-cb36cbf9907d ==============================
+[0m00:08:21.362310 [info ] [MainThread]: Running with dbt=1.9.4
+[0m00:08:21.362878 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/anwar/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': '/home/anwar/AdInsight360/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt clean', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m00:08:21.448082 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '36bb0834-92d1-41e9-8579-cb36cbf9907d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efef2ecba50>]}
+[0m00:08:21.455068 [debug] [MainThread]: Resource report: {"command_name": "clean", "command_success": true, "command_wall_clock_time": 0.12838511, "process_in_blocks": "0", "process_kernel_time": 0.096978, "process_mem_max_rss": "96260", "process_out_blocks": "136", "process_user_time": 0.93769}
+[0m00:08:21.455586 [debug] [MainThread]: Command `dbt clean` succeeded at 00:08:21.455502 after 0.13 seconds
+[0m00:08:21.455922 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efef31bac50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efef6ff1ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efef6ff2050>]}
+[0m00:08:21.456270 [debug] [MainThread]: Flushing usage events
+[0m00:08:23.191208 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:08:24.327143 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4159fafa50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f415a2b7cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4159fe4590>]}
 
 
-============================== 19:56:10.563532 | 013db217-7a93-49fb-83b7-26f8ddb2c17c ==============================
-[0m19:56:10.563532 [info ] [MainThread]: Running with dbt=1.9.4
-[0m19:56:10.564058 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/anwar/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug --config-dir', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
-[0m19:56:10.569328 [info ] [MainThread]: To view your profiles.yml file, run:
+============================== 00:08:24.329293 | e44ff10f-0f9b-4c0f-9903-54ec684b14b7 ==============================
+[0m00:08:24.329293 [info ] [MainThread]: Running with dbt=1.9.4
+[0m00:08:24.329840 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/home/anwar/AdInsight360/logs', 'version_check': 'True', 'profiles_dir': '/home/anwar/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'invocation_command': 'dbt run', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m00:08:24.759305 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e44ff10f-0f9b-4c0f-9903-54ec684b14b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f413d4b2ad0>]}
+[0m00:08:24.796828 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e44ff10f-0f9b-4c0f-9903-54ec684b14b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f413d485a50>]}
+[0m00:08:24.797548 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+[0m00:08:24.861033 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m00:08:24.861614 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m00:08:24.861981 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'e44ff10f-0f9b-4c0f-9903-54ec684b14b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f413d2caa90>]}
+[0m00:08:25.653105 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e44ff10f-0f9b-4c0f-9903-54ec684b14b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f413d3d0350>]}
+[0m00:08:25.696784 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anwar/AdInsight360/target/manifest.json
+[0m00:08:25.697925 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anwar/AdInsight360/target/semantic_manifest.json
+[0m00:08:25.704665 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e44ff10f-0f9b-4c0f-9903-54ec684b14b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f413c722dd0>]}
+[0m00:08:25.705085 [info ] [MainThread]: Found 1 model, 1 source, 476 macros
+[0m00:08:25.705398 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e44ff10f-0f9b-4c0f-9903-54ec684b14b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f413c838b90>]}
+[0m00:08:25.706324 [info ] [MainThread]: 
+[0m00:08:25.706647 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m00:08:25.706906 [info ] [MainThread]: 
+[0m00:08:25.707321 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m00:08:25.708024 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ADINSIGHT_DB'
+[0m00:08:25.735112 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB"
+[0m00:08:25.735498 [debug] [ThreadPool]: On list_ADINSIGHT_DB: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB"} */
+show terse schemas in database ADINSIGHT_DB
+    limit 10000
+[0m00:08:25.735779 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:08:27.915141 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 2.179 seconds
+[0m00:08:27.920915 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ADINSIGHT_DB, now list_ADINSIGHT_DB_public_analytics)
+[0m00:08:27.937392 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB_public_analytics"
+[0m00:08:27.937805 [debug] [ThreadPool]: On list_ADINSIGHT_DB_public_analytics: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB_public_analytics"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m00:08:28.092088 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.154 seconds
+[0m00:08:28.095052 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB_public_analytics"
+[0m00:08:28.095402 [debug] [ThreadPool]: On list_ADINSIGHT_DB_public_analytics: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB_public_analytics"} */
+show objects in ADINSIGHT_DB.public_analytics
+    limit 10000
+    
+;
+[0m00:08:28.244114 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.148 seconds
+[0m00:08:28.245899 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB_public_analytics"
+[0m00:08:28.246498 [debug] [ThreadPool]: On list_ADINSIGHT_DB_public_analytics: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB_public_analytics"} */
+alter session unset quoted_identifiers_ignore_case;
+[0m00:08:28.401696 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.155 seconds
+[0m00:08:28.403129 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e44ff10f-0f9b-4c0f-9903-54ec684b14b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f413c67e0d0>]}
+[0m00:08:28.405450 [debug] [Thread-1 (]: Began running node model.adinsight.stg_reddit_posts
+[0m00:08:28.406107 [info ] [Thread-1 (]: 1 of 1 START sql view model public_analytics.stg_reddit_posts .................. [RUN]
+[0m00:08:28.406673 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_ADINSIGHT_DB_public_analytics, now model.adinsight.stg_reddit_posts)
+[0m00:08:28.407129 [debug] [Thread-1 (]: Began compiling node model.adinsight.stg_reddit_posts
+[0m00:08:28.415370 [debug] [Thread-1 (]: Writing injected SQL for node "model.adinsight.stg_reddit_posts"
+[0m00:08:28.416755 [debug] [Thread-1 (]: Began executing node model.adinsight.stg_reddit_posts
+[0m00:08:28.447025 [debug] [Thread-1 (]: Writing runtime sql for node "model.adinsight.stg_reddit_posts"
+[0m00:08:28.448359 [debug] [Thread-1 (]: Using snowflake connection "model.adinsight.stg_reddit_posts"
+[0m00:08:28.448911 [debug] [Thread-1 (]: On model.adinsight.stg_reddit_posts: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "node_id": "model.adinsight.stg_reddit_posts"} */
+create or replace   view ADINSIGHT_DB.public_analytics.stg_reddit_posts
+  
+   as (
+    
 
-xdg-open /home/anwar/.dbt
-[0m19:56:10.571061 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 0.04827443, "process_in_blocks": "848", "process_kernel_time": 0.095869, "process_mem_max_rss": "94572", "process_out_blocks": "8", "process_user_time": 0.901658}
-[0m19:56:10.571884 [debug] [MainThread]: Command `dbt debug` succeeded at 19:56:10.571762 after 0.05 seconds
-[0m19:56:10.572428 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb76c1f7250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb76c1f5710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb7701d1390>]}
-[0m19:56:10.572982 [debug] [MainThread]: Flushing usage events
-[0m19:56:11.395023 [debug] [MainThread]: An error was encountered while trying to flush usage events
-[0m19:57:04.129014 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8882620710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f88827ce310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8882620950>]}
-
-
-============================== 19:57:04.131108 | 75839be9-86b8-482b-b9d8-58deb0ebac55 ==============================
-[0m19:57:04.131108 [info ] [MainThread]: Running with dbt=1.9.4
-[0m19:57:04.131634 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/anwar/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
-[0m19:57:04.137345 [info ] [MainThread]: dbt version: 1.9.4
-[0m19:57:04.137923 [info ] [MainThread]: python version: 3.11.3
-[0m19:57:04.138373 [info ] [MainThread]: python path: /home/anwar/anaconda3/bin/python
-[0m19:57:04.138791 [info ] [MainThread]: os info: Linux-6.14.2-300.fc42.x86_64-x86_64-with-glibc2.41
-[0m19:57:04.549858 [info ] [MainThread]: Using profiles dir at /home/anwar/.dbt
-[0m19:57:04.550351 [info ] [MainThread]: Using profiles.yml file at /home/anwar/.dbt/profiles.yml
-[0m19:57:04.550763 [info ] [MainThread]: Using dbt_project.yml file at /home/anwar/AdInsight360/dbt_project.yml
-[0m19:57:04.551357 [info ] [MainThread]: adapter type: snowflake
-[0m19:57:04.551718 [info ] [MainThread]: adapter version: 1.9.4
-[0m19:57:04.552134 [info ] [MainThread]: Configuration:
-[0m19:57:04.552530 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
-[0m19:57:04.552830 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
-[0m19:57:04.553088 [info ] [MainThread]: Required dependencies:
-[0m19:57:04.553371 [debug] [MainThread]: Executing "git --help"
-[0m19:57:04.554881 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
-[0m19:57:04.555269 [debug] [MainThread]: STDERR: "b''"
-[0m19:57:04.555645 [info ] [MainThread]:  - git [[32mOK found[0m]
-
-[0m19:57:04.556008 [info ] [MainThread]: Connection:
-[0m19:57:04.556366 [info ] [MainThread]:   account: REZTYKO-ZD49254
-[0m19:57:04.556651 [info ] [MainThread]:   user: ANWARMOUSA
-[0m19:57:04.556912 [info ] [MainThread]:   database: ADINSIGHT_DB
-[0m19:57:04.557223 [info ] [MainThread]:   warehouse: ADINSIGHT_WH
-[0m19:57:04.557511 [info ] [MainThread]:   role: ACCOUNTADMIN
-[0m19:57:04.557790 [info ] [MainThread]:   schema: RAW
-[0m19:57:04.558118 [info ] [MainThread]:   authenticator: None
-[0m19:57:04.558390 [info ] [MainThread]:   oauth_client_id: None
-[0m19:57:04.558642 [info ] [MainThread]:   query_tag: None
-[0m19:57:04.558891 [info ] [MainThread]:   client_session_keep_alive: False
-[0m19:57:04.559137 [info ] [MainThread]:   host: None
-[0m19:57:04.559390 [info ] [MainThread]:   port: None
-[0m19:57:04.559634 [info ] [MainThread]:   proxy_host: None
-[0m19:57:04.559886 [info ] [MainThread]:   proxy_port: None
-[0m19:57:04.560217 [info ] [MainThread]:   protocol: None
-[0m19:57:04.560576 [info ] [MainThread]:   connect_retries: 1
-[0m19:57:04.560929 [info ] [MainThread]:   connect_timeout: None
-[0m19:57:04.561331 [info ] [MainThread]:   retry_on_database_errors: False
-[0m19:57:04.561735 [info ] [MainThread]:   retry_all: False
-[0m19:57:04.562108 [info ] [MainThread]:   insecure_mode: False
-[0m19:57:04.562502 [info ] [MainThread]:   reuse_connections: True
-[0m19:57:04.563025 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
-[0m19:57:04.638483 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
-[0m19:57:04.656920 [debug] [MainThread]: Using snowflake connection "debug"
-[0m19:57:04.657308 [debug] [MainThread]: On debug: select 1 as id
-[0m19:57:04.657585 [debug] [MainThread]: Opening a new connection, currently in state init
-[0m19:57:08.578253 [debug] [MainThread]: SQL status: SUCCESS 1 in 3.921 seconds
-[0m19:57:08.579541 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
-
-[0m19:57:08.580216 [info ] [MainThread]: [31m1 check failed:[0m
-[0m19:57:08.580864 [info ] [MainThread]: Project loading failed for the following reason:
- project path </home/anwar/AdInsight360/dbt_project.yml> not found
-
-[0m19:57:08.582280 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 4.4869757, "process_in_blocks": "41416", "process_kernel_time": 0.206895, "process_mem_max_rss": "211676", "process_out_blocks": "2376", "process_user_time": 1.685633}
-[0m19:57:08.583270 [debug] [MainThread]: Command `dbt debug` failed at 19:57:08.583096 after 4.49 seconds
-[0m19:57:08.583940 [debug] [MainThread]: Connection 'debug' was left open.
-[0m19:57:08.584612 [debug] [MainThread]: On debug: Close
-[0m19:57:09.007607 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8882622210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f88826209d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8865619d10>]}
-[0m19:57:09.008476 [debug] [MainThread]: Flushing usage events
-[0m19:57:09.686766 [debug] [MainThread]: An error was encountered while trying to flush usage events
-[0m19:57:50.803892 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f597885c650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f597885c6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f597885ccd0>]}
-
-
-============================== 19:57:50.806332 | 2a5f90e4-aa76-4af8-af82-2dcaac615f72 ==============================
-[0m19:57:50.806332 [info ] [MainThread]: Running with dbt=1.9.4
-[0m19:57:50.806955 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/anwar/.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
-[0m19:58:09.517331 [debug] [MainThread]: Starter project path: /home/anwar/anaconda3/lib/python3.11/site-packages/dbt/include/starter_project
-[0m19:58:09.521463 [info ] [MainThread]: 
-Your new dbt project "adinsight360" was created!
-
-For more information on how to configure the profiles.yml file,
-please consult the dbt documentation here:
-
-  https://docs.getdbt.com/docs/configure-your-profile
-
-One more thing:
-
-Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
-
-  https://community.getdbt.com/
-
-Happy modeling!
-
-[0m19:58:09.522296 [info ] [MainThread]: Setting up your profile.
-[0m19:59:52.627190 [info ] [MainThread]: Profile adinsight360 written to /home/anwar/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
-[0m19:59:52.628541 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 121.86303, "process_in_blocks": "88", "process_kernel_time": 0.148948, "process_mem_max_rss": "197784", "process_out_blocks": "184", "process_user_time": 1.352318}
-[0m19:59:52.629331 [debug] [MainThread]: Command `dbt init` succeeded at 19:59:52.629189 after 121.86 seconds
-[0m19:59:52.629839 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f597885d750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f59787f6490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f597c7a8910>]}
-[0m19:59:52.630368 [debug] [MainThread]: Flushing usage events
-[0m19:59:53.598416 [debug] [MainThread]: An error was encountered while trying to flush usage events
-[0m20:00:33.899455 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f53f4536990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f53f4874d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f53f45366d0>]}
-
-
-============================== 20:00:33.902567 | 6e74d5f9-706f-41ee-b5dc-d271ad88fb56 ==============================
-[0m20:00:33.902567 [info ] [MainThread]: Running with dbt=1.9.4
-[0m20:00:33.903281 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/anwar/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
-[0m20:00:33.909926 [info ] [MainThread]: dbt version: 1.9.4
-[0m20:00:33.910590 [info ] [MainThread]: python version: 3.11.3
-[0m20:00:33.911055 [info ] [MainThread]: python path: /home/anwar/anaconda3/bin/python
-[0m20:00:33.911556 [info ] [MainThread]: os info: Linux-6.14.2-300.fc42.x86_64-x86_64-with-glibc2.41
-[0m20:00:34.296546 [info ] [MainThread]: Using profiles dir at /home/anwar/.dbt
-[0m20:00:34.296968 [info ] [MainThread]: Using profiles.yml file at /home/anwar/.dbt/profiles.yml
-[0m20:00:34.297286 [info ] [MainThread]: Using dbt_project.yml file at /home/anwar/AdInsight360/dbt_project.yml
-[0m20:00:34.297646 [error] [MainThread]: Encountered an error:
-Internal Error
-  Profile should not be None if loading profile completed
-[0m20:00:34.298359 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.43480575, "process_in_blocks": "0", "process_kernel_time": 0.131609, "process_mem_max_rss": "198696", "process_out_blocks": "16", "process_user_time": 1.274638}
-[0m20:00:34.298779 [debug] [MainThread]: Command `dbt debug` failed at 20:00:34.298709 after 0.44 seconds
-[0m20:00:34.299085 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f53f4535d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f53f4536650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f53f8591350>]}
-[0m20:00:34.299441 [debug] [MainThread]: Flushing usage events
-[0m20:00:35.009700 [debug] [MainThread]: An error was encountered while trying to flush usage events
-[0m20:07:25.012553 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f615490d1d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f615492e110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f615492c650>]}
-
-
-============================== 20:07:25.015809 | 91f89628-cb6f-4419-a98d-16b9873dda14 ==============================
-[0m20:07:25.015809 [info ] [MainThread]: Running with dbt=1.9.4
-[0m20:07:25.016541 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/home/anwar/.dbt', 'log_path': '/home/anwar/AdInsight360/logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
-[0m20:07:25.022673 [info ] [MainThread]: dbt version: 1.9.4
-[0m20:07:25.023316 [info ] [MainThread]: python version: 3.11.3
-[0m20:07:25.023776 [info ] [MainThread]: python path: /home/anwar/anaconda3/bin/python
-[0m20:07:25.024148 [info ] [MainThread]: os info: Linux-6.14.2-300.fc42.x86_64-x86_64-with-glibc2.41
-[0m20:07:25.380646 [info ] [MainThread]: Using profiles dir at /home/anwar/.dbt
-[0m20:07:25.381086 [info ] [MainThread]: Using profiles.yml file at /home/anwar/.dbt/profiles.yml
-[0m20:07:25.381401 [info ] [MainThread]: Using dbt_project.yml file at /home/anwar/AdInsight360/dbt_project.yml
-[0m20:07:25.381797 [info ] [MainThread]: adapter type: snowflake
-[0m20:07:25.382063 [info ] [MainThread]: adapter version: 1.9.4
-[0m20:07:25.453763 [info ] [MainThread]: Configuration:
-[0m20:07:25.454166 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
-[0m20:07:25.454466 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
-[0m20:07:25.454729 [info ] [MainThread]: Required dependencies:
-[0m20:07:25.455002 [debug] [MainThread]: Executing "git --help"
-[0m20:07:25.456461 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
-[0m20:07:25.456797 [debug] [MainThread]: STDERR: "b''"
-[0m20:07:25.457054 [info ] [MainThread]:  - git [[32mOK found[0m]
-
-[0m20:07:25.457335 [info ] [MainThread]: Connection:
-[0m20:07:25.457614 [info ] [MainThread]:   account: REZTYKO-ZD49254
-[0m20:07:25.457866 [info ] [MainThread]:   user: ANWARMOUSA
-[0m20:07:25.458116 [info ] [MainThread]:   database: ADINSIGHT_WH
-[0m20:07:25.458372 [info ] [MainThread]:   warehouse: ADINSIGHT_WH
-[0m20:07:25.458627 [info ] [MainThread]:   role: ACCOUNTADMIN
-[0m20:07:25.458873 [info ] [MainThread]:   schema: public
-[0m20:07:25.459124 [info ] [MainThread]:   authenticator: None
-[0m20:07:25.459389 [info ] [MainThread]:   oauth_client_id: None
-[0m20:07:25.459755 [info ] [MainThread]:   query_tag: None
-[0m20:07:25.460147 [info ] [MainThread]:   client_session_keep_alive: False
-[0m20:07:25.460510 [info ] [MainThread]:   host: None
-[0m20:07:25.460844 [info ] [MainThread]:   port: None
-[0m20:07:25.461216 [info ] [MainThread]:   proxy_host: None
-[0m20:07:25.461541 [info ] [MainThread]:   proxy_port: None
-[0m20:07:25.461914 [info ] [MainThread]:   protocol: None
-[0m20:07:25.462229 [info ] [MainThread]:   connect_retries: 1
-[0m20:07:25.462522 [info ] [MainThread]:   connect_timeout: None
-[0m20:07:25.462810 [info ] [MainThread]:   retry_on_database_errors: False
-[0m20:07:25.463096 [info ] [MainThread]:   retry_all: False
-[0m20:07:25.463397 [info ] [MainThread]:   insecure_mode: False
-[0m20:07:25.463679 [info ] [MainThread]:   reuse_connections: True
-[0m20:07:25.464118 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
-[0m20:07:25.527025 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
-[0m20:07:25.540511 [debug] [MainThread]: Using snowflake connection "debug"
-[0m20:07:25.540888 [debug] [MainThread]: On debug: select 1 as id
-[0m20:07:25.541182 [debug] [MainThread]: Opening a new connection, currently in state init
-[0m20:07:32.915573 [debug] [MainThread]: SQL status: SUCCESS 1 in 7.374 seconds
-[0m20:07:32.917820 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
-
-[0m20:07:32.918737 [info ] [MainThread]: [32mAll checks passed![0m
-[0m20:07:32.920098 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 7.949267, "process_in_blocks": "280", "process_kernel_time": 0.169864, "process_mem_max_rss": "210480", "process_out_blocks": "104", "process_user_time": 1.464291}
-[0m20:07:32.920684 [debug] [MainThread]: Command `dbt debug` succeeded at 20:07:32.920588 after 7.95 seconds
-[0m20:07:32.921064 [debug] [MainThread]: Connection 'debug' was left open.
-[0m20:07:32.921434 [debug] [MainThread]: On debug: Close
-[0m20:07:35.075841 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f615496e6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f615496edd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6137dcb950>]}
-[0m20:07:35.076802 [debug] [MainThread]: Flushing usage events
-[0m20:07:42.004077 [debug] [MainThread]: An error was encountered while trying to flush usage events
-[0m20:12:04.060721 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5dfecc8650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5dfecc8290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5dfecc8450>]}
-
-
-============================== 20:12:04.064482 | 19fa1e04-e21e-4bd0-a826-db9e5894e130 ==============================
-[0m20:12:04.064482 [info ] [MainThread]: Running with dbt=1.9.4
-[0m20:12:04.067046 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/home/anwar/AdInsight360/logs', 'profiles_dir': '/home/anwar/.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
-[0m20:12:04.078540 [info ] [MainThread]: dbt version: 1.9.4
-[0m20:12:04.079258 [info ] [MainThread]: python version: 3.11.3
-[0m20:12:04.079745 [info ] [MainThread]: python path: /home/anwar/anaconda3/bin/python
-[0m20:12:04.080169 [info ] [MainThread]: os info: Linux-6.14.2-300.fc42.x86_64-x86_64-with-glibc2.41
-[0m20:12:04.602973 [info ] [MainThread]: Using profiles dir at /home/anwar/.dbt
-[0m20:12:04.603635 [info ] [MainThread]: Using profiles.yml file at /home/anwar/.dbt/profiles.yml
-[0m20:12:04.604088 [info ] [MainThread]: Using dbt_project.yml file at /home/anwar/AdInsight360/dbt_project.yml
-[0m20:12:04.604669 [info ] [MainThread]: adapter type: snowflake
-[0m20:12:04.604997 [info ] [MainThread]: adapter version: 1.9.4
-[0m20:12:04.682678 [info ] [MainThread]: Configuration:
-[0m20:12:04.683285 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
-[0m20:12:04.683921 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
-[0m20:12:04.684376 [info ] [MainThread]: Required dependencies:
-[0m20:12:04.684849 [debug] [MainThread]: Executing "git --help"
-[0m20:12:04.688278 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
-[0m20:12:04.689608 [debug] [MainThread]: STDERR: "b''"
-[0m20:12:04.690205 [info ] [MainThread]:  - git [[32mOK found[0m]
-
-[0m20:12:04.690741 [info ] [MainThread]: Connection:
-[0m20:12:04.691268 [info ] [MainThread]:   account: REZTYKO-ZD49254
-[0m20:12:04.691692 [info ] [MainThread]:   user: ANWARMOUSA
-[0m20:12:04.692090 [info ] [MainThread]:   database: ADINSIGHT_WH
-[0m20:12:04.692482 [info ] [MainThread]:   warehouse: ADINSIGHT_WH
-[0m20:12:04.692867 [info ] [MainThread]:   role: ACCOUNTADMIN
-[0m20:12:04.693321 [info ] [MainThread]:   schema: public
-[0m20:12:04.693723 [info ] [MainThread]:   authenticator: None
-[0m20:12:04.694172 [info ] [MainThread]:   oauth_client_id: None
-[0m20:12:04.694577 [info ] [MainThread]:   query_tag: None
-[0m20:12:04.694963 [info ] [MainThread]:   client_session_keep_alive: False
-[0m20:12:04.695479 [info ] [MainThread]:   host: None
-[0m20:12:04.695924 [info ] [MainThread]:   port: None
-[0m20:12:04.696348 [info ] [MainThread]:   proxy_host: None
-[0m20:12:04.696790 [info ] [MainThread]:   proxy_port: None
-[0m20:12:04.697206 [info ] [MainThread]:   protocol: None
-[0m20:12:04.697576 [info ] [MainThread]:   connect_retries: 1
-[0m20:12:04.697938 [info ] [MainThread]:   connect_timeout: None
-[0m20:12:04.698357 [info ] [MainThread]:   retry_on_database_errors: False
-[0m20:12:04.698774 [info ] [MainThread]:   retry_all: False
-[0m20:12:04.699141 [info ] [MainThread]:   insecure_mode: False
-[0m20:12:04.699505 [info ] [MainThread]:   reuse_connections: True
-[0m20:12:04.700014 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
-[0m20:12:04.792472 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
-[0m20:12:04.806925 [debug] [MainThread]: Using snowflake connection "debug"
-[0m20:12:04.807343 [debug] [MainThread]: On debug: select 1 as id
-[0m20:12:04.807652 [debug] [MainThread]: Opening a new connection, currently in state init
-[0m20:12:47.939226 [debug] [MainThread]: SQL status: SUCCESS 1 in 43.131 seconds
-[0m20:12:47.940450 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
-
-[0m20:12:47.940924 [info ] [MainThread]: [32mAll checks passed![0m
-[0m20:12:47.941974 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 43.93482, "process_in_blocks": "65912", "process_kernel_time": 0.21585, "process_mem_max_rss": "210428", "process_out_blocks": "112", "process_user_time": 1.767045}
-[0m20:12:47.942580 [debug] [MainThread]: Command `dbt debug` succeeded at 20:12:47.942481 after 43.94 seconds
-[0m20:12:47.942958 [debug] [MainThread]: Connection 'debug' was left open.
-[0m20:12:47.943229 [debug] [MainThread]: On debug: Close
-[0m20:12:48.330620 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5e02cee010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5e02ced310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5dfebb5290>]}
-[0m20:12:48.331875 [debug] [MainThread]: Flushing usage events
-[0m20:12:54.269213 [debug] [MainThread]: An error was encountered while trying to flush usage events
-[0m20:19:11.220237 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f21cb480110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f21cb683590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f21cb480210>]}
-
-
-============================== 20:19:11.223190 | f77a68d2-c0ce-431b-afc2-ee4895f561fa ==============================
-[0m20:19:11.223190 [info ] [MainThread]: Running with dbt=1.9.4
-[0m20:19:11.223718 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/home/anwar/AdInsight360/logs', 'fail_fast': 'False', 'profiles_dir': '/home/anwar/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
-[0m20:19:11.232822 [info ] [MainThread]: dbt version: 1.9.4
-[0m20:19:11.233486 [info ] [MainThread]: python version: 3.11.3
-[0m20:19:11.233945 [info ] [MainThread]: python path: /home/anwar/anaconda3/bin/python
-[0m20:19:11.234404 [info ] [MainThread]: os info: Linux-6.14.2-300.fc42.x86_64-x86_64-with-glibc2.41
-[0m20:19:11.875857 [info ] [MainThread]: Using profiles dir at /home/anwar/.dbt
-[0m20:19:11.876362 [info ] [MainThread]: Using profiles.yml file at /home/anwar/.dbt/profiles.yml
-[0m20:19:11.876746 [info ] [MainThread]: Using dbt_project.yml file at /home/anwar/AdInsight360/dbt_project.yml
-[0m20:19:11.877200 [info ] [MainThread]: adapter type: snowflake
-[0m20:19:11.877487 [info ] [MainThread]: adapter version: 1.9.4
-[0m20:19:11.953629 [info ] [MainThread]: Configuration:
-[0m20:19:11.954080 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
-[0m20:19:11.954423 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
-[0m20:19:11.954707 [info ] [MainThread]: Required dependencies:
-[0m20:19:11.954999 [debug] [MainThread]: Executing "git --help"
-[0m20:19:11.956994 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
-[0m20:19:11.957353 [debug] [MainThread]: STDERR: "b''"
-[0m20:19:11.957642 [info ] [MainThread]:  - git [[32mOK found[0m]
-
-[0m20:19:11.958015 [info ] [MainThread]: Connection:
-[0m20:19:11.958381 [info ] [MainThread]:   account: REZTYKO-ZD49254
-[0m20:19:11.958707 [info ] [MainThread]:   user: ANWARMOUSA
-[0m20:19:11.959012 [info ] [MainThread]:   database: ADINSIGHT_WH
-[0m20:19:11.959340 [info ] [MainThread]:   warehouse: ADINSIGHT_WH
-[0m20:19:11.959670 [info ] [MainThread]:   role: ACCOUNTADMIN
-[0m20:19:11.960014 [info ] [MainThread]:   schema: public
-[0m20:19:11.960412 [info ] [MainThread]:   authenticator: None
-[0m20:19:11.960832 [info ] [MainThread]:   oauth_client_id: None
-[0m20:19:11.961347 [info ] [MainThread]:   query_tag: None
-[0m20:19:11.961837 [info ] [MainThread]:   client_session_keep_alive: False
-[0m20:19:11.962372 [info ] [MainThread]:   host: None
-[0m20:19:11.962890 [info ] [MainThread]:   port: None
-[0m20:19:11.963306 [info ] [MainThread]:   proxy_host: None
-[0m20:19:11.963712 [info ] [MainThread]:   proxy_port: None
-[0m20:19:11.964108 [info ] [MainThread]:   protocol: None
-[0m20:19:11.964514 [info ] [MainThread]:   connect_retries: 1
-[0m20:19:11.964965 [info ] [MainThread]:   connect_timeout: None
-[0m20:19:11.965341 [info ] [MainThread]:   retry_on_database_errors: False
-[0m20:19:11.965656 [info ] [MainThread]:   retry_all: False
-[0m20:19:11.966028 [info ] [MainThread]:   insecure_mode: False
-[0m20:19:11.966416 [info ] [MainThread]:   reuse_connections: True
-[0m20:19:11.966957 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
-[0m20:19:12.040296 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
-[0m20:19:12.060597 [debug] [MainThread]: Using snowflake connection "debug"
-[0m20:19:12.061229 [debug] [MainThread]: On debug: select 1 as id
-[0m20:19:12.061674 [debug] [MainThread]: Opening a new connection, currently in state init
-[0m20:19:13.424599 [debug] [MainThread]: SQL status: SUCCESS 1 in 1.363 seconds
-[0m20:19:13.426899 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
-
-[0m20:19:13.428243 [info ] [MainThread]: [32mAll checks passed![0m
-[0m20:19:13.431486 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 2.2446709, "process_in_blocks": "132544", "process_kernel_time": 0.247329, "process_mem_max_rss": "210648", "process_out_blocks": "104", "process_user_time": 1.59011}
-[0m20:19:13.432776 [debug] [MainThread]: Command `dbt debug` succeeded at 20:19:13.432516 after 2.25 seconds
-[0m20:19:13.433811 [debug] [MainThread]: Connection 'debug' was left open.
-[0m20:19:13.434803 [debug] [MainThread]: On debug: Close
-[0m20:19:13.725469 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f21cb473510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f21cb4a04d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f21cf4cd4d0>]}
-[0m20:19:13.726615 [debug] [MainThread]: Flushing usage events
-[0m20:19:14.742869 [debug] [MainThread]: An error was encountered while trying to flush usage events
+SELECT
+    'post_1' AS id,
+    'Test Post' AS title,
+    100 AS score,
+    CURRENT_TIMESTAMP() AS created_at,
+    'https://example.com' AS url,
+    5 AS num_comments,
+    'test_user' AS author
+  );
+[0m00:08:28.712248 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.263 seconds
+[0m00:08:28.735234 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e44ff10f-0f9b-4c0f-9903-54ec684b14b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f413c30e650>]}
+[0m00:08:28.735842 [info ] [Thread-1 (]: 1 of 1 OK created sql view model public_analytics.stg_reddit_posts ............. [[32mSUCCESS 1[0m in 0.33s]
+[0m00:08:28.736394 [debug] [Thread-1 (]: Finished running node model.adinsight.stg_reddit_posts
+[0m00:08:28.737364 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m00:08:28.737659 [debug] [MainThread]: Connection 'model.adinsight.stg_reddit_posts' was left open.
+[0m00:08:28.737944 [debug] [MainThread]: On model.adinsight.stg_reddit_posts: Close
+[0m00:08:28.971974 [info ] [MainThread]: 
+[0m00:08:28.972501 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 3.26 seconds (3.26s).
+[0m00:08:28.973112 [debug] [MainThread]: Command end result
+[0m00:08:28.993440 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anwar/AdInsight360/target/manifest.json
+[0m00:08:28.994677 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anwar/AdInsight360/target/semantic_manifest.json
+[0m00:08:28.998388 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/anwar/AdInsight360/target/run_results.json
+[0m00:08:28.998697 [info ] [MainThread]: 
+[0m00:08:28.999064 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m00:08:28.999413 [info ] [MainThread]: 
+[0m00:08:28.999730 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m00:08:29.000451 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 4.706379, "process_in_blocks": "0", "process_kernel_time": 0.193263, "process_mem_max_rss": "221364", "process_out_blocks": "3032", "process_user_time": 2.40411}
+[0m00:08:29.000905 [debug] [MainThread]: Command `dbt run` succeeded at 00:08:29.000835 after 4.71 seconds
+[0m00:08:29.001249 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f415a1cea50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f415a28c790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f415df35190>]}
+[0m00:08:29.001583 [debug] [MainThread]: Flushing usage events
+[0m00:08:29.701319 [debug] [MainThread]: An error was encountered while trying to flush usage events

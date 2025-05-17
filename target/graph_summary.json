@@ -1,0 +1,1 @@
+{"_invocation_id": "e44ff10f-0f9b-4c0f-9903-54ec684b14b7", "linked": {"0": {"name": "source.adinsight.reddit.raw_posts", "type": "source"}, "1": {"name": "model.adinsight.stg_reddit_posts", "type": "model"}}}

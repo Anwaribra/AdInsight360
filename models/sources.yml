@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: reddit
+    schema: public
+    tables:
+      - name: raw_posts
+        description: "Raw Reddit posts data"
