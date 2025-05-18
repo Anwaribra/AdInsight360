@@ -143,4 +143,4 @@ try:
     st.plotly_chart(fig_authors, use_container_width=True)
 except Exception as e:
     st.error(f"Error loading data: {str(e)}")
-    st.info("Please ensure your database connection is properly configured in streamlit/config/local_db.py") 
+    st.info("streamlit/config/local_db.py") 

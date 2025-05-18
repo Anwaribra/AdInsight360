@@ -1831,3 +1831,556 @@ from author_metrics
 [0m00:39:13.937331 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcea093c990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcea35ca110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcea35c9590>]}
 [0m00:39:13.937662 [debug] [MainThread]: Flushing usage events
 [0m00:39:14.835580 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:58:22.010328 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdc718e38d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdc718e3210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdc718e3110>]}
+
+
+============================== 02:58:22.016089 | b415820e-e584-4d7b-855b-0427bff11b2f ==============================
+[0m02:58:22.016089 [info ] [MainThread]: Running with dbt=1.9.4
+[0m02:58:22.017384 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/home/anwar/.dbt', 'log_path': '/home/anwar/AdInsight360/logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt test', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m02:58:24.523918 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b415820e-e584-4d7b-855b-0427bff11b2f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdc54e20890>]}
+[0m02:58:25.079652 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b415820e-e584-4d7b-855b-0427bff11b2f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdc54d29950>]}
+[0m02:58:25.086473 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+[0m02:58:26.203011 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m02:58:26.728743 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m02:58:26.729937 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m02:58:26.826640 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b415820e-e584-4d7b-855b-0427bff11b2f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdc54e89e50>]}
+[0m02:58:26.993740 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anwar/AdInsight360/target/manifest.json
+[0m02:58:26.996492 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anwar/AdInsight360/target/semantic_manifest.json
+[0m02:58:27.080373 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b415820e-e584-4d7b-855b-0427bff11b2f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdc548c72d0>]}
+[0m02:58:27.082344 [info ] [MainThread]: Found 2 models, 10 data tests, 1 source, 476 macros
+[0m02:58:27.083965 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b415820e-e584-4d7b-855b-0427bff11b2f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdc54bb9210>]}
+[0m02:58:27.090050 [info ] [MainThread]: 
+[0m02:58:27.091489 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m02:58:27.092712 [info ] [MainThread]: 
+[0m02:58:27.094523 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m02:58:27.100278 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ADINSIGHT_DB_public_analytics'
+[0m02:58:27.107873 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ADINSIGHT_DB_public'
+[0m02:58:27.433429 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB_public"
+[0m02:58:27.434556 [debug] [ThreadPool]: On list_ADINSIGHT_DB_public: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB_public"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m02:58:27.435284 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m02:58:27.448999 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB_public_analytics"
+[0m02:58:27.449833 [debug] [ThreadPool]: On list_ADINSIGHT_DB_public_analytics: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB_public_analytics"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m02:58:27.450500 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m02:58:29.632117 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 2.197 seconds
+[0m02:58:29.633748 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 2.183 seconds
+[0m02:58:29.648094 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB_public"
+[0m02:58:29.650568 [debug] [ThreadPool]: On list_ADINSIGHT_DB_public: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB_public"} */
+show objects in ADINSIGHT_DB.public
+    limit 10000
+    
+;
+[0m02:58:29.649527 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB_public_analytics"
+[0m02:58:29.651547 [debug] [ThreadPool]: On list_ADINSIGHT_DB_public_analytics: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB_public_analytics"} */
+show objects in ADINSIGHT_DB.public_analytics
+    limit 10000
+    
+;
+[0m02:58:29.835705 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.183 seconds
+[0m02:58:29.840323 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB_public_analytics"
+[0m02:58:29.840887 [debug] [ThreadPool]: On list_ADINSIGHT_DB_public_analytics: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB_public_analytics"} */
+alter session unset quoted_identifiers_ignore_case;
+[0m02:58:29.843019 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.192 seconds
+[0m02:58:29.853517 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB_public"
+[0m02:58:29.854437 [debug] [ThreadPool]: On list_ADINSIGHT_DB_public: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB_public"} */
+alter session unset quoted_identifiers_ignore_case;
+[0m02:58:30.015911 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.154 seconds
+[0m02:58:30.021850 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.178 seconds
+[0m02:58:30.037437 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b415820e-e584-4d7b-855b-0427bff11b2f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdc5cfbae90>]}
+[0m02:58:30.094014 [debug] [Thread-1 (]: Began running node test.adinsight.accepted_values_marketing_insights_metric_type__daily__author.811cd30360
+[0m02:58:30.095122 [info ] [Thread-1 (]: 1 of 10 START test accepted_values_marketing_insights_metric_type__daily__author  [RUN]
+[0m02:58:30.096334 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_ADINSIGHT_DB_public_analytics, now test.adinsight.accepted_values_marketing_insights_metric_type__daily__author.811cd30360)
+[0m02:58:30.097217 [debug] [Thread-2 (]: Began running node test.adinsight.dbt_utils_expression_is_true_marketing_insights_total_posts___0.cd9e2c0c36
+[0m02:58:30.100148 [info ] [Thread-2 (]: 2 of 10 START test dbt_utils_expression_is_true_marketing_insights_total_posts___0  [RUN]
+[0m02:58:30.101092 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_ADINSIGHT_DB_public, now test.adinsight.dbt_utils_expression_is_true_marketing_insights_total_posts___0.cd9e2c0c36)
+[0m02:58:30.097948 [debug] [Thread-3 (]: Began running node test.adinsight.not_null_marketing_insights_dimension.d7bb46140b
+[0m02:58:30.102518 [info ] [Thread-3 (]: 3 of 10 START test not_null_marketing_insights_dimension ....................... [RUN]
+[0m02:58:30.098648 [debug] [Thread-4 (]: Began running node test.adinsight.not_null_marketing_insights_metric_type.12ee70c52f
+[0m02:58:30.104280 [info ] [Thread-4 (]: 4 of 10 START test not_null_marketing_insights_metric_type ..................... [RUN]
+[0m02:58:30.099418 [debug] [Thread-1 (]: Began compiling node test.adinsight.accepted_values_marketing_insights_metric_type__daily__author.811cd30360
+[0m02:58:30.101792 [debug] [Thread-2 (]: Began compiling node test.adinsight.dbt_utils_expression_is_true_marketing_insights_total_posts___0.cd9e2c0c36
+[0m02:58:30.103499 [debug] [Thread-3 (]: Acquiring new snowflake connection 'test.adinsight.not_null_marketing_insights_dimension.d7bb46140b'
+[0m02:58:30.121883 [debug] [Thread-3 (]: Began compiling node test.adinsight.not_null_marketing_insights_dimension.d7bb46140b
+[0m02:58:30.105278 [debug] [Thread-4 (]: Acquiring new snowflake connection 'test.adinsight.not_null_marketing_insights_metric_type.12ee70c52f'
+[0m02:58:30.160589 [debug] [Thread-4 (]: Began compiling node test.adinsight.not_null_marketing_insights_metric_type.12ee70c52f
+[0m02:58:30.185956 [debug] [Thread-1 (]: Writing injected SQL for node "test.adinsight.accepted_values_marketing_insights_metric_type__daily__author.811cd30360"
+[0m02:58:30.191482 [debug] [Thread-4 (]: Writing injected SQL for node "test.adinsight.not_null_marketing_insights_metric_type.12ee70c52f"
+[0m02:58:30.194783 [debug] [Thread-1 (]: Began executing node test.adinsight.accepted_values_marketing_insights_metric_type__daily__author.811cd30360
+[0m02:58:30.196011 [debug] [Thread-4 (]: Began executing node test.adinsight.not_null_marketing_insights_metric_type.12ee70c52f
+[0m02:58:30.235213 [debug] [Thread-3 (]: Writing injected SQL for node "test.adinsight.not_null_marketing_insights_dimension.d7bb46140b"
+[0m02:58:30.250359 [debug] [Thread-3 (]: Began executing node test.adinsight.not_null_marketing_insights_dimension.d7bb46140b
+[0m02:58:30.296448 [debug] [Thread-3 (]: Writing runtime sql for node "test.adinsight.not_null_marketing_insights_dimension.d7bb46140b"
+[0m02:58:30.299746 [debug] [Thread-3 (]: Using snowflake connection "test.adinsight.not_null_marketing_insights_dimension.d7bb46140b"
+[0m02:58:30.300726 [debug] [Thread-3 (]: On test.adinsight.not_null_marketing_insights_dimension.d7bb46140b: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "node_id": "test.adinsight.not_null_marketing_insights_dimension.d7bb46140b"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select dimension
+from ADINSIGHT_DB.public.marketing_insights
+where dimension is null
+
+
+
+      
+    ) dbt_internal_test
+[0m02:58:30.291412 [debug] [Thread-4 (]: Writing runtime sql for node "test.adinsight.not_null_marketing_insights_metric_type.12ee70c52f"
+[0m02:58:30.308401 [debug] [Thread-4 (]: Using snowflake connection "test.adinsight.not_null_marketing_insights_metric_type.12ee70c52f"
+[0m02:58:30.309386 [debug] [Thread-4 (]: On test.adinsight.not_null_marketing_insights_metric_type.12ee70c52f: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "node_id": "test.adinsight.not_null_marketing_insights_metric_type.12ee70c52f"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select metric_type
+from ADINSIGHT_DB.public.marketing_insights
+where metric_type is null
+
+
+
+      
+    ) dbt_internal_test
+[0m02:58:30.304151 [debug] [Thread-1 (]: Writing runtime sql for node "test.adinsight.accepted_values_marketing_insights_metric_type__daily__author.811cd30360"
+[0m02:58:30.306404 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m02:58:30.311689 [debug] [Thread-1 (]: Using snowflake connection "test.adinsight.accepted_values_marketing_insights_metric_type__daily__author.811cd30360"
+[0m02:58:30.310126 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m02:58:30.320037 [debug] [Thread-1 (]: On test.adinsight.accepted_values_marketing_insights_metric_type__daily__author.811cd30360: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "node_id": "test.adinsight.accepted_values_marketing_insights_metric_type__daily__author.811cd30360"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with all_values as (
+
+    select
+        metric_type as value_field,
+        count(*) as n_records
+
+    from ADINSIGHT_DB.public.marketing_insights
+    group by metric_type
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'daily','author'
+)
+
+
+
+      
+    ) dbt_internal_test
+[0m02:58:30.341624 [debug] [Thread-2 (]: Compilation Error in test dbt_utils_expression_is_true_marketing_insights_total_posts___0 (models/marts/schema.yml)
+  'dbt_utils' is undefined. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps".
+[0m02:58:30.352860 [error] [Thread-2 (]: 2 of 10 ERROR dbt_utils_expression_is_true_marketing_insights_total_posts___0 .. [[31mERROR[0m in 0.25s]
+[0m02:58:30.354095 [debug] [Thread-2 (]: Finished running node test.adinsight.dbt_utils_expression_is_true_marketing_insights_total_posts___0.cd9e2c0c36
+[0m02:58:30.355047 [debug] [Thread-2 (]: Began running node test.adinsight.not_null_marketing_insights_total_posts.ad0bcb26f0
+[0m02:58:30.356113 [info ] [Thread-2 (]: 5 of 10 START test not_null_marketing_insights_total_posts ..................... [RUN]
+[0m02:58:30.357148 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.adinsight.dbt_utils_expression_is_true_marketing_insights_total_posts___0.cd9e2c0c36, now test.adinsight.not_null_marketing_insights_total_posts.ad0bcb26f0)
+[0m02:58:30.357952 [debug] [Thread-2 (]: Began compiling node test.adinsight.not_null_marketing_insights_total_posts.ad0bcb26f0
+[0m02:58:30.365720 [debug] [Thread-2 (]: Writing injected SQL for node "test.adinsight.not_null_marketing_insights_total_posts.ad0bcb26f0"
+[0m02:58:30.367345 [debug] [Thread-2 (]: Began executing node test.adinsight.not_null_marketing_insights_total_posts.ad0bcb26f0
+[0m02:58:30.372570 [debug] [Thread-2 (]: Writing runtime sql for node "test.adinsight.not_null_marketing_insights_total_posts.ad0bcb26f0"
+[0m02:58:30.375823 [debug] [Thread-2 (]: Using snowflake connection "test.adinsight.not_null_marketing_insights_total_posts.ad0bcb26f0"
+[0m02:58:30.376743 [debug] [Thread-2 (]: On test.adinsight.not_null_marketing_insights_total_posts.ad0bcb26f0: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "node_id": "test.adinsight.not_null_marketing_insights_total_posts.ad0bcb26f0"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select total_posts
+from ADINSIGHT_DB.public.marketing_insights
+where total_posts is null
+
+
+
+      
+    ) dbt_internal_test
+[0m02:58:30.383007 [debug] [Thread-7 (]: Marking all children of 'test.adinsight.dbt_utils_expression_is_true_marketing_insights_total_posts___0.cd9e2c0c36' to be skipped because of status 'error'.  Reason: Compilation Error in test dbt_utils_expression_is_true_marketing_insights_total_posts___0 (models/marts/schema.yml)
+  'dbt_utils' is undefined. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps"..
+[0m02:58:31.103623 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.760 seconds
+[0m02:58:31.131630 [info ] [Thread-1 (]: 1 of 10 PASS accepted_values_marketing_insights_metric_type__daily__author ..... [[32mPASS[0m in 1.04s]
+[0m02:58:31.132940 [debug] [Thread-1 (]: Finished running node test.adinsight.accepted_values_marketing_insights_metric_type__daily__author.811cd30360
+[0m02:58:31.133908 [debug] [Thread-1 (]: Began running node test.adinsight.not_null_stg_reddit_posts_created_utc.bdb23006a5
+[0m02:58:31.134665 [info ] [Thread-1 (]: 6 of 10 START test not_null_stg_reddit_posts_created_utc ....................... [RUN]
+[0m02:58:31.135732 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.adinsight.accepted_values_marketing_insights_metric_type__daily__author.811cd30360, now test.adinsight.not_null_stg_reddit_posts_created_utc.bdb23006a5)
+[0m02:58:31.136604 [debug] [Thread-1 (]: Began compiling node test.adinsight.not_null_stg_reddit_posts_created_utc.bdb23006a5
+[0m02:58:31.144437 [debug] [Thread-1 (]: Writing injected SQL for node "test.adinsight.not_null_stg_reddit_posts_created_utc.bdb23006a5"
+[0m02:58:31.150965 [debug] [Thread-1 (]: Began executing node test.adinsight.not_null_stg_reddit_posts_created_utc.bdb23006a5
+[0m02:58:31.161375 [debug] [Thread-1 (]: Writing runtime sql for node "test.adinsight.not_null_stg_reddit_posts_created_utc.bdb23006a5"
+[0m02:58:31.164738 [debug] [Thread-1 (]: Using snowflake connection "test.adinsight.not_null_stg_reddit_posts_created_utc.bdb23006a5"
+[0m02:58:31.170078 [debug] [Thread-1 (]: On test.adinsight.not_null_stg_reddit_posts_created_utc.bdb23006a5: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "node_id": "test.adinsight.not_null_stg_reddit_posts_created_utc.bdb23006a5"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select created_utc
+from ADINSIGHT_DB.public_analytics.stg_reddit_posts
+where created_utc is null
+
+
+
+      
+    ) dbt_internal_test
+[0m02:58:31.176388 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.799 seconds
+[0m02:58:31.181514 [info ] [Thread-2 (]: 5 of 10 PASS not_null_marketing_insights_total_posts ........................... [[32mPASS[0m in 0.82s]
+[0m02:58:31.183829 [debug] [Thread-2 (]: Finished running node test.adinsight.not_null_marketing_insights_total_posts.ad0bcb26f0
+[0m02:58:31.184644 [debug] [Thread-2 (]: Began running node test.adinsight.not_null_stg_reddit_posts_id.891bfe3601
+[0m02:58:31.186462 [info ] [Thread-2 (]: 7 of 10 START test not_null_stg_reddit_posts_id ................................ [RUN]
+[0m02:58:31.189590 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.adinsight.not_null_marketing_insights_total_posts.ad0bcb26f0, now test.adinsight.not_null_stg_reddit_posts_id.891bfe3601)
+[0m02:58:31.190698 [debug] [Thread-2 (]: Began compiling node test.adinsight.not_null_stg_reddit_posts_id.891bfe3601
+[0m02:58:31.220307 [debug] [Thread-2 (]: Writing injected SQL for node "test.adinsight.not_null_stg_reddit_posts_id.891bfe3601"
+[0m02:58:31.221508 [debug] [Thread-2 (]: Began executing node test.adinsight.not_null_stg_reddit_posts_id.891bfe3601
+[0m02:58:31.250685 [debug] [Thread-2 (]: Writing runtime sql for node "test.adinsight.not_null_stg_reddit_posts_id.891bfe3601"
+[0m02:58:31.252869 [debug] [Thread-2 (]: Using snowflake connection "test.adinsight.not_null_stg_reddit_posts_id.891bfe3601"
+[0m02:58:31.253845 [debug] [Thread-2 (]: On test.adinsight.not_null_stg_reddit_posts_id.891bfe3601: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "node_id": "test.adinsight.not_null_stg_reddit_posts_id.891bfe3601"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select id
+from ADINSIGHT_DB.public_analytics.stg_reddit_posts
+where id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m02:58:31.618086 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.363 seconds
+[0m02:58:31.622258 [info ] [Thread-2 (]: 7 of 10 PASS not_null_stg_reddit_posts_id ...................................... [[32mPASS[0m in 0.43s]
+[0m02:58:31.623339 [debug] [Thread-2 (]: Finished running node test.adinsight.not_null_stg_reddit_posts_id.891bfe3601
+[0m02:58:31.624390 [debug] [Thread-2 (]: Began running node test.adinsight.not_null_stg_reddit_posts_loaded_at.e46226b0e4
+[0m02:58:31.629107 [info ] [Thread-2 (]: 8 of 10 START test not_null_stg_reddit_posts_loaded_at ......................... [RUN]
+[0m02:58:31.630968 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.adinsight.not_null_stg_reddit_posts_id.891bfe3601, now test.adinsight.not_null_stg_reddit_posts_loaded_at.e46226b0e4)
+[0m02:58:31.631752 [debug] [Thread-2 (]: Began compiling node test.adinsight.not_null_stg_reddit_posts_loaded_at.e46226b0e4
+[0m02:58:31.646932 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.474 seconds
+[0m02:58:31.640159 [debug] [Thread-2 (]: Writing injected SQL for node "test.adinsight.not_null_stg_reddit_posts_loaded_at.e46226b0e4"
+[0m02:58:31.649493 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 1.339 seconds
+[0m02:58:31.657568 [debug] [Thread-2 (]: Began executing node test.adinsight.not_null_stg_reddit_posts_loaded_at.e46226b0e4
+[0m02:58:31.656354 [info ] [Thread-1 (]: 6 of 10 PASS not_null_stg_reddit_posts_created_utc ............................. [[32mPASS[0m in 0.52s]
+[0m02:58:31.684613 [debug] [Thread-1 (]: Finished running node test.adinsight.not_null_stg_reddit_posts_created_utc.bdb23006a5
+[0m02:58:31.685515 [debug] [Thread-1 (]: Began running node test.adinsight.not_null_stg_reddit_posts_title.871b671fe7
+[0m02:58:31.686906 [info ] [Thread-1 (]: 9 of 10 START test not_null_stg_reddit_posts_title ............................. [RUN]
+[0m02:58:31.698583 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.adinsight.not_null_stg_reddit_posts_created_utc.bdb23006a5, now test.adinsight.not_null_stg_reddit_posts_title.871b671fe7)
+[0m02:58:31.695367 [info ] [Thread-4 (]: 4 of 10 PASS not_null_marketing_insights_metric_type ........................... [[32mPASS[0m in 1.56s]
+[0m02:58:31.694735 [debug] [Thread-2 (]: Writing runtime sql for node "test.adinsight.not_null_stg_reddit_posts_loaded_at.e46226b0e4"
+[0m02:58:31.700065 [debug] [Thread-1 (]: Began compiling node test.adinsight.not_null_stg_reddit_posts_title.871b671fe7
+[0m02:58:31.701840 [debug] [Thread-4 (]: Finished running node test.adinsight.not_null_marketing_insights_metric_type.12ee70c52f
+[0m02:58:31.718018 [debug] [Thread-4 (]: Began running node test.adinsight.unique_stg_reddit_posts_id.25f18f76d6
+[0m02:58:31.713637 [debug] [Thread-1 (]: Writing injected SQL for node "test.adinsight.not_null_stg_reddit_posts_title.871b671fe7"
+[0m02:58:31.719775 [debug] [Thread-1 (]: Began executing node test.adinsight.not_null_stg_reddit_posts_title.871b671fe7
+[0m02:58:31.715510 [debug] [Thread-2 (]: Using snowflake connection "test.adinsight.not_null_stg_reddit_posts_loaded_at.e46226b0e4"
+[0m02:58:31.724346 [debug] [Thread-1 (]: Writing runtime sql for node "test.adinsight.not_null_stg_reddit_posts_title.871b671fe7"
+[0m02:58:31.718960 [info ] [Thread-4 (]: 10 of 10 START test unique_stg_reddit_posts_id ................................. [RUN]
+[0m02:58:31.725454 [debug] [Thread-2 (]: On test.adinsight.not_null_stg_reddit_posts_loaded_at.e46226b0e4: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "node_id": "test.adinsight.not_null_stg_reddit_posts_loaded_at.e46226b0e4"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select loaded_at
+from ADINSIGHT_DB.public_analytics.stg_reddit_posts
+where loaded_at is null
+
+
+
+      
+    ) dbt_internal_test
+[0m02:58:31.734113 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.adinsight.not_null_marketing_insights_metric_type.12ee70c52f, now test.adinsight.unique_stg_reddit_posts_id.25f18f76d6)
+[0m02:58:31.737405 [debug] [Thread-4 (]: Began compiling node test.adinsight.unique_stg_reddit_posts_id.25f18f76d6
+[0m02:58:31.744319 [debug] [Thread-1 (]: Using snowflake connection "test.adinsight.not_null_stg_reddit_posts_title.871b671fe7"
+[0m02:58:31.745334 [debug] [Thread-1 (]: On test.adinsight.not_null_stg_reddit_posts_title.871b671fe7: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "node_id": "test.adinsight.not_null_stg_reddit_posts_title.871b671fe7"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select title
+from ADINSIGHT_DB.public_analytics.stg_reddit_posts
+where title is null
+
+
+
+      
+    ) dbt_internal_test
+[0m02:58:31.756511 [debug] [Thread-4 (]: Writing injected SQL for node "test.adinsight.unique_stg_reddit_posts_id.25f18f76d6"
+[0m02:58:31.757777 [debug] [Thread-4 (]: Began executing node test.adinsight.unique_stg_reddit_posts_id.25f18f76d6
+[0m02:58:31.769745 [debug] [Thread-4 (]: Writing runtime sql for node "test.adinsight.unique_stg_reddit_posts_id.25f18f76d6"
+[0m02:58:31.771806 [debug] [Thread-4 (]: Using snowflake connection "test.adinsight.unique_stg_reddit_posts_id.25f18f76d6"
+[0m02:58:31.773017 [debug] [Thread-4 (]: On test.adinsight.unique_stg_reddit_posts_id.25f18f76d6: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "node_id": "test.adinsight.unique_stg_reddit_posts_id.25f18f76d6"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    id as unique_field,
+    count(*) as n_records
+
+from ADINSIGHT_DB.public_analytics.stg_reddit_posts
+where id is not null
+group by id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m02:58:31.779654 [debug] [Thread-3 (]: Snowflake adapter: Snowflake query id: 01bc6b3e-0000-247f-0000-000060e59025
+[0m02:58:31.780945 [debug] [Thread-3 (]: Snowflake adapter: Snowflake error: 100035 (22007): Timestamp 'AutoModerator' is not recognized
+[0m02:58:31.786334 [debug] [Thread-3 (]: Database Error in test not_null_marketing_insights_dimension (models/marts/schema.yml)
+  100035 (22007): Timestamp 'AutoModerator' is not recognized
+  compiled code at target/run/adinsight/models/marts/schema.yml/not_null_marketing_insights_dimension.sql
+[0m02:58:31.787746 [error] [Thread-3 (]: 3 of 10 ERROR not_null_marketing_insights_dimension ............................ [[31mERROR[0m in 1.68s]
+[0m02:58:31.789067 [debug] [Thread-3 (]: Finished running node test.adinsight.not_null_marketing_insights_dimension.d7bb46140b
+[0m02:58:31.790541 [debug] [Thread-7 (]: Marking all children of 'test.adinsight.not_null_marketing_insights_dimension.d7bb46140b' to be skipped because of status 'error'.  Reason: Database Error in test not_null_marketing_insights_dimension (models/marts/schema.yml)
+  100035 (22007): Timestamp 'AutoModerator' is not recognized
+  compiled code at target/run/adinsight/models/marts/schema.yml/not_null_marketing_insights_dimension.sql.
+[0m02:58:31.937783 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.190 seconds
+[0m02:58:31.958184 [info ] [Thread-1 (]: 9 of 10 PASS not_null_stg_reddit_posts_title ................................... [[32mPASS[0m in 0.26s]
+[0m02:58:31.959671 [debug] [Thread-1 (]: Finished running node test.adinsight.not_null_stg_reddit_posts_title.871b671fe7
+[0m02:58:31.963769 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.228 seconds
+[0m02:58:31.967773 [info ] [Thread-2 (]: 8 of 10 PASS not_null_stg_reddit_posts_loaded_at ............................... [[32mPASS[0m in 0.34s]
+[0m02:58:31.970827 [debug] [Thread-2 (]: Finished running node test.adinsight.not_null_stg_reddit_posts_loaded_at.e46226b0e4
+[0m02:58:31.982898 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.209 seconds
+[0m02:58:31.989616 [info ] [Thread-4 (]: 10 of 10 PASS unique_stg_reddit_posts_id ....................................... [[32mPASS[0m in 0.26s]
+[0m02:58:31.990996 [debug] [Thread-4 (]: Finished running node test.adinsight.unique_stg_reddit_posts_id.25f18f76d6
+[0m02:58:32.004669 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m02:58:32.005821 [debug] [MainThread]: Connection 'test.adinsight.not_null_stg_reddit_posts_title.871b671fe7' was left open.
+[0m02:58:32.007753 [debug] [MainThread]: On test.adinsight.not_null_stg_reddit_posts_title.871b671fe7: Close
+[0m02:58:32.256357 [debug] [MainThread]: Connection 'test.adinsight.not_null_stg_reddit_posts_loaded_at.e46226b0e4' was left open.
+[0m02:58:32.257477 [debug] [MainThread]: On test.adinsight.not_null_stg_reddit_posts_loaded_at.e46226b0e4: Close
+[0m02:58:32.493062 [debug] [MainThread]: Connection 'test.adinsight.not_null_marketing_insights_dimension.d7bb46140b' was left open.
+[0m02:58:32.494721 [debug] [MainThread]: On test.adinsight.not_null_marketing_insights_dimension.d7bb46140b: Close
+[0m02:58:32.787731 [debug] [MainThread]: Connection 'test.adinsight.unique_stg_reddit_posts_id.25f18f76d6' was left open.
+[0m02:58:32.789012 [debug] [MainThread]: On test.adinsight.unique_stg_reddit_posts_id.25f18f76d6: Close
+[0m02:58:33.084137 [info ] [MainThread]: 
+[0m02:58:33.174313 [info ] [MainThread]: Finished running 10 data tests in 0 hours 0 minutes and 5.99 seconds (5.99s).
+[0m02:58:33.179734 [debug] [MainThread]: Command end result
+[0m02:58:33.565512 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anwar/AdInsight360/target/manifest.json
+[0m02:58:33.568825 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anwar/AdInsight360/target/semantic_manifest.json
+[0m02:58:33.647462 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/anwar/AdInsight360/target/run_results.json
+[0m02:58:33.648339 [info ] [MainThread]: 
+[0m02:58:33.655518 [info ] [MainThread]: [31mCompleted with 2 errors, 0 partial successes, and 0 warnings:[0m
+[0m02:58:33.657849 [info ] [MainThread]: 
+[0m02:58:33.661442 [error] [MainThread]:   Compilation Error in test dbt_utils_expression_is_true_marketing_insights_total_posts___0 (models/marts/schema.yml)
+  'dbt_utils' is undefined. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps".
+[0m02:58:33.699689 [info ] [MainThread]: 
+[0m02:58:33.701398 [error] [MainThread]:   Database Error in test not_null_marketing_insights_dimension (models/marts/schema.yml)
+  100035 (22007): Timestamp 'AutoModerator' is not recognized
+  compiled code at target/run/adinsight/models/marts/schema.yml/not_null_marketing_insights_dimension.sql
+[0m02:58:33.702394 [info ] [MainThread]: 
+[0m02:58:33.703283 [info ] [MainThread]: Done. PASS=8 WARN=0 ERROR=2 SKIP=0 TOTAL=10
+[0m02:58:33.707595 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": false, "command_wall_clock_time": 11.798919, "process_in_blocks": "86568", "process_kernel_time": 0.654397, "process_mem_max_rss": "221988", "process_out_blocks": "2512", "process_user_time": 4.858689}
+[0m02:58:33.709290 [debug] [MainThread]: Command `dbt test` failed at 02:58:33.709017 after 11.80 seconds
+[0m02:58:33.710356 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdc7598e0d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdc7598d5d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdc7598e250>]}
+[0m02:58:33.711312 [debug] [MainThread]: Flushing usage events
+[0m02:58:34.498590 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:58:58.195699 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1646200250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1646503d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f164675b950>]}
+
+
+============================== 02:58:58.220190 | b141aa14-216d-4e2a-ba36-cf33500755bd ==============================
+[0m02:58:58.220190 [info ] [MainThread]: Running with dbt=1.9.4
+[0m02:58:58.237960 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/anwar/.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': '/home/anwar/AdInsight360/logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt docs generate', 'send_anonymous_usage_stats': 'True'}
+[0m02:59:02.681381 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b141aa14-216d-4e2a-ba36-cf33500755bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1646203c50>]}
+[0m02:59:02.775415 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b141aa14-216d-4e2a-ba36-cf33500755bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1629895ad0>]}
+[0m02:59:02.777192 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+[0m02:59:03.248713 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m02:59:04.329597 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m02:59:04.330528 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m02:59:04.400058 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b141aa14-216d-4e2a-ba36-cf33500755bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1629489fd0>]}
+[0m02:59:04.985681 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b141aa14-216d-4e2a-ba36-cf33500755bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f162937bed0>]}
+[0m02:59:04.987720 [info ] [MainThread]: Found 2 models, 10 data tests, 1 source, 476 macros
+[0m02:59:04.990018 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b141aa14-216d-4e2a-ba36-cf33500755bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1629516350>]}
+[0m02:59:05.003190 [info ] [MainThread]: 
+[0m02:59:05.004558 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m02:59:05.018932 [info ] [MainThread]: 
+[0m02:59:05.020616 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m02:59:05.022657 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ADINSIGHT_DB_public_analytics'
+[0m02:59:05.028853 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ADINSIGHT_DB_public'
+[0m02:59:05.831189 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB_public"
+[0m02:59:05.832124 [debug] [ThreadPool]: On list_ADINSIGHT_DB_public: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB_public"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m02:59:05.834428 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m02:59:05.833529 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB_public_analytics"
+[0m02:59:05.835622 [debug] [ThreadPool]: On list_ADINSIGHT_DB_public_analytics: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB_public_analytics"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m02:59:05.836363 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m02:59:08.828926 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 2.992 seconds
+[0m02:59:08.832716 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 2.998 seconds
+[0m02:59:08.845979 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB_public_analytics"
+[0m02:59:08.847400 [debug] [ThreadPool]: On list_ADINSIGHT_DB_public_analytics: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB_public_analytics"} */
+show objects in ADINSIGHT_DB.public_analytics
+    limit 10000
+    
+;
+[0m02:59:08.845331 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB_public"
+[0m02:59:08.850286 [debug] [ThreadPool]: On list_ADINSIGHT_DB_public: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB_public"} */
+show objects in ADINSIGHT_DB.public
+    limit 10000
+    
+;
+[0m02:59:09.058885 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.208 seconds
+[0m02:59:09.060474 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.212 seconds
+[0m02:59:09.063456 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB_public"
+[0m02:59:09.072728 [debug] [ThreadPool]: On list_ADINSIGHT_DB_public: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB_public"} */
+alter session unset quoted_identifiers_ignore_case;
+[0m02:59:09.069596 [debug] [ThreadPool]: Using snowflake connection "list_ADINSIGHT_DB_public_analytics"
+[0m02:59:09.073740 [debug] [ThreadPool]: On list_ADINSIGHT_DB_public_analytics: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "adinsight360", "target_name": "dev", "connection_name": "list_ADINSIGHT_DB_public_analytics"} */
+alter session unset quoted_identifiers_ignore_case;
+[0m02:59:09.314497 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.240 seconds
+[0m02:59:09.315889 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.242 seconds
+[0m02:59:09.323518 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b141aa14-216d-4e2a-ba36-cf33500755bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f16295c5d10>]}
+[0m02:59:09.346108 [debug] [Thread-1 (]: Began running node model.adinsight.stg_reddit_posts
+[0m02:59:09.349396 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_ADINSIGHT_DB_public, now model.adinsight.stg_reddit_posts)
+[0m02:59:09.352621 [debug] [Thread-1 (]: Began compiling node model.adinsight.stg_reddit_posts
+[0m02:59:09.372995 [debug] [Thread-1 (]: Writing injected SQL for node "model.adinsight.stg_reddit_posts"
+[0m02:59:09.375975 [debug] [Thread-1 (]: Began executing node model.adinsight.stg_reddit_posts
+[0m02:59:09.377516 [debug] [Thread-1 (]: Finished running node model.adinsight.stg_reddit_posts
+[0m02:59:09.379487 [debug] [Thread-3 (]: Began running node model.adinsight.marketing_insights
+[0m02:59:09.382136 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.adinsight.marketing_insights'
+[0m02:59:09.381118 [debug] [Thread-2 (]: Began running node test.adinsight.not_null_stg_reddit_posts_id.891bfe3601
+[0m02:59:09.383726 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_ADINSIGHT_DB_public_analytics, now test.adinsight.not_null_stg_reddit_posts_id.891bfe3601)
+[0m02:59:09.384467 [debug] [Thread-2 (]: Began compiling node test.adinsight.not_null_stg_reddit_posts_id.891bfe3601
+[0m02:59:09.382880 [debug] [Thread-3 (]: Began compiling node model.adinsight.marketing_insights
+[0m02:59:09.380377 [debug] [Thread-4 (]: Began running node test.adinsight.not_null_stg_reddit_posts_created_utc.bdb23006a5
+[0m02:59:09.391660 [debug] [Thread-1 (]: Began running node test.adinsight.not_null_stg_reddit_posts_loaded_at.e46226b0e4
+[0m02:59:09.397547 [debug] [Thread-3 (]: Writing injected SQL for node "model.adinsight.marketing_insights"
+[0m02:59:09.407298 [debug] [Thread-4 (]: Acquiring new snowflake connection 'test.adinsight.not_null_stg_reddit_posts_created_utc.bdb23006a5'
+[0m02:59:09.414410 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.adinsight.stg_reddit_posts, now test.adinsight.not_null_stg_reddit_posts_loaded_at.e46226b0e4)
+[0m02:59:09.415382 [debug] [Thread-2 (]: Writing injected SQL for node "test.adinsight.not_null_stg_reddit_posts_id.891bfe3601"
+[0m02:59:09.416837 [debug] [Thread-3 (]: Began executing node model.adinsight.marketing_insights
+[0m02:59:09.418211 [debug] [Thread-4 (]: Began compiling node test.adinsight.not_null_stg_reddit_posts_created_utc.bdb23006a5
+[0m02:59:09.419114 [debug] [Thread-1 (]: Began compiling node test.adinsight.not_null_stg_reddit_posts_loaded_at.e46226b0e4
+[0m02:59:09.420503 [debug] [Thread-3 (]: Finished running node model.adinsight.marketing_insights
+[0m02:59:09.449052 [debug] [Thread-3 (]: Began running node test.adinsight.not_null_stg_reddit_posts_title.871b671fe7
+[0m02:59:09.433903 [debug] [Thread-2 (]: Began executing node test.adinsight.not_null_stg_reddit_posts_id.891bfe3601
+[0m02:59:09.450607 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.adinsight.marketing_insights, now test.adinsight.not_null_stg_reddit_posts_title.871b671fe7)
+[0m02:59:09.432842 [debug] [Thread-4 (]: Writing injected SQL for node "test.adinsight.not_null_stg_reddit_posts_created_utc.bdb23006a5"
+[0m02:59:09.457012 [debug] [Thread-4 (]: Began executing node test.adinsight.not_null_stg_reddit_posts_created_utc.bdb23006a5
+[0m02:59:09.454057 [debug] [Thread-2 (]: Finished running node test.adinsight.not_null_stg_reddit_posts_id.891bfe3601
+[0m02:59:09.460058 [debug] [Thread-2 (]: Began running node test.adinsight.unique_stg_reddit_posts_id.25f18f76d6
+[0m02:59:09.448064 [debug] [Thread-1 (]: Writing injected SQL for node "test.adinsight.not_null_stg_reddit_posts_loaded_at.e46226b0e4"
+[0m02:59:09.458916 [debug] [Thread-4 (]: Finished running node test.adinsight.not_null_stg_reddit_posts_created_utc.bdb23006a5
+[0m02:59:09.455449 [debug] [Thread-3 (]: Began compiling node test.adinsight.not_null_stg_reddit_posts_title.871b671fe7
+[0m02:59:09.461778 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.adinsight.not_null_stg_reddit_posts_id.891bfe3601, now test.adinsight.unique_stg_reddit_posts_id.25f18f76d6)
+[0m02:59:09.464566 [debug] [Thread-4 (]: Began running node test.adinsight.accepted_values_marketing_insights_metric_type__daily__author.811cd30360
+[0m02:59:09.478954 [debug] [Thread-3 (]: Writing injected SQL for node "test.adinsight.not_null_stg_reddit_posts_title.871b671fe7"
+[0m02:59:09.483813 [debug] [Thread-2 (]: Began compiling node test.adinsight.unique_stg_reddit_posts_id.25f18f76d6
+[0m02:59:09.485697 [debug] [Thread-1 (]: Began executing node test.adinsight.not_null_stg_reddit_posts_loaded_at.e46226b0e4
+[0m02:59:09.487633 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.adinsight.not_null_stg_reddit_posts_created_utc.bdb23006a5, now test.adinsight.accepted_values_marketing_insights_metric_type__daily__author.811cd30360)
+[0m02:59:09.499378 [debug] [Thread-4 (]: Began compiling node test.adinsight.accepted_values_marketing_insights_metric_type__daily__author.811cd30360
+[0m02:59:09.498524 [debug] [Thread-1 (]: Finished running node test.adinsight.not_null_stg_reddit_posts_loaded_at.e46226b0e4
+[0m02:59:09.507564 [debug] [Thread-3 (]: Began executing node test.adinsight.not_null_stg_reddit_posts_title.871b671fe7
+[0m02:59:09.518021 [debug] [Thread-2 (]: Writing injected SQL for node "test.adinsight.unique_stg_reddit_posts_id.25f18f76d6"
+[0m02:59:09.529679 [debug] [Thread-1 (]: Began running node test.adinsight.dbt_utils_expression_is_true_marketing_insights_total_posts___0.cd9e2c0c36
+[0m02:59:09.551170 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.adinsight.not_null_stg_reddit_posts_loaded_at.e46226b0e4, now test.adinsight.dbt_utils_expression_is_true_marketing_insights_total_posts___0.cd9e2c0c36)
+[0m02:59:09.552009 [debug] [Thread-1 (]: Began compiling node test.adinsight.dbt_utils_expression_is_true_marketing_insights_total_posts___0.cd9e2c0c36
+[0m02:59:09.536194 [debug] [Thread-4 (]: Writing injected SQL for node "test.adinsight.accepted_values_marketing_insights_metric_type__daily__author.811cd30360"
+[0m02:59:09.549640 [debug] [Thread-2 (]: Began executing node test.adinsight.unique_stg_reddit_posts_id.25f18f76d6
+[0m02:59:09.537738 [debug] [Thread-3 (]: Finished running node test.adinsight.not_null_stg_reddit_posts_title.871b671fe7
+[0m02:59:09.569537 [debug] [Thread-3 (]: Began running node test.adinsight.not_null_marketing_insights_dimension.d7bb46140b
+[0m02:59:09.570342 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.adinsight.not_null_stg_reddit_posts_title.871b671fe7, now test.adinsight.not_null_marketing_insights_dimension.d7bb46140b)
+[0m02:59:09.570981 [debug] [Thread-3 (]: Began compiling node test.adinsight.not_null_marketing_insights_dimension.d7bb46140b
+[0m02:59:09.566211 [debug] [Thread-4 (]: Began executing node test.adinsight.accepted_values_marketing_insights_metric_type__daily__author.811cd30360
+[0m02:59:09.580938 [debug] [Thread-4 (]: Finished running node test.adinsight.accepted_values_marketing_insights_metric_type__daily__author.811cd30360
+[0m02:59:09.579364 [debug] [Thread-3 (]: Writing injected SQL for node "test.adinsight.not_null_marketing_insights_dimension.d7bb46140b"
+[0m02:59:09.582026 [debug] [Thread-4 (]: Began running node test.adinsight.not_null_marketing_insights_metric_type.12ee70c52f
+[0m02:59:09.584171 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.adinsight.accepted_values_marketing_insights_metric_type__daily__author.811cd30360, now test.adinsight.not_null_marketing_insights_metric_type.12ee70c52f)
+[0m02:59:09.583220 [debug] [Thread-3 (]: Began executing node test.adinsight.not_null_marketing_insights_dimension.d7bb46140b
+[0m02:59:09.568620 [debug] [Thread-2 (]: Finished running node test.adinsight.unique_stg_reddit_posts_id.25f18f76d6
+[0m02:59:09.584955 [debug] [Thread-4 (]: Began compiling node test.adinsight.not_null_marketing_insights_metric_type.12ee70c52f
+[0m02:59:09.586416 [debug] [Thread-3 (]: Finished running node test.adinsight.not_null_marketing_insights_dimension.d7bb46140b
+[0m02:59:09.588853 [debug] [Thread-2 (]: Began running node test.adinsight.not_null_marketing_insights_total_posts.ad0bcb26f0
+[0m02:59:09.604311 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.adinsight.unique_stg_reddit_posts_id.25f18f76d6, now test.adinsight.not_null_marketing_insights_total_posts.ad0bcb26f0)
+[0m02:59:09.602720 [debug] [Thread-4 (]: Writing injected SQL for node "test.adinsight.not_null_marketing_insights_metric_type.12ee70c52f"
+[0m02:59:09.607650 [debug] [Thread-4 (]: Began executing node test.adinsight.not_null_marketing_insights_metric_type.12ee70c52f
+[0m02:59:09.605466 [debug] [Thread-2 (]: Began compiling node test.adinsight.not_null_marketing_insights_total_posts.ad0bcb26f0
+[0m02:59:09.632374 [debug] [Thread-1 (]: Compilation Error in test dbt_utils_expression_is_true_marketing_insights_total_posts___0 (models/marts/schema.yml)
+  'dbt_utils' is undefined. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps".
+[0m02:59:09.609010 [debug] [Thread-4 (]: Finished running node test.adinsight.not_null_marketing_insights_metric_type.12ee70c52f
+[0m02:59:09.633130 [debug] [Thread-2 (]: Writing injected SQL for node "test.adinsight.not_null_marketing_insights_total_posts.ad0bcb26f0"
+[0m02:59:09.635179 [debug] [Thread-2 (]: Began executing node test.adinsight.not_null_marketing_insights_total_posts.ad0bcb26f0
+[0m02:59:09.636269 [debug] [Thread-2 (]: Finished running node test.adinsight.not_null_marketing_insights_total_posts.ad0bcb26f0
+[0m02:59:09.634135 [debug] [Thread-1 (]: Finished running node test.adinsight.dbt_utils_expression_is_true_marketing_insights_total_posts___0.cd9e2c0c36
+[0m02:59:09.637470 [debug] [Thread-7 (]: Marking all children of 'test.adinsight.dbt_utils_expression_is_true_marketing_insights_total_posts___0.cd9e2c0c36' to be skipped because of status 'error'.  Reason: Compilation Error in test dbt_utils_expression_is_true_marketing_insights_total_posts___0 (models/marts/schema.yml)
+  'dbt_utils' is undefined. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps"..
+[0m02:59:09.638750 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m02:59:09.639632 [debug] [MainThread]: Connection 'test.adinsight.not_null_marketing_insights_total_posts.ad0bcb26f0' was left open.
+[0m02:59:09.640323 [debug] [MainThread]: On test.adinsight.not_null_marketing_insights_total_posts.ad0bcb26f0: Close
+[0m02:59:09.879370 [debug] [MainThread]: Connection 'test.adinsight.dbt_utils_expression_is_true_marketing_insights_total_posts___0.cd9e2c0c36' was left open.
+[0m02:59:09.880285 [debug] [MainThread]: On test.adinsight.dbt_utils_expression_is_true_marketing_insights_total_posts___0.cd9e2c0c36: Close
+[0m02:59:10.109782 [debug] [MainThread]: Connection 'test.adinsight.not_null_marketing_insights_dimension.d7bb46140b' was properly closed.
+[0m02:59:10.110635 [debug] [MainThread]: Connection 'test.adinsight.not_null_marketing_insights_metric_type.12ee70c52f' was properly closed.
+[0m02:59:10.111707 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Compilation Error in test dbt_utils_expression_is_true_marketing_insights_total_posts___0 (models/marts/schema.yml)
+    'dbt_utils' is undefined. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps".
+[0m02:59:10.114790 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": false, "command_wall_clock_time": 12.032518, "process_in_blocks": "161416", "process_kernel_time": 0.729894, "process_mem_max_rss": "218732", "process_out_blocks": "344", "process_user_time": 4.353982}
+[0m02:59:10.116814 [debug] [MainThread]: Command `dbt docs generate` failed at 02:59:10.116455 after 12.03 seconds
+[0m02:59:10.118293 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1646255e90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f164a1ed550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f164a07bb90>]}
+[0m02:59:10.119576 [debug] [MainThread]: Flushing usage events
+[0m02:59:11.039527 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:59:15.120278 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6395b80110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6395b7bad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6395b800d0>]}
+
+
+============================== 02:59:15.128822 | 62853f74-8b66-424f-a568-95ac1ccf9cca ==============================
+[0m02:59:15.128822 [info ] [MainThread]: Running with dbt=1.9.4
+[0m02:59:15.130052 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/anwar/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/home/anwar/AdInsight360/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt docs serve --port 8081', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m02:59:16.685126 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '62853f74-8b66-424f-a568-95ac1ccf9cca', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f637915aad0>]}
+[0m02:59:16.807923 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '62853f74-8b66-424f-a568-95ac1ccf9cca', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f63966eced0>]}
