@@ -122,24 +122,16 @@ dag = DAG(
     start_date=datetime(2025, 5, 17),  
     max_active_runs=MAX_ACTIVE_RUNS,
     tags=['reddit', 'marketing', 'snowflake', 'dbt'],
-    doc_md="""
-    # Reddit Marketing Data Pipeline
-    
-    This DAG orchestrates the following tasks:
-    1. Extracts marketing data from Reddit
-    2. Loads the data into Snowflake
-    3. Transforms the data using dbt models
-    4. Runs data quality tests
-    
-    ## Dependencies
-    - Reddit API credentials in .env file
-    - Snowflake connection configured in Airflow
-    - dbt project setup with profile configuration
-    
-    ## Schedule
-    Runs every 4 hours to provide regular updates to marketing analytics
-    """,
 )
+
+
+
+
+
+
+
+
+
 
 # Task 1: Extract Reddit data
 extract_task = PythonOperator(
