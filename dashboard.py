@@ -36,7 +36,7 @@ sys.path.append(str(config_path))
 try:
     from local_db import DB_CONFIG
 except ImportError:
-    st.error("Mlocal_db.py'DB_CONFIG.")
+    st.error("Missing database configuration. Please create the file 'streamlit/config/local_db.py' with your DB_CONFIG.")
     st.stop()
 
 # Session state initialization
@@ -160,7 +160,7 @@ def extract_topics(text_series, n_top_words=10, n_topics=5):
         text = re.sub(r'\d+', '', text)  
         cleaned_texts.append(text)
     
-
+    # Initialize CountVectorizer
     stop_words = set(stopwords.words('english'))
     stop_words.update(['reddit', 'post', 'comment', 'like'])
     vectorizer = CountVectorizer(
@@ -214,7 +214,7 @@ def metric_card(title, value, delta=None, delta_color="normal", help=None):
 # Title with logo
 col1, col2, col3 = st.columns([1, 3, 1])
 with col2:
-    st.markdown('<h1 class="main-header"> AdInsight360 </h1>', unsafe_allow_html=True)
+    st.markdown('<h1 class="main-header">🚀 AdInsight360 PRO</h1>', unsafe_allow_html=True)
     st.markdown("""
     <p style="text-align:center; font-size:1.2rem; margin-bottom:30px;">
     Advanced Reddit Marketing Analytics Platform | Real-time Insights & AI-Powered Recommendations
@@ -222,11 +222,11 @@ with col2:
     """, unsafe_allow_html=True)
 
 # Create tabs for different analytics sections using custom styling
-tabs = [" Marketing Dashboard", " Content Intelligence", "Sentiment Analysis", "Competitor Analysis", " AI Recommendations"]
+tabs = ["📈 Marketing Dashboard", "🔍 Content Intelligence", "🧠 Sentiment Analysis", "🎯 Competitor Analysis", "🤖 AI Recommendations"]
 selected_tab = st.radio("Navigation", tabs, horizontal=True, label_visibility="collapsed")
 
 # Display appropriate content based on selected tab
-if selected_tab == " Marketing Dashboard":
+if selected_tab == "📈 Marketing Dashboard":
     st.markdown('<h2 class="sub-header">Marketing Performance Overview</h2>', unsafe_allow_html=True)
     
     with st.sidebar:

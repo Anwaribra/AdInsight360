@@ -21,7 +21,7 @@ The system consists of several key components:
 
 ## Live Demo
 
-🔗 **[Try the live demo](https://redditinsight360.streamlit.app/)**
+🔗 **[Try the live demo](https://redditinsight-360.streamlit.app/)**
 
 Experience the interactive dashboard and analytics features in action!
 

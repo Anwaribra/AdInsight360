@@ -2,7 +2,7 @@
 streamlit==1.31.0
 praw==7.7.1
 python-dotenv==1.0.0
-
+wordcloud==1.8.1 
 # Database
 psycopg2-binary==2.9.9
 snowflake-connector-python==3.5.0
