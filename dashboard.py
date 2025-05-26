@@ -284,7 +284,7 @@ if selected_tab == "Marketing Dashboard":
                     "Last 90 Days": 90,
                     "Last Year": 52,
                     "All Time": 104}[date_range],
-            freq={"Last 24 Hours": "H", 
+            freq={"Last 24 Hours": "h", 
                  "Last 7 Days": "D", 
                  "Last 30 Days": "D",
                  "Last 90 Days": "3D",
@@ -363,8 +363,8 @@ if selected_tab == "Marketing Dashboard":
             with metrics_col4:
                 metric_card(
                     "Avg. Score per Post",
-                    f"{(daily_df['total_score'].sum() / daily_df['total_posts'].sum()):.1f}",
-                    f"{daily_df['total_score'].div(daily_df['total_posts']).std():.1f} std dev",
+                    f"{(daily_df['total_score'].sum() / max(daily_df['total_posts'].sum(), 1)):.1f}",
+                    f"{daily_df['total_score'].div(daily_df['total_posts'].replace(0, 1)).std():.1f} std dev",
                     "normal"
                 )
             
@@ -759,7 +759,7 @@ elif selected_tab == "Content Intelligence":
                 length_bins = [0, 30, 40, 50, 60, 70, 80, 90, 100, 150]
                 df['title_length_bin'] = pd.cut(df['title_length'], bins=length_bins)
                 
-                length_analysis = df.groupby('title_length_bin').agg({
+                length_analysis = df.groupby('title_length_bin', observed=True).agg({
                     'score': 'mean',
                     'num_comments': 'mean',
                     'title': 'count'
@@ -894,7 +894,7 @@ elif selected_tab == "Content Intelligence":
                 day_order = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
                 df['day'] = pd.Categorical(df['day'], categories=day_order, ordered=True)
                 
-                day_perf = df.groupby('day').agg({
+                day_perf = df.groupby('day', observed=True).agg({
                     'score': 'mean',
                     'num_comments': 'mean',
                     'title': 'count'
@@ -938,7 +938,7 @@ elif selected_tab == "Content Intelligence":
                 st.plotly_chart(fig_hour, use_container_width=True)
                 
                 # Day/hour heatmap
-                timing_stats = df.groupby(['day', 'hour']).agg({
+                timing_stats = df.groupby(['day', 'hour'], observed=True).agg({
                     'score': 'mean'
                 }).reset_index()
                 
