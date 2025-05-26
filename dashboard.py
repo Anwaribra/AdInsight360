@@ -26,29 +26,37 @@ import random
 # Download required NLTK data
 try:
     nltk.data.find('tokenizers/punkt')
+    nltk.data.find('corpora/stopwords')
 except LookupError:
-    nltk.download('punkt', quiet=True)
-    nltk.download('stopwords', quiet=True)
-
-config_path = Path(__file__).parent / "config"
-sys.path.append(str(config_path))
+    try:
+        nltk.download('punkt', quiet=True)
+        nltk.download('stopwords', quiet=True)
+    except:
+        pass
 
 try:
     from local_db import DB_CONFIG
 except ImportError:
-    st.error("Missing database configuration. Please create the file 'streamlit/config/local_db.py' with your DB_CONFIG.")
-    st.stop()
+    DB_CONFIG = {
+        'host': 'localhost',
+        'database': 'adinsight_demo',
+        'user': 'demo',
+        'password': 'demo',
+        'port': 5432
+    }
 
-# Session state initialization
 if 'selected_tab' not in st.session_state:
     st.session_state.selected_tab = 0
 
 # db connection
 def get_db_connection():
-    return psycopg2.connect(
-        **DB_CONFIG,
-        cursor_factory=RealDictCursor
-    )
+    try:
+        return psycopg2.connect(
+            **DB_CONFIG,
+            cursor_factory=RealDictCursor
+        )
+    except:
+        return None
 
 # Configure Streamlit page
 st.set_page_config(
@@ -119,7 +127,10 @@ def generate_wordcloud(text_series):
     if text_series.empty:
         return None
     
-    stop_words = set(stopwords.words('english'))
+    try:
+        stop_words = set(stopwords.words('english'))
+    except:
+        stop_words = set(['the', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for', 'of', 'with', 'by'])
     
     text = ' '.join(text_series.dropna().astype(str).values)
     
@@ -160,15 +171,17 @@ def extract_topics(text_series, n_top_words=10, n_topics=5):
         text = re.sub(r'\d+', '', text)  
         cleaned_texts.append(text)
     
-    # Initialize CountVectorizer
-    stop_words = set(stopwords.words('english'))
+
+    try:
+        stop_words = set(stopwords.words('english'))
+    except:
+        stop_words = set(['the', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for', 'of', 'with', 'by'])
     stop_words.update(['reddit', 'post', 'comment', 'like'])
     vectorizer = CountVectorizer(
         max_features=1000,
         stop_words=list(stop_words)
     )
     
-    # Fit and transform
     try:
         X = vectorizer.fit_transform(cleaned_texts)
         words = vectorizer.get_feature_names_out()
@@ -214,19 +227,19 @@ def metric_card(title, value, delta=None, delta_color="normal", help=None):
 # Title with logo
 col1, col2, col3 = st.columns([1, 3, 1])
 with col2:
-    st.markdown('<h1 class="main-header">🚀 AdInsight360 PRO</h1>', unsafe_allow_html=True)
+    st.markdown('<h1 class="main-header">  Reddit Marketing Analytics </h1>', unsafe_allow_html=True)
     st.markdown("""
     <p style="text-align:center; font-size:1.2rem; margin-bottom:30px;">
-    Advanced Reddit Marketing Analytics Platform | Real-time Insights & AI-Powered Recommendations
+     Reddit Marketing Analytics Platform | Real-time Insights & AI-Powered Recommendations
     </p>
     """, unsafe_allow_html=True)
 
 # Create tabs for different analytics sections using custom styling
-tabs = ["📈 Marketing Dashboard", "🔍 Content Intelligence", "🧠 Sentiment Analysis", "🎯 Competitor Analysis", "🤖 AI Recommendations"]
+tabs = ["Marketing Dashboard", "Content Intelligence", "Sentiment Analysis", "Competitor Analysis", "AI Recommendations"]
 selected_tab = st.radio("Navigation", tabs, horizontal=True, label_visibility="collapsed")
 
 # Display appropriate content based on selected tab
-if selected_tab == "📈 Marketing Dashboard":
+if selected_tab == "Marketing Dashboard":
     st.markdown('<h2 class="sub-header">Marketing Performance Overview</h2>', unsafe_allow_html=True)
     
     with st.sidebar:
@@ -518,7 +531,7 @@ if selected_tab == "📈 Marketing Dashboard":
             st.error(f"Error loading dashboard data: {str(e)}")
             st.info("Check if your database connection is properly configured.")
 
-elif selected_tab == "🔍 Content Intelligence":
+elif selected_tab == "Content Intelligence":
     st.markdown('<h2 class="sub-header">Content Performance Analysis</h2>', unsafe_allow_html=True)
     
     with st.sidebar:
@@ -1034,7 +1047,7 @@ elif selected_tab == "🔍 Content Intelligence":
             st.error(f"Error analyzing content: {str(e)}")
             st.info("Check if your database is properly configured.")
     
-elif selected_tab == "🧠 Sentiment Analysis":
+elif selected_tab == "Sentiment Analysis":
     st.markdown('<h2 class="sub-header">Sentiment Analysis Dashboard</h2>', unsafe_allow_html=True)
     
     with st.sidebar:
@@ -1619,7 +1632,7 @@ elif selected_tab == "🧠 Sentiment Analysis":
             st.error(f"Error analyzing sentiment: {str(e)}")
             st.info("Check if your database connection is properly configured.")
 
-elif selected_tab == "🎯 Competitor Analysis":
+elif selected_tab == "Competitor Analysis":
     st.markdown('<h2 class="sub-header">Competitor Analysis</h2>', unsafe_allow_html=True)
     
     st.info("This module is currently under development. Check back soon for competitive analysis features!")
@@ -1635,7 +1648,7 @@ elif selected_tab == "🎯 Competitor Analysis":
     - **Automated alerts** - Get notified when competitors launch new campaigns or receive unusual engagement
     """)
 
-elif selected_tab == "🤖 AI Recommendations":
+elif selected_tab == "AI Recommendations":
     st.markdown('<h2 class="sub-header">AI-Powered Recommendations</h2>', unsafe_allow_html=True)
     
     st.info("The AI Recommendations module is currently in beta. Some features may be limited.")
@@ -1659,6 +1672,6 @@ elif selected_tab == "🤖 AI Recommendations":
 st.markdown("""
 ---
 <p style="text-align: center; color: gray; font-size: 0.8rem;">
-AdInsight360 PRO | Advanced Reddit Marketing Analytics Platform | © 2023
+AdInsight360 | Reddit Marketing Analytics Platform 
 </p>
 """, unsafe_allow_html=True)
