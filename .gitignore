@@ -53,3 +53,5 @@ setup_postgres.py
 
 tables/ 
 target/ 
+.target
+target/
